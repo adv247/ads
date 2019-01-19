@@ -2628,4 +2628,21 @@ m.facebook.com,touch.facebook.com##div[data-sigil="comment"] section.touchable[d
 ||touch.messenger.com/*/mark_seen.php$important
 ||touch.messenger.com/*/typ.php$important
 
+!||badges.instagram.com^
+||api.instagram.com^
+||cdninstagram.com^
+||instagram.com^
+||www.instagram.com^
 
+||adf.ly^$important
+||bit.do/*^$important
+||bit.ly/*^$important
+||biturl.io^$important
+||cur.lv^$important
+||dr.tl/*^$important
+||go.budurl.co^$important
+||hackforu.ms^$important
+||shorte.st^$important
+||slsh.us^$important
+||taveo.net/*^$important
+||tldr.ly^$important
