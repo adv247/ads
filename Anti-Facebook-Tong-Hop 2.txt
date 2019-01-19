@@ -45,6 +45,32 @@
 ||certifications.apple.com^
 ||certifications2.apple.com^
 
+||support.apple.com^
+||support01.apple.com^
+||support02.apple.com^
+||support03.apple.com^
+||support04.apple.com^
+||support05.apple.com^
+||supportprofile.apple.com^
+||supporttest.apple.com^
+||survey.apple.com^
+||survey2.apple.com^
+
+||tips.apple.com^
+||trailers.apple.com^
+||training.apple.com^
+||trainingevents.apple.com^
+||uptodate.apple.com^
+||volume.apple.com^
+||PublishingResearch.com^
+||PublishingSurvey.com^
+||Quicktime.com^
+
+||Applemusic.com^
+||Buy-Different.com^
+||BuyAAPL.com^
+
+
 
 ||api-read.facebook.com/restserver.php?api_key=$third-party
 ||api.facebook.com^$third-party
