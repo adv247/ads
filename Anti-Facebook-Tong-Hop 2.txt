@@ -2444,8 +2444,7 @@ linkis.com##.other-pages-holder .right-column
 linkis.com##.popup_force-auth
 linkis.com##.theme15-authorize
 
-
-
-
-
+||facebook.com$domain=~www.facebook.com
+||facebook.net$domain=~www.facebook.com
+||fbcdn.net$domain=~www.facebook.com
 
