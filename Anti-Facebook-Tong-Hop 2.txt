@@ -46,14 +46,10 @@
 ||certifications2.apple.com^
 
 
-||tips.apple.com^
 ||trailers.apple.com^
-||training.apple.com^
-||trainingevents.apple.com^
 ||uptodate.apple.com^
 ||volume.apple.com^
-||PublishingResearch.com^
-||PublishingSurvey.com^
+
 
 
 
