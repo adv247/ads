@@ -15,6 +15,16 @@
 ! Warning, will break on facebook-based comment sites and may also break on some facebook apps or games.
 !
 ! Thirdparty Filters
+
+0.0.0.0 0 mesu.apple.com
+0.0.0.0 0 ocsp.apple.com
+0.0.0.0 0 appldnld.apple.com
+127.0.0.1 mesu.apple.com
+127.0.0.1 ocsp.apple.com
+127.0.0.1 appldnld.apple.com
+127.0.0.1 mesu.apple.com
+
+
 !
 ||api-read.facebook.com/restserver.php?api_key=$third-party
 ||api.facebook.com^$third-party
