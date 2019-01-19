@@ -1,0 +1,3297 @@
+﻿[Adblock Plus 2.0]
+! Checksum: 4MYH9lkE+S6iLOi+FOtfeg
+! Title: Anti-Facebook List
+! Updated: 19 May 2018
+! Expires: 6 days
+! License: http://creativecommons.org/licenses/by/3.0/
+! Homepage: http://www.fanboy.co.nz/
+! Reporting Issues: https://github.com/ryanbr/fanboy-adblock/issues
+!
+! Legal stuff (T&C's) .
+! In no event shall Fanboy List, or the list author be liable for any indirect, direct, punitive, special, incidental, or consequential damages whatsoever.
+! By downloading or viewing, or using this list, you are accepting these terms and the license.
+!
+!
+! Warning, will break on facebook-based comment sites and may also break on some facebook apps or games.
+!
+! Thirdparty Filters
+!
+||api-read.facebook.com/restserver.php?api_key=$third-party
+||api.facebook.com^$third-party
+||badge.facebook.com^$third-party
+||connect.facebook.com^$third-party,domain=~facebook.net|~fb.com
+||connect.facebook.net^$third-party,domain=~facebook.com|~fb.com
+||facebook.com/connect/$third-party
+||facebook.com/dialog/oauth?display=popup$popup,domain=humorhub.org
+||facebook.com/plugins/activity.php?$third-party
+||facebook.com/plugins/comments.php?$third-party
+||facebook.com/plugins/facepile.php?$third-party
+||facebook.com/plugins/fan.php?$third-party
+||facebook.com/plugins/follow.php$third-party
+||facebook.com/plugins/like.php?$third-party
+||facebook.com/plugins/like_box.php$third-party
+||facebook.com/plugins/likebox.php?$third-party
+||facebook.com/plugins/post.php?$third-party
+||facebook.com/plugins/recommendations.php?$third-party
+||facebook.com/plugins/recommendations_bar.php?$third-party
+||facebook.com/plugins/send.php?$third-party
+||facebook.com/plugins/share_button.php?$third-party
+||facebook.com/plugins/subscribe.php$third-party
+||facebook.com/plugins/subscribe?$third-party
+||facebook.com/restserver.php?*.getStats&$third-party
+||facebook.com/whitepages/wpminiprofile.php$third-party
+||facebook.com/widgets/activity.php?$third-party
+||facebook.com/widgets/fan.php?$third-party
+||facebook.com/widgets/like.php?$third-party
+||facebook.com/widgets/recommendations.php?$third-party
+||fbcdn-profile-a.akamaihd.net^$third-party,domain=~facebook.com
+||google.com/js/client:plusone.js$third-party
+||google.com/js/plusone.js$third-party
+||graph.facebook.com/?id=$third-party
+||graph.facebook.com^$third-party,xmlhttprequest
+||profile.ak.fbcdn.net^$third-party,domain=~facebook.com
+||scontent-a.*.fbcdn.net^$third-party,domain=~facebook.com
+||spot.im/embed/scripts/launcher.js$third-party
+||static.ak.fbcdn.net^$third-party,domain=~facebook.com
+!
+! Test Filters (For Gannett sites, which don't work anyways with Facebook blocked)
+!
+##.util-bar-module-firefly-visible
+!
+! Whitelist Filters
+!
+@@/cdn-cgi/pe/bag2?*connect.facebook.net$domain=forwardprogressives.com|onhax.net|opensubtitles.org|viralthread.com|youngcons.com
+@@||akamaihd.net/rsrc.php/$domain=facebook.com
+@@||channel.facebook.com^$domain=facebook.com
+@@||connect.facebook.com^*/AudienceNetworkPrebid.js$domain=vice.com
+@@||facebook.com/ajax/browse/$domain=facebook.com
+@@||facebook.com/ajax/bz$domain=facebook.com
+@@||facebook.com/ajax/chat/buddy_list.php$domain=facebook.com
+@@||facebook.com/ajax/chat/hovercard/$domain=facebook.com
+@@||facebook.com/ajax/hovercard/$domain=facebook.com
+@@||facebook.com/ajax/litestand/$domain=facebook.com
+@@||facebook.com/ajax/notifications/$domain=facebook.com
+@@||facebook.com/ajax/pagelet/$domain=facebook.com
+@@||facebook.com/ajax/photos/$domain=facebook.com
+@@||facebook.com/ajax/presence/$domain=facebook.com
+@@||facebook.com/ajax/typeahead/$domain=facebook.com
+@@||facebook.com/ajax/webstorage/$domain=facebook.com
+@@||facebook.com/chat/$domain=facebook.com
+@@||facebook.com/images/$domain=facebook.com
+@@||fbcdn-photos-*.akamaihd.net^$domain=facebook.com
+@@||fbcdn-profile-*.akamaihd.net^$domain=facebook.com
+@@||fbcdn-sphotos-*.akamaihd.net^$domain=facebook.com
+@@||fbexternal-*.akamaihd.net^$domain=facebook.com
+@@||scontent-*.fbcdn.net^$domain=facebook.com
+!
+! Problematic sites
+!
+@@||connect.facebook.com^*/audiencenetworkprebid.js$script,domain=screenrant.com
+@@||connect.facebook.net^$script,domain=abc.go.com|adultswim.com|contv.com|damnyouautocorrect.com|embedly.com|fitbit.com|instagram.com|interviewmagazine.com|noovo.ca|pogo.com|reddit.com|salon.com|sci2.tv|southpark.cc.com|southpark.de|upi.com
+@@||google.com/js/plusone.js$domain=abcnews.go.com|watch.nba.com
+@@||graph.facebook.com^$xmlhttprequest,domain=theguardian.com
+@@||staticxx.facebook.com/connect/$domain=embedly.com
+!
+! Cloudflare CDN
+!
+/cdn-cgi/pe/bag2?*connect.facebook.com
+/cdn-cgi/pe/bag2?*connect.facebook.net
+||00.video-ak.cdn.spotify.com^
+||01.video-ak.cdn.spotify.com^
+||02.video-ak.cdn.spotify.com^
+||03.video-ak.cdn.spotify.com^
+||04.video-ak.cdn.spotify.com^
+||05.video-ak.cdn.spotify.com^
+||06.video-ak.cdn.spotify.com^
+||07.video-ak.cdn.spotify.com^
+||08.video-ak.cdn.spotify.com^
+||09.video-ak.cdn.spotify.com^
+||10.video-ak.cdn.spotify.com^
+||11.video-ak.cdn.spotify.com^
+||12.video-ak.cdn.spotify.com^
+||13.video-ak.cdn.spotify.com^
+||1364.tm.zedo.com^
+||14.video-ak.cdn.spotify.com^
+||144.64.199.104.bc.googleusercontent.com^
+||15.video-ak.cdn.spotify.com^
+||153.64.199.104.bc.googleusercontent.com^
+||16.video-ak.cdn.spotify.com^
+||163-172-209-161.rev.poneytelecom.eu^
+||17.video-ak.cdn.spotify.com^
+||18.video-ak.cdn.spotify.com^
+||19.video-ak.cdn.spotify.com^
+||192.121.140.177^
+||1a.video-ak.cdn.spotify.com^
+||1b.video-ak.cdn.spotify.com^
+||1c.video-ak.cdn.spotify.com^
+||1d.video-ak.cdn.spotify.com^
+||1e.video-ak.cdn.spotify.com^
+||1f.video-ak.cdn.spotify.com^
+||20.65.199.104.bc.googleusercontent.com^
+||20.video-ak.cdn.spotify.com^
+||21.video-ak.cdn.spotify.com^
+||22.video-ak.cdn.spotify.com^
+||23.video-ak.cdn.spotify.com^
+||24.video-ak.cdn.spotify.com^
+||25.video-ak.cdn.spotify.com^
+||26.video-ak.cdn.spotify.com^
+||27.video-ak.cdn.spotify.com^
+||28.64.199.104.bc.googleusercontent.com^
+||28.video-ak.cdn.spotify.com^
+||29.video-ak.cdn.spotify.com^
+||2a.video-ak.cdn.spotify.com^
+||2b.video-ak.cdn.spotify.com^
+||2c.video-ak.cdn.spotify.com^
+||2d.video-ak.cdn.spotify.com^
+||2e.video-ak.cdn.spotify.com^
+||2f.video-ak.cdn.spotify.com^
+||30.video-ak.cdn.spotify.com^
+||31.video-ak.cdn.spotify.com^
+||32.video-ak.cdn.spotify.com^
+||33.video-ak.cdn.spotify.com^
+||34.video-ak.cdn.spotify.com^
+||35.video-ak.cdn.spotify.com^
+||36.video-ak.cdn.spotify.com^
+||37.video-ak.cdn.spotify.com^
+||38.video-ak.cdn.spotify.com^
+||39.video-ak.cdn.spotify.com^
+||3a.video-ak.cdn.spotify.com^
+||3b.video-ak.cdn.spotify.com^
+||3c.video-ak.cdn.spotify.com^
+||3d.video-ak.cdn.spotify.com^
+||3e.video-ak.cdn.spotify.com^
+||3f.video-ak.cdn.spotify.com^
+||40.video-ak.cdn.spotify.com^
+||41.65.199.104.bc.googleusercontent.com^
+||41.video-ak.cdn.spotify.com^
+||42.video-ak.cdn.spotify.com^
+||43.video-ak.cdn.spotify.com^
+||44.video-ak.cdn.spotify.com^
+||45.video-ak.cdn.spotify.com^
+||46.video-ak.cdn.spotify.com^
+||47.video-ak.cdn.spotify.com^
+||48.224.186.35.bc.googleusercontent.com^
+||48.65.199.104.bc.googleusercontent.com^
+||48.video-ak.cdn.spotify.com^
+||49.video-ak.cdn.spotify.com^
+||4a.video-ak.cdn.spotify.com^
+||4b.video-ak.cdn.spotify.com^
+||4c.video-ak.cdn.spotify.com^
+||4d.video-ak.cdn.spotify.com^
+||4e.video-ak.cdn.spotify.com^
+||4f.video-ak.cdn.spotify.com^
+||50.video-ak.cdn.spotify.com^
+||51.video-ak.cdn.spotify.com^
+||52.video-ak.cdn.spotify.com^
+||53.video-ak.cdn.spotify.com^
+||54.video-ak.cdn.spotify.com^
+||55.video-ak.cdn.spotify.com^
+||56.video-ak.cdn.spotify.com^
+||62.224.186.35.bc.googleusercontent.com^
+||64.video-ak.cdn.spotify.com^
+||6d.video-ak.cdn.spotify.com^
+||6e.video-ak.cdn.spotify.com^
+||6f.video-ak.cdn.spotify.com^
+||70.video-ak.cdn.spotify.com^
+||71.video-ak.cdn.spotify.com^
+||72.video-ak.cdn.spotify.com^
+||73.video-ak.cdn.spotify.com^
+||74.video-ak.cdn.spotify.com^
+||75.video-ak.cdn.spotify.com^
+||76.video-ak.cdn.spotify.com^
+||77.video-ak.cdn.spotify.com^
+||78.video-ak.cdn.spotify.com^
+||79.video-ak.cdn.spotify.com^
+||7a.video-ak.cdn.spotify.com^
+||7b.video-ak.cdn.spotify.com^
+||7c.video-ak.cdn.spotify.com^
+||7d.video-ak.cdn.spotify.com^
+||7e.video-ak.cdn.spotify.com^
+||7f.video-ak.cdn.spotify.com^
+||80.video-ak.cdn.spotify.com^
+||81.video-ak.cdn.spotify.com^
+||82.video-ak.cdn.spotify.com^
+||83.video-ak.cdn.spotify.com^
+||84.video-ak.cdn.spotify.com^
+||85.video-ak.cdn.spotify.com^
+||86.video-ak.cdn.spotify.com^
+||87.video-ak.cdn.spotify.com^
+||88.video-ak.cdn.spotify.com^
+||89.video-ak.cdn.spotify.com^
+||8a.video-ak.cdn.spotify.com^
+||8b.video-ak.cdn.spotify.com^
+||8c.video-ak.cdn.spotify.com^
+||8d.video-ak.cdn.spotify.com^
+||8e.video-ak.cdn.spotify.com^
+||8f.video-ak.cdn.spotify.com^
+||90.video-ak.cdn.spotify.com^
+||91.video-ak.cdn.spotify.com^
+||92.video-ak.cdn.spotify.com^
+||93.video-ak.cdn.spotify.com^
+||94.video-ak.cdn.spotify.com^
+||95.video-ak.cdn.spotify.com^
+||96.video-ak.cdn.spotify.com^
+||97.video-ak.cdn.spotify.com^
+||98.video-ak.cdn.spotify.com^
+||99.video-ak.cdn.spotify.com^
+||9a.video-ak.cdn.spotify.com^
+||9b.video-ak.cdn.spotify.com^
+||9c.video-ak.cdn.spotify.com^
+||9d.video-ak.cdn.spotify.com^
+||9e.video-ak.cdn.spotify.com^
+||9f.video-ak.cdn.spotify.com^
+||a.adk2x.com^
+||a.admob.com^
+||a0.video-ak.cdn.spotify.com^
+||a1.audio-ak.cdn.spotify.com^
+||a1.video-ak.cdn.spotify.com^
+||a1294.w20.akamai.net^
+||a1843.g.akamai.net^
+||a2-19-66-11.deploy.static.akamaitechnologies.com^
+||a2.video-ak.cdn.spotify.com^
+||a23-45-105-248.deploy.static.akamaitechnologies.com^
+||a23-54-115-202.deploy.static.akamaitechnologies.com^
+||a297.c.akamai.net^
+||a3-19-66-11.deploy.static.akamaitechnologies.com^
+||a3.video-ak.cdn.spotify.com^
+||a301.w62d.akamai.net^
+||a4.video-ak.cdn.spotify.com^
+||a5.video-ak.cdn.spotify.com^
+||a50.g2.akamai.net^
+||a6.video-ak.cdn.spotify.com^
+||a7.video-ak.cdn.spotify.com^
+||a8.video-ak.cdn.spotify.com^
+||a9.video-ak.cdn.spotify.com^
+||aa.video-ak.cdn.spotify.com^
+||ab.tune.com^
+||ab.video-ak.cdn.spotify.com^
+||ac.video-ak.cdn.spotify.com^
+||ac1.vip.sc9.admob.com^
+||ac208.sc9.admob.com^
+||academy.tune.com^
+||accalia.ap.spotify.com^
+||accalia.ash.spotify.com^
+||accalia.ash1.spotify.com^
+||ad-proxy.spotify.com^
+||ad.atdmt.com^
+||ad.audio-ak.cdn.spotify.com^
+||ad.doubleclick.net^
+||ad.video-ak.cdn.spotify.com^
+||ad3.adfarm1.adition.com^
+||adclick.g.doublecklick.net^
+||adclick.g.doubleclick.net^
+||ade.googlesyndication.com^
+||adeventtracker.spotify.com^
+||adgen-dev.spotify.com^
+||adgen.spotify.com^
+||adgrx.moatads.com^
+||adjust-callback.spotify.com^
+||adjust.com^
+||adlab.spotify.com^
+||adlab.spotify.com^
+||adlog.spotify.com^
+||admetrix.comscore.com^
+||admob.biz^
+||admob.co.kr^
+||admob.co.nz^
+||admob.co.uk^
+||admob.com^
+||admob.de^
+||admob.dk^
+||admob.es^
+||admob.fi^
+||admob.fr^
+||admob.gr^
+||admob.it^
+||admob.jp^
+||admob.kr^
+||admob.mobi^
+||admob.no^
+||admob.pt^
+||admob.sg^
+||admob.tk^
+||admob.tw^
+||admocker.spotify.com^
+||adnxs.com^
+||adnxs.comadplexmedia.adk2x.com^
+||adobe-dns-2.spotify.com^
+||ads-akp.spotify.com^
+||ads-br.spotify.com^
+||ads-ca.spotify.com^
+||ads-fa.cdn.spotify.com^
+||ads-fa.spotify.com^
+||ads-jp.spotify.com^
+||ads-pt.spotify.com^
+||ads-sp-ash.cdn.spotify.com^
+||ads-sp-lon.cdn.spotify.com^
+||ads-sp-sto.cdn.spotify.com^
+||ads-static.saymedia.com^
+||ads-us.spotify.com^
+||ads-west-colo.adsymptotic.com^
+||ads.54646.co^
+||ads.admob.com^
+||ads.bizhut.com^
+||ads.flurry.com^
+||ads.pubmatic.com^
+||adserver-as.adtech.advertising.com^
+||adserver.adtechus.com^
+||adservice.google.com^
+||adsgtm-dev.spotify.com^
+||adsgtm-sandbox.spotify.com^
+||adsgtm.spotify.com^
+||adstudio-help.spotify.com^
+||adstudio.spotify.com^
+||ae.audio-ak.cdn.spotify.com^
+||ae.video-ak.cdn.spotify.com^
+||af.audio-ak.cdn.spotify.com^
+||af.video-ak.cdn.spotify.com^
+||afs.moatads.com^
+||afton.ap.spotify.com^
+||agnes.ap.spotify.com^
+||ahava.ap.spotify.com^
+||ams1-ib.adnxs.com^
+||analytics-001.lon.spotify.com^
+||analytics-002.lon.spotify.com^
+||analytics-classic.spotify.com^
+||analytics-preview.spotify.com^
+||analytics.admob.com^
+||analytics.google.com^
+||analytics.spotify.com^
+||anycast.pixel.adsafeprotected.com^
+||api-iam.intercom.io^
+||api-ping.intercom.io^
+||api.admob.com^
+||api.admob.xiaomi.com^
+||api.comscore.com^
+||api.intercom.io^
+||api.mixpanel.com^
+||api.zwizzarmyknife.com^
+||apx.moatads.com^
+||ar.voicefive.com^
+||aser.comscore.com^
+||assets.spotify.com^
+||atom.adjust.com^
+||audio-ak-spotify-com.akamaized.net^
+||audio-ak.spotify.com.edgesuite.net^
+||audio-ak.spotify.com.eip.akadns.net^
+||audio-ak.spotify.com^
+||audio-ake.spotify.com.edgesuite.net^
+||audio-akp-spotify-com.akamaized.net^
+||audio-akp.spotify.com.edgesuite.net^
+||audio-akp.spotify.com^
+||audio-cf.spotify.com^
+||audio-ec.spotify.com^
+||audio-fa.scdn.co # do not block while using chromecast^
+||audio-fa.spotify.com^
+||audio-fab.spotify.com^
+||audio-fac-spotify.com^
+||audio-fac.spotify.com^
+||audio-gc.scdn.co^
+||audio-gc.spotify.com^
+||audio4-ak.spotify.com.edgesuite.net^
+||audio4-akp.spotify.com.edgesuite.net^
+||auditdesk-server.spotify.com^
+||austin.logs.roku.com^
+||b.admob.com^
+||b.scorecardresearch.com^
+||b0.video-ak.cdn.spotify.com^
+||b1.video-ak.cdn.spotify.com^
+||b2.video-ak.cdn.spotify.com^
+||b3.video-ak.cdn.spotify.com^
+||b4.video-ak.cdn.spotify.com^
+||b5.video-ak.cdn.spotify.com^
+||b6.video-ak.cdn.spotify.com^
+||b7.video-ak.cdn.spotify.com^
+||b8.video-ak.cdn.spotify.com^
+||b9.video-ak.cdn.spotify.com^
+||ba.video-ak.cdn.spotify.com^
+||bb.video-ak.cdn.spotify.com^
+||bc.video-ak.cdn.spotify.com^
+||bd.moatads.com^
+||bd.video-ak.cdn.spotify.com^
+||be.ads.justpremium.com^
+||be.video-ak.cdn.spotify.com^
+||bengta.lon.spotify.com^
+||bengta.lon2.spotify.com^
+||berdine.ash.spotify.com^
+||berdine.ash1.spotify.com^
+||beta.developer.spotify.com^
+||beta.spotify.com^
+||beta.spotify.map.fastly.net^
+||beta.spotify.map.fastlylb.net^
+||beta.static.tune.com^
+||beta.tune.com^
+||bf.audio-ak.cdn.spotify.com^
+||bf.video-ak.cdn.spotify.com^
+||bloodhound.spotify.com^
+||bounceexchange.com^
+||broadcast.admob.com^
+||bs.serving-sys.com^
+||bsams.eyeblaster.akadns.net^
+||bug.spotify.com^
+||bugzilla-001.lon.spotify.com^
+||bundling-integration.spotify.com^
+||buy-link-001.lon.spotify.com^
+||c-evt.moatads.com^
+||c.admob.com^
+||c0.video-ak.cdn.spotify.com^
+||c1.video-ak.cdn.spotify.com^
+||c1.vip.sc9.admob.com^
+||c2.video-ak.cdn.spotify.com^
+||c3.video-ak.cdn.spotify.com^
+||c4.video-ak.cdn.spotify.com^
+||c5.video-ak.cdn.spotify.com^
+||c6.video-ak.cdn.spotify.com^
+||c7.video-ak.cdn.spotify.com^
+||c8.video-ak.cdn.spotify.com^
+||c9.video-ak.cdn.spotify.com^
+||ca.video-ak.cdn.spotify.com^
+||cb.video-ak.cdn.spotify.com^
+||cc.video-ak.cdn.spotify.com^
+||cd.video-ak.cdn.spotify.com^
+||cdn.ravenjs.com^
+||cdr.comscore.com^
+||ce.video-ak.cdn.spotify.com^
+||cer.comscore.com^
+||cf.video-ak.cdn.spotify.com^
+||christopher.lon.spotify.com^
+||click.api.cp.tune.com^
+||clk1.vip.sc9.admob.com^
+||clk2.vip.sc9.admob.com^
+||clk3.vip.sc9.admob.com^
+||combine.urbanairship.com^
+||comscore.net^
+||comscore.org^
+||comscoredatagems.com^
+||comscoredatamine.com^
+||comscoredirect.net^
+||comscorenetworks.net^
+||configuration.ma.tune.com^
+||content.bitsontherun.com^
+||core.insightexpressai.com^
+||corp.tune.com^
+||cp.tune.com^
+||cpm.admob.com^
+||cpm1.admob.com^
+||cpm1.vip.sc9.admob.com^
+||cpm2.admob.com^
+||cpm2.vip.sc9.admob.com^
+||cpm3.admob.com^
+||cpm3.vip.sc9.admob.com^
+||crashdump-001.lon.spotify.com^
+||crashdump.ciqe-gslb.spotify.com^
+||crashdump.spotify.com^
+||crashdump.sto.spotify.com^
+||crashlytics.163.com^
+||crashlytics.com^
+||crashlytics.twimg.com^
+||cs126.wpc.edgecastcdn.net^
+||cs126.wpc.teliasoneracdn.net^
+||cs283.wpc.teliasoneracdn.net^
+||cs934.wac.thetacdn.net^
+||d.admob.com^
+||d0.video-ak.cdn.spotify.com^
+||d1.video-ak.cdn.spotify.com^
+||d2.video-ak.cdn.spotify.com^
+||d2gi7ultltnc2u.cloudfront.net^
+||d3.video-ak.cdn.spotify.com^
+||d4.video-ak.cdn.spotify.com^
+||d5.video-ak.cdn.spotify.com^
+||d6.video-ak.cdn.spotify.com^
+||d7.video-ak.cdn.spotify.com^
+||d8.video-ak.cdn.spotify.com^
+||d9.video-ak.cdn.spotify.com^
+||da.video-ak.cdn.spotify.com^
+||db.video-ak.cdn.spotify.com^
+||dbg52463.moatads.com^
+||dc.video-ak.cdn.spotify.com^
+||dd.video-ak.cdn.spotify.com^
+||de.video-ak.cdn.spotify.com^
+||decide.mixpanel.com^
+||dep.admob.com^
+||dev.lab.tune.com^
+||dev1.vip.sc9.admob.com^
+||developer.admob.com^
+||developers.intercom.io^
+||devnews.spotify.com^
+||df.video-ak.cdn.spotify.com^
+||doubleclick.net^
+||ds.serving-sys.com^
+||e.admob.com^
+||e.crashlytics.com^
+||e0.video-ak.cdn.spotify.com^
+||e1.video-ak.cdn.spotify.com^
+||e2.video-ak.cdn.spotify.com^
+||e3.video-ak.cdn.spotify.com^
+||e4.video-ak.cdn.spotify.com^
+||e5.video-ak.cdn.spotify.com^
+||e6.video-ak.cdn.spotify.com^
+||e7.video-ak.cdn.spotify.com^
+||e7876.dscg.akamaiedge.net^
+||e8.video-ak.cdn.spotify.com^
+||e8218.dscb1.akamaiedge.net^
+||e9.video-ak.cdn.spotify.com^
+||ea.video-ak.cdn.spotify.com^
+||eb.video-ak.cdn.spotify.com^
+||ec.video-ak.cdn.spotify.com^
+||ec2-34-195-40-20.compute-1.amazonaws.com^
+||ec2-52-202-9-181.compute-1.amazonaws.com^
+||ec2-52-212-113-202.eu-west-1.compute.amazonaws.com^
+||ec2-52-7-112-21.compute-1.amazonaws.com^
+||ec2-54-246-172-197.eu-west-1.compute.amazonaws.com^
+||ec2-54-248-172-197.eu-west-1.compute.amazonaws.com^
+||ec2-54-88-142-76.compute-1.amazonaws.com^
+||ec2-54-88-58-219.compute-1.amazonaws.com^
+||ed.video-ak.cdn.spotify.com^
+||ee-in-f95.1.e100.net^
+||ee.video-ak.cdn.spotify.com^
+||ef.video-ak.cdn.spotify.com^
+||eip-ntt.audio-ak.spotify.com.akahost.net^
+||eip-onnet.audio-ak.spotify.com.akahost.net^
+||eip-tata.audio-ak.spotify.com.akahost.net^
+||ejs.moatads.com^
+||eng.admob.com^
+||engineering.intercom.io^
+||eu-gmtdmp.gd1.mookie1.com^
+||event.api.cp.tune.com^
+||event.spotxchange.com^
+||events.adjust.com^
+||evt.moatads.com^
+||exp-canary.wg.spotify.com^
+||exp.spotify.com^
+||exp.wg.spotify.com^
+||f.admob.com^
+||f0.video-ak.cdn.spotify.com^
+||f1.video-ak.cdn.spotify.com^
+||f2.video-ak.cdn.spotify.com^
+||f3.video-ak.cdn.spotify.com^
+||f4.video-ak.cdn.spotify.com^
+||f5.video-ak.cdn.spotify.com^
+||f6.video-ak.cdn.spotify.com^
+||f7.video-ak.cdn.spotify.com^
+||f8.video-ak.cdn.spotify.com^
+||f9.video-ak.cdn.spotify.com^
+||fc.video-ak.cdn.spotify.com^
+||fd.video-ak.cdn.spotify.com^
+||fe.video-ak.cdn.spotify.com^
+||ff.video-ak.cdn.spotify.com^
+||ffcampaign.spotify.com^
+||fra15s17-in-f3.1e100.net^
+||fs.moatads.com^
+||full-cdn-01.cluster001.ovh.net^
+||full-cdn-01.cluster002.ovh.net^
+||funky.staging.intercom.io^
+||g.admob.com^
+||gads.pubmatic.com^
+||gads22000.pubmatic.com^
+||games.admob.com^
+||gcdn.2mdn.net^
+||ge-0-0-1-edge1.sc9.admob.com^
+||ge-0-0-43-crs1.sc9.admob.com^
+||geo.moatads.com^
+||gew1-accesspoint-b-n4n5.ap.spotify.com^
+||googleads.g.doubleclick.net^
+||googleads4.g.doubleclick.net^
+||googleadservices.com^
+||gs5j7zyhogb53dmqmjfqljsq2ykksm3.spotify.com^
+||gtssl2-ocsp.geotrust.com^
+||guc-dealer-ssl.spotify.com^
+||guc-dealer.spotify.com^
+||guc-spclient.spotify.com^
+||gw.admob.com^
+||h.admob.com^
+||heads-ak.spotify.com.edgesuite.net^
+||heads-ak.spotify.com^
+||heads-akp.spotify.com.edgesuite.net^
+||heads-akp.spotify.com^
+||heads-cf.spotify.com^
+||heads-ec.spotify.com^
+||heads-ecb.spotify.com^
+||heads-ecp.spotify.com^
+||heads-fa.scdn.co^
+||heads-fa.spotify.com^
+||heads-fab.spotify.com^
+||heads-fac.spotify.com^
+||heads-l3.spotify.com^
+||heads4-ak.spotify.com.edgesuite.net^
+||heads4-akp.spotify.com.edgesuite.net^
+||heather.ap.spotify.com^
+||i.admob.com^
+||ia1.comscore.com^
+||ia2.comscore.com^
+||iad.comscore.com^
+||ib.adnxs.com^
+||im.comscore.com^
+||images.comscore.com^
+||imagesrv.adition.com^
+||imqvs2qippm65n6g2qtyyqimyeggervnt64cyzl2x2fduo6g.tb6aoen5rgxsd3vrsm5x6257pe43ez5jpbpqs7mnhfd2gwpm.6p43cx5jyukului62krjkjbuw27drk43s2wizh2rqbzqnoix.rr4lyf2ny4j5pit663giazaneive3wnxoi67oietaezfarxq.nvkux5go6wfzevmi.er.spo.spotify.com^
+||indosatooredoo.spotify.com^
+||intercom.io^
+||internal.intercom.io^
+||investors.spotify.com^
+||ipinfo.io^
+||iria.ash.spotify.com^
+||iria.ash1.spotify.com^
+||j.admob.com^
+||jm.moatads.com^
+||jp.admob.com^
+||js.moatads.com^
+||json.moatads.com^
+||jsonp.moatads.com^
+||k.admob.com^
+||kismet.ap.spotify.com^
+||kismet.ash.spotify.com^
+||kismet.ash1.spotify.com^
+||klara.lon.spotify.com^
+||l.admob.com^
+||lab.tune.com^
+||labels-canary.spotify.com^
+||labs.comscore.com^
+||labs.tune.com^
+||lb1-217593028.us-east-1.elb.amazonaws.com^
+||leadvisualdesigner.intercom.io^
+||links.iterable.com^
+||links.spotify.com^
+||live.adyen.com^
+||log.spotify.com^
+||log2.spotify.com^
+||logtest.moatads.com^
+||m.admob.com^
+||ma.tune.com^
+||mail2.comscore.com^
+||marketer.comscore.com^
+||media-match.com^
+||media-router-flurry7.prod.media.wg1.b.yahoo.com^
+||media.admob.com^
+||metrics.admob.com^
+||mil04s27-in-f131.1e100.net^
+||mil04s27-in-f142.1e100.net^
+||mixpanel.com^
+||mkt.tune.com^
+||mm.admob.com^
+||mm1.vip.sc1.admob.com^
+||mm1.vip.sc9.admob.com^
+||mm104.sc9.admob.com^
+||mmv.admob.com^
+||moat.pxl.ace.advertising.com^
+||moatads.com.edgekey.net^
+||moatads.com^
+||mobile-sdk-api.intercom.io^
+||mp3ad.scdn.co^
+||muc11s15-in-f3.1e100.net^
+||multiverse.tune.com^
+||muster-sandbox.intercom.io^
+||mx0.comscore.com^
+||mx1.comscore.com^
+||mx2.comscore.com^
+||my.comscore.com^
+||mycomscore.com^
+||mymetrix.comscore.com^
+||myresearch.comscore.com^
+||n.admob.com^
+||n1nlhg562c1562.shr.prod.ams1.secureserver.net^
+||n2nlhg562c1562.shr.prod.ams1.secureserver.net^
+||n2nlhg562c1562.shr.prod.ams2.secureserver.net^
+||na.gmtdmp.com^
+||network.admob.com^
+||nexus-testing.intercom.io^
+||nexus-websocket-a.intercom.io^
+||nexus.intercom.io^
+||o.admob.com^
+||oktascimpoc.spotify.com^
+||oktascimserver-test.spotify.com^
+||oktascimserver.spotify.com^
+||omaze.com^
+||ops-prod.us-west-2.k8s.ops.tune.com^
+||ord.comscore.com^
+||orientation.internal.intercom.io^
+||p.admob.com^
+||p1.vip.sc9.admob.com^
+||pagead-googlehosted.l.google.com^
+||pagead.l.doubleclick.net^
+||pagead2.googlesyndication.com^
+||pagead46.l.doubleclick.net^
+||paix1.sc1.admob.com^
+||partner-provisioning.spotify.com^
+||partner-service-testing.spotify.com^
+||partner-service.spotify.com^
+||partner.googleadservices.com^
+||partnerad.l.doubleclick.net^
+||partnerportal.spotify.com^
+||pay-testing.spotify.com^
+||payment-callback.spotify.com^
+||pci.spotify.com^
+||pixel-static.spotify.com^
+||pixel.admobclick.com^
+||pixel.moatads.com^
+||pixel.spotify.com^
+||pixel1.spotify.com^
+||pixel2.spotify.com^
+||pl35t7bb4aabglvz2i3btceznecjh4fka7m6ppyzdthifgcq.obfxt53kpvuicjyib3vacc5db3htskgk62k5tsonipsj2pty.yoyjueb2cieypg5vnrb5jpkuf52xxafpqf4ecynqzuz6s42t.tiox3ktdzfwwbcokrxi6o7huoya6iogdfo7ktcsdhkxakyjw.sg7cexr7oxb2d6ms.er.spo.spotify.com^
+||playlist.ma.tune.com^
+||pool3.moatads.com^
+||pool5.moatads.com^
+||post.update.moatads.com^
+||postbuy.comscore.com^
+||premium-code-admin.lon.spotify.com^
+||prg03s02-in-f110.1e100.net^
+||prg03s02-in-f99.1e100.net^
+||proclarity.comscore.com^
+||prod.spotify-heads.map.fastlylb.net^
+||prod.spotify.map.fastly.net^
+||prod.spotify.map.fastlylb.net^
+||promo-001.lon.spotify.com^
+||promo.spotify.com^
+||pt.admob.com^
+||pub-net-srx-int-testing.spotify.com^
+||pubads.g.doubleclick.net^
+||px.moatads.com^
+||q.admob.com^
+||qat.comscore.com^
+||qm2adg47liahr7nsp3hu3do3v4rhjzv7o5z2e4gffuri4fzk.22aradra3s5midyr2lud47ipbxupxt52kzcmfsblo7zjty7a.sx2gdu6lcitzksm3d2zgxbxg5ppfc7mp7uanbvwjxq7wac2i.4doohcbyhkrp2eb4d7gsqareg6h5h73uespoxkefxgf23dua.dl6tyv4jcseeishe.er.spo.spotify.com^
+||qnajplxtvz-a.akamaihd.net^
+||quantcast584928381.s.moatpixel.com^
+||quicksilver.scdn.co^
+||r.254a.comjs.moatads.com^
+||r.admob.com^
+||r2.vip.sc9.admob.com^
+||r620test.lon.spotify.com^
+||reports.crashlytics.com^
+||request.api.cp.tune.com^
+||rmd.admob.com^
+||rp-lb-766892831.us-east-1.elb.amazonaws.com^
+||s-jsonp.moatads.com^
+||s.admob.com^
+||s.moatads.com^
+||s.update.moatads.com^
+||s0-2mdn-net.l.google.com^
+||s0.2mdn.net^
+||sap-testing.spotify.com^
+||sap.spotify.com^
+||sb.scorecardresearch.com^
+||sb.voicefive.com^
+||sc1.admob.com^
+||sc9.admob.com^
+||search.spotxchange.com^
+||secure-gg.imrworldwide.com^
+||securepubads.g.doubleclick.net^
+||seen-on-screen.thewhizmarketing.com^
+||sejs.moatads.com^
+||server-54-230-216-203.mrs50.r.cloudfront.net^
+||settings-crashlytics-1410998606.us-east-1.elb.amazonaws.com^
+||settings-crashlytics-b-103974621.us-east-1.elb.amazonaws.com^
+||settings.crashlytics.com^
+||sgwww.spotify.com^
+||shavar.developer-services.mozilla.com^
+||shavar.services.mozilla.com^
+||showads33000.pubmatic.com^
+||shulamit.ash1.spotify.com^
+||sienna.ap.spotify.com^
+||sienna.sto.spotify.com^
+||sigrid.lon.spotify.com^
+||sirkka.lon.spotify.com^
+||sirkka.lon2.spotify.com^
+||siterecruit.comscore.com^
+||skye.ap.spotify.com^
+||skye.sto.spotify.com^
+||smartling-001.lon.spotify.com^
+||smartling-001.lon2.spotify.com^
+||smtp.admob.com^
+||smtp2.admob.com^
+||speech-recognition-test.spotify.com^
+||speech-recognition.spotify.com^
+||spotxchange.com^
+||stage.tune.com^
+||star-z-mini.c10r.facebook.com^
+||status.intercom.io^
+||sto1-apresolve-a3.sto.spotify.com^
+||sto1-crashdump-a1.sto.spotify.com^
+||sto1-crashdump-a2.sto.spotify.com^
+||sto3-accesspoint-a88.sto3.spotify.net^
+||sto3-tbdscan-a2.sto3.spotify.com^
+||sto3-vmddelivery-b1.sto3.spotify.com^
+||store.intercom.io^
+||suk6mvixsl7e7pnqmcxzq2nlrv23orxa4lnmqehevie5lr46.qcfzwrpafytxzuzudly53cdpuinbus5dryc5yyluqfgstdbk.ifcouvs4yrkvq54g3sqlvxg6iwtieqko3d4z6g43c2na2xok.5l6armklu65sqea3msfquneq7rjwynp42nva5f7pl5qx4a7x.erz4onrdnlviivki.er.spo.spotify.com^
+||support.tune.com^
+||surveys.spotify.com^
+||svast.moatads.com^
+||svastx.moatads.com^
+||svn.comscore.com^
+||switchboard.mixpanel.com^
+||sync.search.spotxchange.com^
+||t.admob.com^
+||t.myvisualiq.net^
+||t.update.moatads.com^
+||tap1.vip.sc9.admob.com^
+||terraform-modules-test.intercom.io^
+||tic1.vip.sc9.admob.com^
+||tpc.googlesyndication.com^
+||track.clearsender.com^
+||track.leanlab.co^
+||tracking.admobsphere.com^
+||tribpubdfp745347008913.s.moatpixel.com^
+||tune.com^
+||tx102.sc9.admob.com^
+||tx103.sc9.admob.com^
+||u.admob.com^
+||u.moatads.com^
+||udm.scorecardresearch.com^
+||ui.cp.tune.com^
+||ukr.admob.com^
+||ulink.adjust.com^
+||update.moatads.com^
+||updates.tune.com^
+||upgrade.scdn.co # optional^
+||upgrade.scdn.co^
+||upgrade.scdn.com^
+||upgrade.spotify.com # optional^
+||upgrade.spotify.com^
+||upsell.scdn.co^
+||upv4.moatads.com^
+||v.admob.com^
+||v.jwpcdn.com^
+||v3.moatads.com^
+||v4.moatads.com^
+||valerie.ap.spotify.com^
+||valerie.lon.spotify.com^
+||valerie.lon2.spotify.com^
+||vast.moatads.com^
+||vastx.moatads.com^
+||via.intercom.io^
+||video-ad-stats.googlesyndication.com^
+||video-fa-b.cdn.spotify.com^
+||video-fa.cdn.spotify.com^
+||video-fa.scdn.co^
+||video-fa.spotify.com^
+||view.adjust.com^
+||vip.sc9.admob.com^
+||vpb0.moatads.com^
+||vpn-ash1-1.ash.spotify.com^
+||vpn-lon-001.lon.spotify.com^
+||vt.myvisualiq.net^
+||vu.moatads.com^
+||w.admob.com^
+||w.intercom.io^
+||wap.admob.com^
+||waps.admob.com^
+||wendy.admob.com^
+||widget.intercom.io^
+||wildcard.moatads.com.edgekey.net^
+||woody.intercom.io^
+||www.admob.com.akadns.net^
+||www.admob.com^
+||www.codequest.spotify.com^
+||www.comscore.com^
+||www.contest.codequest.spotify.com^
+||www.cp.tune.com^
+||www.googleadservices.com^
+||www.googletagservices.com^
+||www.intercom.io^
+||www.mixpanel.com^
+||www.moatads.com^
+||www.mycomscore.net^
+||www.omaze.com^
+||www.spotx.tv^
+||www.ui.cp.tune.com^
+||www.upv4.moatads.com^
+||www.www.spotify.com^
+||www1.vip.sc9.admob.com^
+||wwwtools.spotify.com^
+||x.admob.com^
+||xfactor.spotify.com^
+||y.admob.com^
+||y.moatads.com^
+||yj.moatads.com^
+||yt.moatads.com^
+||yts.moatads.com^
+||z.admob.com^
+||z.moatads.com^
+||zaira.lon.spotify.com^
+||zaira.lon2.spotify.com^
+||zayit.ap.spotify.com^
+||zayit.lon.spotify.com^
+||zayit.lon2.spotify.com^
+||zhcn.admob.com^
+!
+! ---------- Spotify Homepage + webplayer ----------
+! 
+/mp3-ad/*$domain=open.spotify.com|play.spotify.com
+play.spotify.com##+js(nr-unwrapper.js)
+spotify.com/ads/*
+||akamaized.net/audio/*$media,redirect=noopmp3-0.1s,domain=open.spotify.com
+||audio-akp-spotify-com.akamaized.net/audio/*$media,domain=open.spotify.com
+||audio-fa.scdn.co/audio/$media,domain=open.spotify.com|play.spotify.com
+||audio-fa.scdn.co/audio/*$media,redirect=noopmp3-0.1s,domain=open.spotify.com 
+@@||123greetings.com^$third-party
+@@||122.2o7.net^$third-party
+@@||112.2o7.net^$third-party
+@@||5min.com^$third-party
+@@||accuweather.com^$third-party
+@@||actionnetwork.org^$third-party
+@@||auth.adobe.com^$third-party
+@@||wwwimages.adobe.com^$third-party
+@@||xsdownload.adobe.com^$third-party
+@@||akamai.net^$third-party
+@@||akamaihd.net^$third-party
+@@||akamaized.net^$third-party
+@@||al.com^$third-party
+@@||alert60.com^$third-party
+@@||alexa.com^$third-party
+@@||alicdn.com^$third-party
+@@||ally.com^$third-party
+@@||amazon.com^$third-party
+@@||s3.amazonaws.com^$third-party
+@@||amazonaws.com^$third-party
+@@||coin.amazonpay.com^$third-party
+@@||coin-eu.amazonpay.com^$third-party
+@@||americanhomecomings.com^$third-party
+@@||ancestry.com^$third-party
+@@||angularjs.org^$third-party
+@@||anonymto.me^$third-party
+@@||up.anv.bz^$third-party
+@@||anvato.net^$third-party
+@@||tkx-acc.apis.anvato.net^$third-party
+@@||cdn.anvato.net^$third-party
+@@||tkx2-prod.anvato.net^$third-party
+@@||mcp-media5.anvato.net^$third-party
+@@||aol.com^$third-party
+@@||aolcdn.com^$third-party
+@@||ap.org^$third-party
+@@||apnewsregistry.com^$third-party
+@@||apple.com^$third-party
+@@||hiroservers.appspot.com^$third-party
+@@||snapabug.appspot.com^$third-party
+@@||appspot.com^$third-party
+@@||arcgis.com^$third-party
+@@||archive.org^$third-party
+@@||secure5.arcot.com^$third-party
+@@||cdn.arstechnica.net^$third-party
+@@||art19.com^$third-party
+@@||aspnetcdn.com^$third-party
+@@||c64.assets-yammer.com^$third-party
+@@||assetfiles.com^$third-party
+@@||assets-cdk.com^$third-party
+@@||authorize.net^$third-party
+@@||autoforums.com^$third-party
+@@||azureedge.net^$third-party
+@@||bac-assets.com^$third-party
+@@||bandcamp.com^$third-party
+@@||bankid.no^$third-party
+@@||bankrate.com^$third-party
+@@||bazaarvoice.com^$third-party
+@@||bcbits.com^$third-party
+@@||betterttv.net^$third-party
+@@||www.bing.com^$third-party
+@@||bit.ly^$third-party
+@@||bizrate.com^$third-party
+@@||blogblog.com^$third-party
+@@||blogger.com^$third-party
+@@||blogher.org^$third-party
+@@||blogspot.com^$third-party
+@@||bp.blogspot.com^$third-party
+@@||bloxcms.com^$third-party
+@@||boldchat.com^$third-party
+@@||bootstrapcdn.com^$third-party
+@@||braintreegateway.com^$third-party
+@@||brcdn.com^$third-party
+@@||break.com^$third-party
+@@||breakingburner.com^$third-party
+@@||brightcove.com^$third-party
+@@||players.brightcove.net^$third-party
+@@||bungie.net^$third-party
+@@||buzzfed.com^$third-party
+@@||buzzfeed.com^$third-party
+@@||cachefly.net^$third-party
+@@||cardinalcommerce.com^$third-party
+@@||cars.com^$third-party
+@@||cbsi.com^$third-party
+@@||cbsimg.net^$third-party
+@@||cbsistatic.com^$third-party
+@@||cdninstagram.com^$third-party
+@@||cdnpk.com^$third-party
+@@||cern.ch^$third-party
+@@||charter.com^$third-party
+@@||civicscience.com^$third-party
+@@||cleanprint.net^$third-party
+@@||cleveland.com^$third-party
+@@||cloudflare.com^$third-party
+@@||cloudfront.net^$third-party
+@@||cloudinary.com^$third-party
+@@||bbb.org^$third-party
+@@||bbc.co.uk^$third-party
+@@||bbci.co.uk^$third-party
+@@||grapeshot.co.uk^$third-party
+@@||w.graphiq.com^$third-party
+@@||s.graphiq.com^$third-party
+@@||s2.graphiq.com^$third-party
+@@||s3.graphiq.com^$third-party
+@@||files.graphiq.com^$third-party
+@@||gr-assets.com^$third-party
+@@||guardian.co.uk^$third-party
+@@||media-imdb.com^$third-party
+@@||mediaworks.co.nz^$third-party
+@@||cc.cnetcontent.com^$third-party
+@@||cdn.cnetcontent.com^$third-party
+@@||ws.cnetcontent.com^$third-party
+@@||com.com^$third-party
+@@||complex.com^$third-party
+@@||convio.net^$third-party
+@@||copyscape.com^$third-party
+@@||corporate-ir.net^$third-party
+@@||coupons.com^$third-party
+@@||craveonline.com^$third-party
+@@||creativecommons.org^$third-party
+@@||crowdynews.com^$third-party
+@@||cstv.com^$third-party
+@@||cursecdn.com^$third-party
+@@||custhelp.com^$third-party
+@@||d3js.org^$third-party
+@@||dailymotion.com^$third-party
+@@||danid.dk^$third-party
+@@||dealer.com^$third-party
+@@||dealerinspire.com^$third-party
+@@||delicious.com^$third-party
+@@||delvenetworks.com^$third-party
+@@||denverpost.com^$third-party
+@@||deviantart.com^$third-party
+@@||deviantart.net^$third-party
+@@||digg.com^$third-party
+@@||cdn.discourse.org^$third-party
+@@||discovery.com^$third-party
+@@||disqus.com^$third-party
+@@||disquscdn.com^$third-party
+@@||a.disquscdn.com^$third-party
+@@||uploads.disquscdn.com^$third-party
+@@||dmcdn.net^$third-party
+@@||dmcdn.com^$third-party
+@@||screendoor.dobt.co^$third-party
+@@||domainnamesales.com^$third-party
+@@||dotsub.com^$third-party
+@@||dl.dropboxusercontent.com^$third-party
+@@||dudamobile.com^$third-party
+@@||dumpert.nl^$third-party
+@@||ebay.com^$third-party
+@@||ebayimg.com^$third-party
+@@||ebayrtm.com^$third-party
+@@||ebaystatic.com^$third-party
+@@||ecwid.com^$third-party
+@@||edgecastcdn.net^$third-party
+@@||edgefcs.net^$third-party
+@@||edgekey.net^$third-party
+@@||files.edx.org^$third-party
+@@||elasticbeanstalk.com^$third-party
+@@||eltrafiko.com^$third-party
+@@||api-cdn.embed.ly^$third-party
+@@||api.embed.ly^$third-party
+@@||cdn.embed.ly^$third-party
+@@||cdn.embedly.com^$third-party
+@@||i-cdn.embed.ly^$third-party
+@@||i.embed.ly^$third-party
+@@||epoch.com^$third-party
+@@||estara.com^$third-party
+@@||ethn.io^$third-party
+@@||evcdn.com^$third-party
+@@||ebmedia.eventbrite.com^$third-party
+@@||s-static.ak.facebook.com^$third-party
+@@||staticxx.facebook.com^$third-party
+@@||www.facebook.com^$third-party
+@@||fansonly.com^$third-party
+@@||travis-ci-org.global.ssl.fastly.net^$third-party
+@@||fastly.net^$third-party
+@@||fbcdn.net^$third-party
+@@||attachment.fbsbx.com^$third-party
+@@||feedburner.com^$third-party
+@@||filepicker.io^$third-party
+@@||financialcontent.com^$third-party
+@@||findnsave.com^$third-party
+@@||firstlook.org^$third-party
+@@||flipcause.com^$third-party
+@@||framasoft.org^$third-party
+@@||frz.io^$third-party
+@@||build.origami.ft.com^$third-party
+@@||fz.io^$third-party
+@@||fzcdn.net^$third-party
+@@||hello.firefox.com^$third-party
+@@||flattr.com^$third-party
+@@||flickr.com^$third-party
+@@||fling.com^$third-party
+@@||flowplayer.org^$third-party
+@@||flyertown.ca^$third-party
+@@||adm.fwmrm.net^$third-party
+@@||fontawesome.com^$third-party
+@@||fontdeck.com^$third-party
+@@||fonts.com^$third-party
+@@||fonts.net^$third-party
+@@||force.com^$third-party
+@@||fuseservice.com^$third-party
+@@||140cc.v.fwmrm.net^$third-party
+@@||fyre.co^$third-party
+@@||gannett-cdn.com^$third-party
+@@||gannettonline.com^$third-party
+@@||gannett-tv.com^$third-party
+@@||gasbuddy.com^$third-party
+@@||gawkerassets.com^$third-party
+@@||geenstijl.nl^$third-party
+@@||geoplugin.net^$third-party
+@@||geotrust.com^$third-party
+@@||getpocket.com^$third-party
+@@||giant.gfycat.com^$third-party
+@@||gfycat.com^$third-party
+@@||ggpht.com^$third-party
+@@||giphy.com^$third-party
+@@||github.com^$third-party
+@@||githubusercontent.com^$third-party
+@@||gmodules.com^$third-party
+@@||go.com^$third-party
+@@||godaddy.com^$third-party
+@@||godatafeed.com^$third-party
+@@||gogousenet.com^$third-party
+@@||accounts.google.com^$third-party
+@@||apis.google.com^$third-party
+@@||books.google.com^$third-party
+@@||calendar.google.com^$third-party
+@@||checkout.google.com^$third-party
+@@||clients1.google.com^$third-party
+@@||clients6.google.com^$third-party
+@@||consent.google.com^$third-party
+@@||cse.google.com^$third-party
+@@||developers.google.com^$third-party
+@@||docs.google.com^$third-party
+@@||drive.google.com^$third-party
+@@||feedburner.google.com^$third-party
+@@||feedproxy.google.com^$third-party
+@@||fusiontables.google.com^$third-party
+@@||groups.google.com^$third-party
+@@||kh.google.com^$third-party
+@@||khms0.google.com^$third-party
+@@||khms1.google.com^$third-party
+@@||khms2.google.com^$third-party
+@@||khms3.google.com^$third-party
+@@||khms4.google.com^$third-party
+@@||labs.google.com^$third-party
+@@||maps-api-ssl.google.com^$third-party
+@@||mapsengine.google.com^$third-party
+@@||maps.google.com^$third-party
+@@||mt0.google.com^$third-party
+@@||mt1.google.com^$third-party
+@@||mts0.google.com^$third-party
+@@||mts1.google.com^$third-party
+@@||mw1.google.com^$third-party
+@@||mw2.google.com^$third-party
+@@||picasaweb.google.com^$third-party
+@@||play.google.com^$third-party
+@@||plus.google.com^$third-party
+@@||sites.google.com^$third-party
+@@||spreadsheets.google.com^$third-party
+@@||storage.googleapis.com^$third-party
+@@||talkgadget.google.com^$third-party
+@@||translate.google.com^$third-party
+@@||trends.google.com^$third-party
+@@||video.google.com^$third-party
+@@||www.google.com^$third-party
+@@||ajax.googleapis.com^$third-party
+@@||googleapis.com^$third-party
+@@||googlecode.com^$third-party
+@@||googlecommerce.com^$third-party
+@@||googletagservices.com^$third-party
+@@||cdn.leafletjs.com^$third-party
+@@||lh4.googleusercontent.com^$third-party
+@@||googleusercontent.com^$third-party
+@@||googlevideo.com^$third-party
+@@||governmentjobs.com^$third-party
+@@||gravatar.com^$third-party
+@@||greenhouse.io^$third-party
+@@||gscdn.nl^$third-party
+@@||gstatic.com^$third-party
+@@||guildwars2.com^$third-party
+@@||hackerone-user-content.com^$third-party
+@@||helium.com^$third-party
+@@||hellobar.com^$third-party
+@@||herokuapp.com^$third-party
+@@||code.highcharts.com^$third-party
+@@||homestead.com^$third-party
+@@||honcode.ch^$third-party
+@@||hootsuite.com^$third-party
+@@||howaboutwe.com^$third-party
+@@||howstuffworks.com^$third-party
+@@||huffpost.com^$third-party
+@@||humblebundle.com^$third-party
+@@||hwcdn.net^$third-party
+@@||hypothes.is^$third-party
+@@||ibsys.com^$third-party
+@@||ibtimes.com^$third-party
+@@||icbdr.com^$third-party
+@@||mpsnare.iesnare.com^$third-party
+@@||imagecorn.com^$third-party
+@@||imageg.net^$third-party
+@@||imagehost123.com^$third-party
+@@||images-amazon.com^$third-party
+@@||imageshack.us^$third-party
+@@||imagetwist.com^$third-party
+@@||imagevenue.com^$third-party
+@@||www.img-bahn.de^$third-party
+@@||imgchili.com^$third-party
+@@||imgfarm.com^$third-party
+@@||imgspice.com^$third-party
+@@||imgur.com^$third-party
+@@||imgix.net^$third-party
+@@||imshopping.com^$third-party
+@@||indeed.com^$third-party
+@@||inergizedigital.com^$third-party
+@@||instagram.com^$third-party
+@@||instantservice.com^$third-party
+@@||instapaper.com^$third-party
+@@||intellicast.com^$third-party
+@@||intensedebate.com^$third-party
+@@||intercom.io^$third-party
+@@||members.internetdefenseleague.org^$third-party
+@@||investingchannel.com^$third-party
+@@||script.ioam.de^$third-party
+@@||issuu.com^$third-party
+@@||janrain.com^$third-party
+@@||jquery.com^$third-party
+@@||jquerytools.org^$third-party
+@@||jsdelivr.net^$third-party
+@@||jsonip.com^$third-party
+@@||jtvnw.net^$third-party
+@@||justin.tv^$third-party
+@@||jwpcdn.com^$third-party
+@@||jwpltx.com^$third-party
+@@||content.jwplatform.com^$third-party
+@@||cdnapi.kaltura.com^$third-party
+@@||cdnapisec.kaltura.com^$third-party
+@@||cdnbakmi.kaltura.com^$third-party
+@@||cdnsecakmi.kaltura.com^$third-party
+@@||cfvod.kaltura.com^$third-party
+@@||www.kaltura.com^$third-party
+@@||kampyle.com^$third-party
+@@||kataweb.it^$third-party
+@@||kickapps.com^$third-party
+@@||kickstarter.com^$third-party
+@@||kickstatic.com^$third-party
+@@||kingfeatures.com^$third-party
+@@||kinja.com^$third-party
+@@||kinja-static.com^$third-party
+@@||klarna.com^$third-party
+@@||klarnacdn.net^$third-party
+@@||klm.com^$third-party
+@@||kxcdn.com^$third-party
+@@||libsyn.com^$third-party
+@@||licdn.com^$third-party
+@@||licensebuttons.net^$third-party
+@@||addon.lidl.de^$third-party
+@@||media.lidl.com^$third-party
+@@||linkwithin.com^$third-party
+@@||list-manage.com^$third-party
+@@||i.lithium.com^$third-party
+@@||messenger.live.com^$third-party
+@@||livechatinc.com^$third-party
+@@||livefyre.com^$third-party
+@@||livehelpnow.net^$third-party
+@@||livestream.com^$third-party
+@@||llnwd.net^$third-party
+@@||loggly.com^$third-party
+@@||logos.com^$third-party
+@@||lphbs.com^$third-party
+@@||mail.ru^$third-party
+@@||mailchimp.com^$third-party
+@@||mapbox.com^$third-party
+@@||mapquestapi.com^$third-party
+@@||marketo.com^$third-party
+@@||masslive.com^$third-party
+@@||mathjax.org^$third-party
+@@||maxmind.com^$third-party
+@@||mcclatchyinteractive.com^$third-party
+@@||meebocdn.net^$third-party
+@@||mfstatic.cz^$third-party
+@@||microsoft.com^$third-party
+@@||microsoftonline.com^$third-party
+@@||microsofttranslator.com^$third-party
+@@||mlive.com^$third-party
+@@||mobify.com^$third-party
+@@||loop.services.mozilla.com^$third-party
+@@||mozilla.net^$third-party
+@@||mozilla.org^$third-party
+@@||mozu.com^$third-party
+@@||mqcdn.com^$third-party
+@@||msecnd.net^$third-party
+@@||msn.com^$third-party
+@@||mtv.com^$third-party
+@@||mtvnservices.com^$third-party
+@@||mycapture.com^$third-party
+@@||myportfolio.com^$third-party
+@@||mzstatic.com^$third-party
+@@||nationbuilder.com^$third-party
+@@||nationalgeographic.com^$third-party
+@@||nbcuni.com^$third-party
+@@||neighborsink.com^$third-party
+@@||netdna-cdn.com^$third-party
+@@||netdna-ssl.com^$third-party
+@@||netflix.com^$third-party
+@@||networksolutions.com^$third-party
+@@||newsinc.com^$third-party
+@@||newslook.com^$third-party
+@@||newstogram.com^$third-party
+@@||nextopiasoftware.com^$third-party
+@@||nfl.com^$third-party
+@@||nflcdn.com^$third-party
+@@||assets.nflxext.com^$third-party
+@@||cdn3.nflxext.com^$third-party
+@@||nflxext.com^$third-party
+@@||ngfiles.com^$third-party
+@@||nj.com^$third-party
+@@||nmcdn.us^$third-party
+@@||nola.com^$third-party
+@@||npmcdn.com^$third-party
+@@||nrcdn.com^$third-party
+@@||nsimg.net^$third-party
+@@||media.nu.nl^$third-party
+@@||nyt.com^$third-party
+@@||nytimes.com^$third-party
+@@||c.o0bg.com^$third-party
+@@||ocdn.eu^$third-party
+@@||ocsn.com^$third-party
+@@||olark.com^$third-party
+@@||omroep.nl^$third-party
+@@||amazoncustomerservice.d2.sc.omtrdc.net^$third-party
+@@||attservicesinc.tt.omtrdc.net^$third-party
+@@||onswipe.com^$third-party
+@@||api.ooyala.com^$third-party
+@@||c.ooyala.com^$third-party
+@@||l.ooyala.com^$third-party
+@@||opf.ooyala.com^$third-party
+@@||player.ooyala.com^$third-party
+@@||secure-cf-c.ooyala.com^$third-party
+@@||tile.opencyclemap.org^$third-party
+@@||tile2.opencyclemap.org^$third-party
+@@||openlayers.org^$third-party
+@@||openlibrary.org^$third-party
+@@||openload.co^$third-party
+@@||tile.openstreetmap.fr^$third-party
+@@||openstreetmap.org^$third-party
+@@||optimizely.com^$third-party
+@@||oregonlive.com^$third-party
+@@||outlook.com^$third-party
+@@||pandacommerce.net^$third-party
+@@||parastorage.com^$third-party
+@@||passwordbox.com^$third-party
+@@||paypal.com^$third-party
+@@||paypalobjects.com^$third-party
+@@||pdf.yt^$third-party
+@@||pennlive.com^$third-party
+@@||performgroup.com^$third-party
+@@||pgcdn.com^$third-party
+@@||phncdn.com^$third-party
+@@||photobucket.com^$third-party
+@@||phplist.com^$third-party
+@@||piclens.com^$third-party
+@@||pinimg.com^$third-party
+@@||piratebay.org^$third-party
+@@||pistachio-cdn.graze.com^$third-party
+@@||pixietrixcomix.com^$third-party
+@@||plex.tv^$third-party
+@@||plot.ly^$third-party
+@@||poll.fm^$third-party
+@@||polldaddy.com^$third-party
+@@||postimg.org^$third-party
+@@||powerreviews.com^$third-party
+@@||pricegrabber.com^$third-party
+@@||printfriendly.com^$third-party
+@@||prismic.io^$third-party
+@@||providesupport.com^$third-party
+@@||psswrdbx.com^$third-party
+@@||publiekeomroep.nl^$third-party
+@@||img.purch.com^$third-party
+@@||qualtrics.com^$third-party
+@@||quotemedia.com^$third-party
+@@||api.razorpay.com^$third-party
+@@||checkout.razorpay.com^$third-party
+@@||razorpay.com^$third-party
+@@||rackcdn.com^$third-party
+@@||rackspacecloud.com^$third-party
+@@||radikal.ru^$third-party
+@@||rambler.ru^$third-party
+@@||images.rapgenius.com^$third-party
+@@||readability.com^$third-party
+@@||readthedocs.org^$third-party
+@@||recaptcha.net^$third-party
+@@||recurly.com^$third-party
+@@||reddit.com^$third-party
+@@||redditmedia.com^$third-party
+@@||redditstatic.com^$third-party
+@@||cdngeneral.rentcafe.com^$third-party
+@@||resellerratings.com^$third-party
+@@||resultspage.com^$third-party
+@@||rewardstyle.com^$third-party
+@@||rpxnow.com^$third-party
+@@||rssinclude.com^$third-party
+@@||salesforce.com^$third-party
+@@||salsalabs.com^$third-party
+@@||sbnation.com^$third-party
+@@||schd.ws^$third-party
+@@||sched.org^$third-party
+@@||scribd.com^$third-party
+@@||scribdassets.com^$third-party
+@@||securesuite.co.uk^$third-party
+@@||securitymetrics.com^$third-party
+@@||seeclickfix.com^$third-party
+@@||sgizmo.com^$third-party
+@@||shopify.com^$third-party
+@@||shopping.com^$third-party
+@@||shoprunner.com^$third-party
+@@||siteimprove.com^$third-party
+@@||shield.sitelock.com^$third-party
+@@||sketchfab.com^$third-party
+@@||slidedeck.com^$third-party
+@@||public.slidesharecdn.com^$third-party
+@@||s-msft.com^$third-party
+@@||s-msn.com^$third-party
+@@||smugmug.com^$third-party
+@@||snapengage.com^$third-party
+@@||sndcdn.com^$third-party
+@@||auth.api.sonyentertainmentnetwork.com^$third-party
+@@||cdn-a.sonyentertainmentnetwork.com^$third-party
+@@||soundcloud.com^$third-party
+@@||springboardplatform.com^$third-party
+@@||squarespace.com^$third-party
+@@||squareup.com^$third-party
+@@||squirt.io^$third-party
+@@||ssl-images-amazon.com^$third-party
+@@||cdn.sstatic.net^$third-party
+@@||sstatic.net^$third-party
+@@||stackexchange.com^$third-party
+@@||stackoverflow.com^$third-party
+@@||staticamzn.com^$third-party
+@@||cdn.static-economist.com^$third-party
+@@||staticflickr.com^$third-party
+@@||steampowered.com^$third-party
+@@||store.akamai.steamstatic.com^$third-party
+@@||steamusercontent.com^$third-party
+@@||stellaservice.com^$third-party
+@@||stripe.com^$third-party
+@@||stripecdn.com^$third-party
+@@||surveygizmo.com^$third-party
+@@||surveymonkey.com^$third-party
+@@||swiftype.com^$third-party
+@@||syracuse.com^$third-party
+@@||public.tableausoftware.com^$third-party
+@@||c.tadst.com^$third-party
+@@||taleo.net^$third-party
+@@||uploads.tapatalk-cdn.com^$third-party
+@@||targetimg1.com^$third-party
+@@||targetimg2.com^$third-party
+@@||technorati.com^$third-party
+@@||tegna-media.com^$third-party
+@@||textalk.se^$third-party
+@@||theplatform.com^$third-party
+@@||tile.thunderforest.com^$third-party
+@@||timeinc.net^$third-party
+@@||tinypic.com^$third-party
+@@||tinyurl.com^$third-party
+@@||tiqcdn.com^$third-party
+@@||tmsbuyatoyota.com^$third-party
+@@||torbit.com^$third-party
+@@||townnews.com^$third-party
+@@||cookieblock.trackersimulate.org^$third-party
+@@||tradingview.com^$third-party
+@@||trb.com^$third-party
+@@||trbimg.com^$third-party
+@@||tripadvisor.com^$third-party
+@@||trumba.com^$third-party
+@@||privacy-policy.truste.com^$third-party
+@@||trustkeeper.net^$third-party
+@@||trustwave.com^$third-party
+@@||ttvnw.net^$third-party
+@@||tumblr.com^$third-party
+@@||turner.com^$third-party
+@@||twimg.com^$third-party
+@@||api.twisto.cz^$third-party
+@@||static.twisto.cz^$third-party
+@@||api.twisto.pl^$third-party
+@@||twitch.tv^$third-party
+@@||twitter.com^$third-party
+@@||platform.twitter.com^$third-party
+@@||syndication.twitter.com^$third-party
+@@||typekit.net^$third-party
+@@||typekit.com^$third-party
+@@||typepad.com^$third-party
+@@||typography.com^$third-party
+@@||assets.ubuntu.com^$third-party
+@@||uicdn.com^$third-party
+@@||ui-portal.de^$third-party
+@@||ultraimg.com^$third-party
+@@||unicornmedia.com^$third-party
+@@||uplynk.com^$third-party
+@@||usa.gov^$third-party
+@@||viafoura.net^$third-party
+@@||viddler.com^$third-party
+@@||videobash.com^$third-party
+@@||vidible.tv^$third-party
+@@||viduki.com^$third-party
+@@||vimeo.com^$third-party
+@@||vimeocdn.com^$third-party
+@@||virtualearth.net^$third-party
+@@||visa.com^$third-party
+@@||vmixcore.com^$third-party
+@@||voxmedia.com^$third-party
+@@||vox-cdn.com^$third-party
+@@||w3.org^$third-party
+@@||wallst.com^$third-party
+@@||weather.com^$third-party
+@@||weather.gov^$third-party
+@@||weatherbug.com^$third-party
+@@||weathernationtv.com^$third-party
+@@||weatherzone.com.au^$third-party
+@@||webflow.com^$third-party
+@@||webs.com^$third-party
+@@||websimages.com^$third-party
+@@||webtype.com^$third-party
+@@||where.com^$third-party
+@@||widgetserver.com^$third-party
+@@||wikidata.org^$third-party
+@@||wikimedia.org^$third-party
+@@||wikipedia.org^$third-party
+@@||wildapricot.org^$third-party
+@@||windows.net^$third-party
+@@||wishabi.com^$third-party
+@@||wistia.net^$third-party
+@@||wistia.com^$third-party
+@@||wix.com^$third-party
+@@||gatherer.wizards.com^$third-party
+@@||s.w.org^$third-party
+@@||ts.w.org^$third-party
+@@||ps.w.org^$third-party
+@@||wnyc.org^$third-party
+@@||wordpress.com^$third-party
+@@||worldnow.com^$third-party
+@@||wp.com^$third-party
+@@||wpengine.com^$third-party
+@@||wufoo.com^$third-party
+@@||wunderground.com^$third-party
+@@||wxc.com^$third-party
+@@||wxug.com^$third-party
+@@||y3.analytics.yahoo.com^$third-party
+@@||pipes.yahoo.com^$third-party
+@@||search.yahoo.com^$third-party
+@@||yahoo.net^$third-party
+@@||yahooapis.com^$third-party
+@@||yandex.net^$third-party
+@@||yandex.ru^$third-party
+@@||yandex.ua^$third-party
+@@||yardbarker.com^$third-party
+@@||yellowpages.com^$third-party
+@@||seatme.yelp.com^$third-party
+@@||yelpcdn.com^$third-party
+@@||yimg.com^$third-party
+@@||youku.com^$third-party
+@@||youtube.com^$third-party
+@@||youtube-nocookie.com^$third-party
+@@||youwatch.org^$third-party
+@@||ytimg.com^$third-party
+@@||zap2it.com^$third-party
+@@||zdassets.com^$third-party
+@@||zencdn.net^$third-party
+@@||zendesk.com^$third-party
+@@||zergnet.com^$third-party
+@@||ziplist.com^$third-party
+@@||zlcdn.com^$third-party
+@@||zombaio.com^$third-party
+@@||zope.net^$third-party
+@@||zopim.com^$third-party
+@@||zvents.com^$third-party
+[uBlock Origin 1.16.7.2]
+! Title: Facebook Modules Commands List
+! Version: 201901151318
+! Author: kowith337
+! Homepage: https://github.com/kowith337/PersonalFilterListCollection/blob/master/filterlist/facebook
+! Expires: 2 days
+! Mirror: https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/facebook/FacebookCommands.txt
+! Note: This filter isn't recommended to use publicly, it might broke entire Facebook functions because
+!       these rules below will disable many JavaScript functions and also prevent lots of network requests.
+!       Although, the script blocking may not work as expected, but few rules will work in alphabetically.
+
+! ?modules request block
+||facebook.com/*?modules=*LinkshimLogController$important
+||facebook.com/*?modules=AYMTHomepagePanelTypedLogger$important
+||facebook.com/*?modules=AbandonedSessionSurvey$important
+||facebook.com/*?modules=AdAllocationIntegrityGapsInfo$important
+||facebook.com/*?modules=AdAllocationIntegrityUtils$important
+||facebook.com/*?modules=AdBlockerDetectorLogging$important
+||facebook.com/*?modules=AdBreakInsertionDisabledReason$important
+||facebook.com/*?modules=AdDelayedHiddenCheckConfiguration$important
+||facebook.com/*?modules=AdImpressionLoggingConfig$important
+||facebook.com/*?modules=AdInterfacesUiLogger$important
+||facebook.com/*?modules=AdPageMessageTypeEnum$important
+||facebook.com/*?modules=AdPreferencesEducationPageSubtype$important
+||facebook.com/*?modules=AdsAPIImageFields$important
+||facebook.com/*?modules=AdsAdobjectDataLoadStateStore$important
+||facebook.com/*?modules=AdsAppVisibilityFocusDataActionFlux$important
+||facebook.com/*?modules=AdsCollectionsConstants$important
+||facebook.com/*?modules=AdsConversionPixelStatusUI$important
+||facebook.com/*?modules=AdsEmptyValue$important
+||facebook.com/*?modules=AdsError$important
+||facebook.com/*?modules=AdsFeedbackConstants$important
+||facebook.com/*?modules=AdsFilterChangeTypes$important
+||facebook.com/*?modules=AdsGenericFilter$important
+||facebook.com/*?modules=AdsGetter$important
+||facebook.com/*?modules=AdsGuidanceUnifiedNavigationTip$important
+||facebook.com/*?modules=AdsIntelligentBlueTipContainer$important
+||facebook.com/*?modules=AdsInteractions$important
+||facebook.com/*?modules=AdsInterfacesComponentsEventCategory$important
+||facebook.com/*?modules=AdsInterfacesComponentsEventName$important
+||facebook.com/*?modules=AdsInterfacesComponentsLogger$important
+||facebook.com/*?modules=AdsInterfacesLogger$important
+||facebook.com/*?modules=AdsInterfacesRouteConstants$important
+||facebook.com/*?modules=AdsLWIErrorCode$important
+||facebook.com/*?modules=AdsLWISimilarPromotionsNoticeContainer$important
+||facebook.com/*?modules=AdsLoadState$important
+||facebook.com/*?modules=AdsLogger$important
+||facebook.com/*?modules=AdsLoggerConstants$important
+||facebook.com/*?modules=AdsMouseStateStore$important
+||facebook.com/*?modules=AdsPEReporting$important
+||facebook.com/*?modules=AdsPagerConstants$important
+||facebook.com/*?modules=AdsPagerDispatcher$important
+||facebook.com/*?modules=AdsPerfTiming$important
+||facebook.com/*?modules=AdsPixelDialogTypes$important
+||facebook.com/*?modules=AdsPixelEventNames$important
+||facebook.com/*?modules=AdsPixelTableColumns$important
+||facebook.com/*?modules=AdsPixelViewActions$important
+||facebook.com/*?modules=AdsPreferencesSectionSurvey$important
+||facebook.com/*?modules=AdsPreferencesSectionSurveyResponse$important
+||facebook.com/*?modules=AdsProfileAdPreview$important
+||facebook.com/*?modules=AdsProfileAdvertiserStore$important
+||facebook.com/*?modules=AdsProfileBehaviorItem$important
+||facebook.com/*?modules=AdsProfileDemographicsView$important
+||facebook.com/*?modules=AdsProfileDispatcher$important
+||facebook.com/*?modules=AdsProfileEducationCarousel$important
+||facebook.com/*?modules=AdsProfileInterestAdModal$important
+||facebook.com/*?modules=AdsProfileSampleAdsStore$important
+||facebook.com/*?modules=AdsProfileSuggestions$important
+||facebook.com/*?modules=AdsProfileSuggestionsItem$important
+||facebook.com/*?modules=AdsProfileSuggestionsModal$important
+||facebook.com/*?modules=AdsRefreshHandler$important
+||facebook.com/*?modules=AdsRichSelector$important
+||facebook.com/*?modules=AdsRouting$important
+||facebook.com/*?modules=AdsScenarios$important
+||facebook.com/*?modules=AdsSelectedAccountGetter$important
+||facebook.com/*?modules=AdsShimmerBar$important
+||facebook.com/*?modules=AdsTargetingLocationLoggingEvents$important
+||facebook.com/*?modules=AdsTargetingViewActionsLogger$important
+||facebook.com/*?modules=AdsTimeRange$important
+||facebook.com/*?modules=AdsTransparencyAdvertiserEnum$important
+||facebook.com/*?modules=AdsTransparencyEvent$important
+||facebook.com/*?modules=AdsTransparencyProduct$important
+||facebook.com/*?modules=AdsTransparencyProductElement$important
+||facebook.com/*?modules=AdsTransparencySurveyTypedLogger$important
+||facebook.com/*?modules=AdsTransparencyTypedLogger$important
+||facebook.com/*?modules=AdsVideoFetcher$important
+||facebook.com/*?modules=AdvertiserHomePagelet$important
+||facebook.com/*?modules=AppInstallLogger$important
+||facebook.com/*?modules=AppLoggerUtils$important
+||facebook.com/*?modules=AttachmentRelatedShareTimingConstants$important
+||facebook.com/*?modules=BoostedComponentPromotionsManagerStrings$important
+||facebook.com/*?modules=BootloaderEventsTypedLogger$important
+||facebook.com/*?modules=BootloaderLoggerUtil$important
+||facebook.com/*?modules=BrowseClickLogger$important
+||facebook.com/*?modules=BrowseClientEventLogger$important
+||facebook.com/*?modules=ChatImpressionLogger$important
+||facebook.com/*?modules=ClickRefLogger$important
+||facebook.com/*?modules=CommercialBreakHostStoryComponentType$important
+||facebook.com/*?modules=CommercialBreakMobileEvent$important
+||facebook.com/*?modules=CommercialBreakVideoHide$important
+||facebook.com/*?modules=ConnectionsPYMLTypedLogger$important
+||facebook.com/*?modules=ControlledReferer$important
+||facebook.com/*?modules=DimensionTracking$important
+||facebook.com/*?modules=DynamicAdsXOutOptionName$important
+||facebook.com/*?modules=EducationPromotionTriggerInfo$important
+||facebook.com/*?modules=EgoActionType$important
+||facebook.com/*?modules=EgoPageServiceConstants$important
+||facebook.com/*?modules=EgoSectionExpander$important
+||facebook.com/*?modules=EgoUnitSlideInsert$important
+||facebook.com/*?modules=EntstreamAttachmentRelatedFBVideo$important
+||facebook.com/*?modules=EntstreamAttachmentRelatedShare$important
+||facebook.com/*?modules=ExternalTrackingTag$important
+||facebook.com/*?modules=FBLynxWrapper$important
+||facebook.com/*?modules=FBStoriesLoggingHelper$important
+||facebook.com/*?modules=FbFeedAttachmentRelatedShare$important
+||facebook.com/*?modules=FeedAdsClickLogger$important
+||facebook.com/*?modules=FeedAdsGapRuleViolationDetectionFix$important
+||facebook.com/*?modules=FeedStoryOptionMenuTypedLogger$important
+||facebook.com/*?modules=FeedTrackingAsync$important
+||facebook.com/*?modules=FunnelLogger$important
+||facebook.com/*?modules=FunnelLoggerSampler$important
+||facebook.com/*?modules=GBMAdCarousel$important
+||facebook.com/*?modules=GBMAdCarouselItem$important
+||facebook.com/*?modules=GBMAdMasonryGrid$important
+||facebook.com/*?modules=GBMAdModalCarousel$important
+||facebook.com/*?modules=GBMCMSAdCarouselItem$important
+||facebook.com/*?modules=GBMCMSAdMasonryGrid$important
+||facebook.com/*?modules=GBMLeaderboardAdCarouselItem$important
+||facebook.com/*?modules=GBMLeaderboardAdMasonryGrid$important
+||facebook.com/*?modules=GamesImpressionTracker$important
+||facebook.com/*?modules=HomeRHCAdsBasicRefresh$important
+||facebook.com/*?modules=InteractionTracker$important
+||facebook.com/*?modules=ItunesDetector$important
+||facebook.com/*?modules=ItunesPluginLogging$important
+||facebook.com/*?modules=KappaWrapper$important
+||facebook.com/*?modules=KeyframesPluginRandomSubdocument$important
+||facebook.com/*?modules=LoadingMarkerVisibilityBasedStateTracker
+||facebook.com/*?modules=MAdsPrefsFeedback$important
+||facebook.com/*?modules=MAdsScrollOnMarginTap$important
+||facebook.com/*?modules=MAdsUtils$important
+||facebook.com/*?modules=MFeedAdsGapRuleViolationDetection$important
+||facebook.com/*?modules=MFeedChaining$important
+||facebook.com/*?modules=MLinkshim$important
+||facebook.com/*?modules=MNAdsLogMessageUtils$important
+||facebook.com/*?modules=MNAdsLoggerEventEnum$important
+||facebook.com/*?modules=MNAdsMessageUtils$important
+||facebook.com/*?modules=MPymkFunnelLogger$important
+||facebook.com/*?modules=MQuickPromotion$important
+||facebook.com/*?modules=MRecentSearchesUpdater$important
+||facebook.com/*?modules=MSearchTrendingLogger$important
+||facebook.com/*?modules=MSearchTypeaheadLogger$important
+||facebook.com/*?modules=MSearchTypeaheadPerfLoggerUtil$important
+||facebook.com/*?modules=MSearchTypeaheadPerfLoggerV2$important
+||facebook.com/*?modules=MTokenizerWithSuggestions$important
+||facebook.com/*?modules=MTypeaheadNullstateSource$important
+||facebook.com/*?modules=MViewableImpressionTracking$important
+||facebook.com/*?modules=MainThreadPerformance$important
+||facebook.com/*?modules=MeasurePeopleTypedLogger$important
+||facebook.com/*?modules=MessengerDotComPromotionActionURL$important
+||facebook.com/*?modules=MessengerPromotionData$important
+||facebook.com/*?modules=MessengerWebDeltasTypedLogger$important
+||facebook.com/*?modules=MessengerWebGraphQLTypedLogger
+||facebook.com/*?modules=MobileZeroRewriteURL$important
+||facebook.com/*?modules=NetEgo$important
+||facebook.com/*?modules=NetEgoShowcase$important
+||facebook.com/*?modules=NonBlockingIFrame$important
+||facebook.com/*?modules=PageContextualRecommendationsTrigger$important
+||facebook.com/*?modules=PageRecommendationsCircleScore$important
+||facebook.com/*?modules=PagesIntegrityEventTypedLogger$important
+||facebook.com/*?modules=PhotoSnowliftViewableWithContextMenuLogging$important
+||facebook.com/*?modules=PubcontentFeedChainingController$important
+||facebook.com/*?modules=PubcontentFeedChainingInjectionUtils$important
+||facebook.com/*?modules=PubcontentSuggestionsUtil$important
+||facebook.com/*?modules=PymkFunnelLogger$important
+||facebook.com/*?modules=QuickLogActionType$important
+||facebook.com/*?modules=QuickPerformanceLogger$important
+||facebook.com/*?modules=QuickPromotionActionType
+||facebook.com/*?modules=ReactComposerFeedSurvey$important
+||facebook.com/*?modules=ReactComposerMagicTagSurvey$important
+||facebook.com/*?modules=ResourceTimingBootloaderHelper$important
+||facebook.com/*?modules=SLPerfTypedLogger$important
+||facebook.com/*?modules=SavedForLaterChromeExtensionToastNux$important
+||facebook.com/*?modules=SearchClientFunnelTypedLogger$important
+||facebook.com/*?modules=SearchFunnelLogger$important
+||facebook.com/*?modules=SearchLoggingClientUnitIdPrefix$important
+||facebook.com/*?modules=SearchResultPageNavigationPerfTypedLogger$important
+||facebook.com/*?modules=SearchSuggestionsHighlighter$important
+||facebook.com/*?modules=ShareDialogMessageAudience$important
+||facebook.com/*?modules=ShowsPYMFUtils$important
+||facebook.com/*?modules=TahoeBackAffordanceContainer$important
+||facebook.com/*?modules=TahoeUpNextOverlayAndEndScreen$important
+||facebook.com/*?modules=TrackingPixel$important
+||facebook.com/*?modules=TypeaheadMetricReporter$important
+||facebook.com/*?modules=TypingDetector$important
+||facebook.com/*?modules=UFIOrderingModeSelectorContainer$important
+||facebook.com/*?modules=VideoAutoplayController$important
+||facebook.com/*?modules=VideoChainingToken$important
+||facebook.com/*?modules=VideoWatchAndScrollEndScreen$important
+||facebook.com/*?modules=ViewableImpressionDurationLogger$important
+||facebook.com/*?modules=ViewableImpressionEventHandler$important
+||facebook.com/*?modules=ViewableImpressionHeatmapLogger$important
+||facebook.com/*?modules=ViewableImpressionTracker$important
+||facebook.com/*?modules=ViewableImpressionTracking$important
+||facebook.com/*?modules=ViewableImpressionUtils$important
+||facebook.com/*?modules=VisibilityTracking$important
+||facebook.com/*?modules=VisibilityTrackingHelper$important
+||facebook.com/*?modules=VisibilityWatcher$important
+||facebook.com/*?modules=WebBrowserDimensionsResizeTypedLogger$important
+||facebook.com/*?modules=XAYMTPanelSaveSettingsController$important
+||facebook.com/*?modules=XAYMTPostPickerController$important
+||facebook.com/*?modules=XAdPreferencesNUXController$important
+||facebook.com/*?modules=XAdsCMController$important
+||facebook.com/*?modules=XAdsPreferencesFeedbackController$important
+||facebook.com/*?modules=XBrowseLoggerController$important
+||facebook.com/*?modules=XCommerceResponse$important
+||facebook.com/*?modules=XEducationPromotionTriggerRecordController$important
+||facebook.com/*?modules=XEgoExpandAsyncController$important
+||facebook.com/*?modules=XEventRelatedEventsPivotController$important
+||facebook.com/*?modules=XFB4BResponsiveAdContentAsyncController$important
+||facebook.com/*?modules=XFeedAdsChainingController$important
+||facebook.com/*?modules=XFeedChainingAsyncController$important
+||facebook.com/*?modules=XFeedEgoImpressionLoggingController$important
+||facebook.com/*?modules=XFundraiserAttachmentPivotController$important
+||facebook.com/*?modules=XGBMLeaderboardAdItemContentAsyncController$important
+||facebook.com/*?modules=XGameroomLandingPageController$important
+||facebook.com/*?modules=XLinkshimLogController$important
+||facebook.com/*?modules=XMobileSearchTrendingLoggingController$important
+||facebook.com/*?modules=XPagesLikeAndReshareShownController$important
+||facebook.com/*?modules=XPubcontentChainedSuggestionsController$important
+||facebook.com/*?modules=XPubcontentCommerceProductChainingController$important
+||facebook.com/*?modules=XPubcontentFeedChainingController$important
+||facebook.com/*?modules=XPubcontentFeedCommentChainingController$important
+||facebook.com/*?modules=XPubcontentGroupRelatedStoriesChainingController$important
+||facebook.com/*?modules=XPubcontentImpressionLoggingController$important
+||facebook.com/*?modules=XPubcontentInlinePhotoPivotsEventsController$important
+||facebook.com/*?modules=XPubcontentInlineStoryPivotChainingController$important
+||facebook.com/*?modules=XPubcontentInteractionLoggingController$important
+||facebook.com/*?modules=XPubcontentLocalNewsChainingController$important
+||facebook.com/*?modules=XPubcontentPoliticalIssueChainingController$important
+||facebook.com/*?modules=XPubcontentRelatedShareChainingController$important
+||facebook.com/*?modules=XPubcontentRelatedVideoChainingController$important
+||facebook.com/*?modules=XPubcontentRelatedVideoInlineController$important
+||facebook.com/*?modules=XPubcontentTopicChainingController$important
+||facebook.com/*?modules=XPymkFunnelLoggingController$important
+||facebook.com/*?modules=XQuickPromotionSimpleLoggingController$important
+||facebook.com/*?modules=XRefererFrameController$important
+||facebook.com/*?modules=XRelatedGamesChainingController$important
+||facebook.com/*?modules=XSearchFacebarSurveyController$important
+||facebook.com/*?modules=XSearchRelatedPostsPivotController$important
+||facebook.com/*?modules=XSetNUXSeenController$important
+||facebook.com/*?modules=XSpokespersonProductChainingController$important
+||facebook.com/*?modules=XVideoQualitySurveyController$important
+||facebook.com/*?modules=XVideoWNSSurveyController$important
+||facebook.com/*?modules=XVideoWnsUpNextAsyncController$important
+||facebook.com/*?modules=ads-lib-formatters$important
+||facebook.com/*?modules=ads-lib-urllib$important
+||facebook.com/*?modules=adsExcelGKCheck$important
+||facebook.com/*?modules=adsGetDateFromAdObject$important
+||facebook.com/*?modules=getEventTarget$important
+||facebook.com/*?modules=isAdsExcelAddinURI$important
+||facebook.com/*?modules=isLinkshimURI$important
+||facebook.com/*?modules=trackReferrer$important
+||facebook.com##div#stream_pagelet
+||facebook.com##div#pagelet_trending_tags_and_topics
+||facebook.com##span.uiSideNavCount
+||facebook.com##div.home_right_column
+||facebook.com##div#pagelet_sidebar
+facebook.com##div#stream_pagelet
+facebook.com##div#pagelet_trending_tags_and_topics
+facebook.com##span.uiSideNavCount
+facebook.com##div.home_right_column
+facebook.com##div#pagelet_sidebar
+facebook.com##.home_right_column .ego_column.egoOrganicColumn
+facebook.com###globalContainer .ego_column.egoOrganicColumn
+facebook.com###rightCol .ego_column.egoOrganicColumn
+facebook.com##.home_right_column .pagelet.egoOrganicColumn
+facebook.com###globalContainer .pagelet.egoOrganicColumn
+facebook.com###rightCol .pagelet.egoOrganicColumn
+! "Trending" box
+facebook.com###pagelet_trending_tags_and_topics
+! "Featured Music Services" (Music feed)
+facebook.com###music_services
+! "Games Your Friends Are Playing" (Games feed)
+facebook.com##.rightColumnWrapper > ._5ksw
+facebook.com##.rightColumnWrapper > ._5ms_
+! "Game requests/invitations" 
+facebook.com##.rightColumnWrapper .fbRemindersRemove + #custom_reminders_link[data-gt*="\"appid\":\""]
+! "Recommended games"
+facebook.com###pagelet_games_rhc
+! In news feed
+! "Upcoming Events" and "Most Shared On Page X"
+facebook.com##.fbMainStreamAttachment ._4hh
+! "Recently Released Albums"
+facebook.com##.fbMainStreamAttachment ._4hl
+! "Similar To Page X" (after liking a post in the news feed)
+facebook.com##.commentable_item + .mvs
+facebook.com##.commentable_item + div > .mvs
+facebook.com##div[id^="substream_"] > div > div > .mvm
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV > .mbm > ._4_ck
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV[data-ownerid^="u_"] > .mvm
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV[data-ownerid^="u_"] > DIV > .mbm > ._4_ck
+facebook.com##DIV[id^="feed_stream_"] > DIV[id^="js_"] > DIV > DIV > DIV[data-ownerid^="u_"] > .mvm
+facebook.com##DIV[id^="substream_"] ._2bex > .mbm > ._4_ck
+facebook.com###pagelet_group_ .mbm > ._4_ck
+! "Suggestions" below a post
+facebook.com##.userContentWrapper > ._5pax > DIV > .mvs
+! "Page X is posting about Page Y", "Page X is similar to Pages you like" and "Trending about Page X"
+facebook.com##.storyContent > .storyUnconnectedPost
+! "Games You May Like" (new Facebook news feed)
+facebook.com##.mbm._6nl + .uiList > ._6n2
+facebook.com##.mbm._6nl
+facebook.com##._5pcr > .mbm._43rz
+facebook.com##._5pcr > .mbm._43rz + ._43r-
+facebook.com##.mbm._43rz + .uiList > ._43s1
+facebook.com##.mbm._43rz + .uiList + .uiList
+facebook.com##.mbm > ._5pcr > .mbs + ._43r- > .uiList
+facebook.com##.mbm > ._5pcr > .mbs
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > A[href="https://www.facebook.com/games/"]
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg ._50z3 > ._50zm
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > ._3dp._29k > DIV > ._5pbw > .fsl.fwb.fcb
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > ._3dp._29k > DIV > ._5pbw + .uiLinkSubtle[href="https://www.facebook.com/games/"]
+! "People you may know"
+facebook.com###stream_pagelet > #pagelet_composer + ._4-u2._2ph_._3-95
+! Other
+! All recommendations in the right sidebar but when viewing an image in gallery view 
+facebook.com##.photoUfiContainer .ego_column.egoOrganicColumn
+facebook.com##.photoUfiContainer .pagelet.egoOrganicColumn
+! "Like Your Favorite Pages" (Pages feed)
+facebook.com##.megaphone_location_pages_feed
+! Right sidebar on app/game pages
+apps.facebook.com###rightCol
+! "People You May Know" on profile page
+facebook.com###pagelet_pymk_timeline
+facebook.com##.fbMainStreamAttachment ._4hh
+! "Recently Released Albums"
+facebook.com##.fbMainStreamAttachment ._4hl
+! "Similar To Page X" (after liking a post in the news feed)
+facebook.com##.commentable_item + .mvs
+facebook.com##.commentable_item + div > .mvs
+facebook.com##div[id^="substream_"] > div > div > .mvm
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV > .mbm > ._4_ck
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV[data-ownerid^="u_"] > .mvm
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV[data-ownerid^="u_"] > DIV > .mbm > ._4_ck
+facebook.com##DIV[id^="feed_stream_"] > DIV[id^="js_"] > DIV > DIV > DIV[data-ownerid^="u_"] > .mvm
+facebook.com##DIV[id^="substream_"] ._2bex > .mbm > ._4_ck
+facebook.com###pagelet_group_ .mbm > ._4_ck
+! "Suggestions" below a post
+facebook.com##.userContentWrapper > ._5pax > DIV > .mvs
+! "Page X is posting about Page Y", "Page X is similar to Pages you like" and "Trending about Page X"
+facebook.com##.storyContent > .storyUnconnectedPost
+! "Games You May Like" (new Facebook news feed)
+facebook.com##.mbm._6nl + .uiList > ._6n2
+facebook.com##.mbm._6nl
+facebook.com##._5pcr > .mbm._43rz
+facebook.com##._5pcr > .mbm._43rz + ._43r-
+facebook.com##.mbm._43rz + .uiList > ._43s1
+facebook.com##.mbm._43rz + .uiList + .uiList
+facebook.com##.mbm > ._5pcr > .mbs + ._43r- > .uiList
+facebook.com##.mbm > ._5pcr > .mbs
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > A[href="https://www.facebook.com/games/"]
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg ._50z3 > ._50zm
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > ._3dp._29k > DIV > ._5pbw > .fsl.fwb.fcb
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > ._3dp._29k > DIV > ._5pbw + .uiLinkSubtle[href="https://www.facebook.com/games/"]
+! "People you may know"
+facebook.com###stream_pagelet > #pagelet_composer + ._4-u2._2ph_._3-95
+f.nanafiles.co.il/Common/Images/pixel.gif
+facebook.com$important,third-party
+facebook.com$subdocument,domain=ynet.co.il
+facebook.com/*like.php$third-party
+facebook.com/*plugins/page.php
+facebook.com/*sdk.js
+facebook.com/RDXSports
+facebook.com/babylonsoftwareltd
+facebook.com/connect/ping
+facebook.com/fql
+facebook.com/offsite_event.php
+facebook.com/outbrain
+facebook.com/plugins/
+facebook.com/plugins/likebox.php
+facebook.com/sharer.php
+facebook.com/taboola
+facebook.com/tr
+facebook.com/tr*PageView
+facebook.net/*fbevents.js
+facebook.net/*like.php$third-party
+facebook.net/*sdk.js
+filehippo.com/*px.js
+filehippo.com/scripts*/master*.js
+firefox.com/metrics
+firefox.com/metrics-errors
+forbes.com/ajax/getUniregUserData
+forum.piriform.com/uploads/profile/photo-thumb-
+forum.xda-developers.com/*sponsor_logic.js
+fosshub.com/*donate
+fsdn.com/*adframe.js
+fsdn.com/*madmen.js
+fus.walla.co.il/json/1172351/mint.new_walla_android.homepage.main
+fus.walla.co.il/json/9088451/mint.new_walla_android.homepage
+fxp.co.il/ynet-fxp/html/ynet_showt.php
+ga-beacon
+gamecopyworld.com/*/h1.gif
+getclicky
+getvero.s3.amazonaws.com/uploads/*.jpg
+getvero.s3.amazonaws.com/uploads/*.js
+gigya
+github.com/outbrain
+github/page_view
+globes.co.il/*Globes_Chrome_PopUp_tr.png
+globes.co.il/Images/NewGlobes/Misc_2/2016/300x50_B.jpg
+globes.co.il/shared
+godaddy.com/*rebrand-bg-image.jpg
+godaddy.com/pageevents
+goodshare
+google*/insights
+google-analytics
+google.*/webpagethumbnail
+google.co.il/async/newtab_ogb
+google.co.il/pagead
+google.co.il/uds/stats
+google.com$domain=onhax.me
+google.com$domain=xhamster.com
+google.com*/csilog
+google.com*/footprints
+google.com*/jserror
+google.com*/rpclog
+google.com/*streamwidgets
+google.com/*view=ad
+google.com/aclk
+google.com/ads
+google.com/ads/
+google.com/adsense/
+google.com/afs
+google.com/analytics/web/inpage/pub/inpage.js
+google.com/appserve/security-bugs
+google.com/async/newtab_ogb
+google.com/chromesuggestions
+google.com/cr/report
+google.com/fdfe/log
+google.com/js/platform.js
+google.com/log
+google.com/pagead
+google.com/pagead/drt
+google.com/ping
+google.com/tbproxy
+google.com/uds
+google.com/uds/api/ads
+google.com/uds/stats
+google.com/webpagethumbnail
+google.com/webstore/csp_report
+googleAd
+googleads
+googleadservices
+googleapis.com$domain=xhamster.com
+googleapis.com/androidcheck
+googleapis.com/auth/chrome-content-suggestions
+googleapis.com/instore
+googleapis.com/log
+googleapis.com/play/log
+googleapis.com/youtube/v3/videos?id*statistics*viewCount$xmlhttprequest,domain=youtube.com
+googleapis.com/youtubei/v1/log_interaction
+googlesyndication.com
+googletagmanager
+googletagservices.com
+googleusercontent.com/*photo$image,domain=stackexchange.com|stackapps.com|askubuntu.com|serverfault.com|stackoverflow.com|superuser.com
+googlevideo.com/videogoodput
+graph.facebook.com/?id
+gravatar.com$important,third-party
+gravatar.com/avatar/$image
+gstatic.com$domain=xhamster.com
+gstatic.com/csi
+gstatic.com/feedback/api.js
+haaretz.co.il/*async.js
+haaretz.co.il/*refreshmanager.js
+haaretz.co.il/*show_all_ads.js
+haaretz.co.il/*xgemius.js
+haaretz.co.il/*xx*.js
+haaretz.co.il/*xxx1.js
+haaretz.co.il/logger
+haaretz.co.il/promotions-page
+hc-sticky.js
+hc-sticky.min.js
+horoscop
+hostgator
+hover-intent.js
+hover-intent.min.js
+htjs.php
+html*adflag
+hwzone.co.il/*hw_scripts.js
+hwzone.co.il/cubicbig-banner-articles.js
+hwzone.co.il/cubicbig1articles.js
+hwzone.co.il/cubicbig2articles.js
+hwzone.co.il/openx/www/delivery/ajs.php
+i1.social.s-msft.com/globalresources/Images/trans.gif
+icefilms.info/*img*.gif
+icefilms.info/cdn-cgi/cl/img.gif
+id.js?accountId
+il1.gaiamobile.com/gaia-parsers/xnet.ynet.co.il/ad-wrapper.php
+images.fxp.co.il/advertising
+images.fxp.co.il/clientscript/nanamako.php
+imdb.com/*social
+img.mako.co.il/*Banner
+img.mako.co.il/*loan
+imgur.com/include/flash/zeroclipboard.swf
+infomed.co.il$subdocument,domain=ynet.co.il
+instagram.com/babylonltd
+instagram.com/outbrain
+instagram.com/outbrainuxd
+instagram.com/rdx_sports
+instagram.com/taboola
+ivory.co.il*slide.js
+ivory.co.il/files/banners
+iwanttodeliver
+iyogi.com/*banner*.jpg
+iyogi.com/*feedback
+iyogi.com/etc/designs/browser-iyogi/images/opacity.png
+jobbox
+jquery.gfeed.js
+jquery.gfeed.min.js
+jquery.lazyload
+jquery.mousewheel.js
+jquery.mousewheel.min.js
+jquery.slimscroll
+jquery.touchSwipe.js
+jquery.touchSwipe.min.js
+jquery.transit.js
+jquery.transit.min.js
+jquery/store.min*js
+js.php
+khanacademy.org/api
+ksn.co.il/wp-content/uploads/*banner
+lazy-load*.js
+lazyload*.js
+lazyload-ad
+leumit.co.il/*JoinPagelink
+linkedin.com$important,third-party
+linkedin.com/*track
+linkedin.com/*tracking
+linkedin.com/company/outbrain
+linkedin.com/company/visual-revenue-inc
+linkedin.com/jobs/outbrain-jobs
+liveperson.net
+logger-*.dailymotion.com
+lp.peugeot.co.il/208/jan/?utm_source=103
+lp.peugeot.co.il/general/may/?utm_source=103
+macxdvd.com/*howto_image
+mako.co.il/*ABOOLA
+mako.co.il/*utbrain
+mako.co.il/AjaxPage?jspName=promoProcessor.jsp
+mako.co.il/Collab/cm8/360Advert.js
+mc.yandex.ru/metrika
+mc.yandex.ru/watch
+measure.js
+measure.min.js
+member.smartair.co.il/giftcard-mako-iframe
+menuAjax*act=counter
+messaging.min.js
+mgid.com
+microsoft.com/c.gif
+microsoft.com/ms.js
+microsoft.com/trans_pixel.aspx
+mintmark.co.il/appdata/public/wallaads
+moatad.js
+moatframe.js
+moatvideo.js
+morfix.co.il/External
+mozilla.org/metrics
+mozilla.org/metrics-errors
+mssplus.mcafee.com/mssplus.txt
+mysticism
+nahala.co.il/mimisites
+napkin
+netanyanet.co.il/images/banners
+netek.co.il/banners
+networkworld.com/www/js/ads
+new.citroen.co.il/model/cactus/?utm_source=103
+nr-data
+nullprogram.com*/avatar
+odindownload.com/images/root-android-download.png
+onegoogle*googleapis
+onhax*/*banner
+onhax*/*cloudflare
+onhax*/*photon
+onhax*/*powersource
+onhax*/*promo
+onhax*/*rocket
+onhax*/*sale
+onhax*/cdn-cgi/pe/bag2
+onhax*/wp-content/oh-content/imgs/green_btn*.png
+onlife.co.il/dbcads
+onlife.co.il/sites/all/modules/*newsletter
+onlife.co.il/sites/all/modules/*share
+onlife.co.il/sites/all/modules/fb
+onlytss.com$domain=www.ebay.com
+ooyala
+osdownloader.org
+outbrain.com
+p=subscribe
+p=unsubscribe&uid=
+pagefair
+pagespeed_beacon
+pandora.com/radio/services/brokenAd.jsp
+pandora.com/radio/xmlrpc*method=getAdList
+pandora.com/radio/xmlrpc*method=getSVNAds
+pandora.com/radio/xmlrpc*method=trackPlay
+pandora.com/radioAdEmbed
+pandora.com/radioAdEmbed.html
+pandora.com/static/counters
+pandora.com/static/promo
+phncdn.com/*assets/js/
+phncdn.com/iframe
+phncdn.com/networkbar
+phncdn.com/timings*js
+phncdn.com/vortex
+pig.livechat
+pixelID=123
+platform.twitter.com/oct.js
+platform.twitter.com/widgets.js
+platform.twitter.com/widgets/follow_button.html
+play.google.com/log
+play.googleapis.com/log
+play.googleapis.com/play/log
+plus.google.com/+babylon
+plus.google.com/+babylon/
+plus.google.com/+outbrain
+plus.google.com/+outbrain/
+plus.google.com/+taboola/
+plus.google.com/outbrain
+pooradb
+promotion
+public-ads-manager
+public-api.wordpress.com/connect
+rackcdn
+rcs.mako.co.il/*hadshot
+rcs.mako.co.il/*hadshot-2.png
+rcs.mako.co.il/images/*mySupermarket
+rcs.mako.co.il/images/logo/slideAd.png
+rcs.mako.co.il/images/neo/grad_1px.png
+rcs.mako.co.il/js/bannend.js
+rcs.mako.co.il/js/scripts/adsfix.js
+rcs.mako.co.il/js/scripts/mako_ga.js
+rcs.mako.co.il/js/scripts/metrics.js
+rcs.mako.co.il/js/scripts/thirdParty.js
+reco.stg.stratus.qa
+reddit.com/*favicon
+reddit.com/api/request_promo
+reddit.com/api/request_recommended_link
+reddit.com/r/ads
+redditmedia.com/ads
+redditmedia.com/gtm/jail
+redditstatic.com/*favicon
+redditstatic.com/ad
+redditstatic.com/display*.js
+redditstatic.com/moat
+redditstatic.com/recommended-link
+refer=
+robtex.com$image
+robtex.com/*.png$domain=www.robtex.com
+robtex.com/*graph.gif
+robtex.com/*status.gif
+rover.ebay.com/roverclk$beacon,domain=www.ebay.com
+s-msft.com/globalresources/Images/trans.gif
+s.imgur.com/min/rt*.js
+s3.amazonaws.com/*displaycreative
+s3.amazonaws.com/r.kissinsights.com
+s3.amazonaws.com/trk.cetrk.com
+safaribooksonline.com/library/view/pageview.js
+sammobile.com/*animation-min.js
+sammobile.com/*ckeditor.js
+sammobile.com/*ckeditor_config.js
+sammobile.com/*default.js
+sammobile.com/*dragdrop-min.js
+sammobile.com/*tracking.js
+sammobile.com/*vbulletin_quick_comment.js
+scandalads
+scene7.com$domain=www.ebay.com
+scorecardresearch.com
+script.crazyegg.com/pages/scripts/0004/4384.js
+script.crazyegg.com/pages/scripts/0021/7526.js
+section.PopularSearches
+secure.33across.com/ps
+secureserver.net/image.aspx
+sharrre
+sharrre.js
+sharrre.min.js
+shemli.co.il/hebnames/res/images/askme/
+skimlinks
+skimlinks.js
+slimstat/wp-slimstat.*js
+smartair-js.travelyo-cdn.site/js/
+social.s-msft.com/globalresources/Images/trans.gif
+sockjs
+soft32.com
+srcid=[PUBID]
+stack.imgur.com/$image,domain=stackexchange.com|stackapps.com|askubuntu.com|serverfault.com|stackoverflow.com|superuser.com
+stackoverflow.com/posts/*ivc
+stackpathdns
+submityourflicks.com/*bl.php
+t.co/i/adsct
+taboola.com
+taldor
+tapuz.co.il/*LikeModalPopup.js
+tapuz.co.il/*SocialNetwork.js
+tapuz.co.il/*kidumKofetz.js
+telegraph.co.uk/*commWidget.js
+telegraph.co.uk/*qbert
+telegraph.co.uk/*webtrends
+tevalife.com/*Banner*$domain=www.tevalife.com
+tevalife.com/*banner
+tevalife.com/iFrameBanManProArticleDown.asp
+tevalife.com/images/DietAbout-NEW.jpg
+tevalife.com/images/brainFood-NEW.jpg
+tevalife.com/images/doctors_faq.jpg
+tevalife.com/images/markonim-NEW.jpg
+tevalife.com/images/mensSecrets-NEW.jpg
+tevalife.com/images/searchG.jpg
+tevalife.com/images/top-banner-tevalife-new.jpg
+tevalife.com/images/yediotAward.jpg
+themarker.com/pcs/click
+thepiratebay.org/*ads
+thepiratebay.org/*exo
+thepiratebay.org/static/js/p.js
+torrentproject.se/*.pdf
+torrentproject.se/anti*.js
+tracker.js
+tracking.js
+tracking.min.js
+trafficjunky
+trafficstars
+trans_pixel
+translate.google.com/*element.js
+translate.googleapis.com/translate_a/l^
+tribdss
+tritondigital.com
+twitter.com$important,third-party
+twitter.com/ADnl
+twitter.com/BabylonLTD
+twitter.com/Outbrain
+twitter.com/RDXSports
+twitter.com/Taboola
+updato.com/unlock
+upload.so/js/countdown.js
+upload.so/js/share.js
+uploadex.com/tst/dbtn.gif
+uploadex.com/tst/download1.png
+uploadshub.com/downloadfiles/*button
+userscloud.com/_a
+vglnk
+walla.co.il/dist/scripts/vertical/wos
+walla.co.il/events.asp?version=9&c=
+walla.co.il/images/sponsers-logos-sprite.svg
+walla.co.il/resources/js/common.js
+wcdn.co.il/api
+wf/click?
+wikipedia.org/*AutoLogin
+windgetbook
+ws\:\/\/
+wsimg.com/*rebrand-bg-image.jpg
+wss\:\/\/
+www.facebook.com/babylonsoftwareltd
+www.google.*/ads/
+xda-cdn.com/*favicons
+xda-developers.com$websocket
+xhamster.com/*videofeatured
+xhamster.com/ajax/cams-widget
+xhamster.com/banner
+xhamster.com/cdn.stats
+xhamster.com/cnt.php
+xhamster.com/videoView
+xhcdn.com/*ads
+xhcdn.com/*banners
+xhcdn.com/*fingerprintjs
+xhcdn.com/*statistics
+xhcdn.com/*tpl2.comment.js
+xhcdn.com/*tpl2.view.js
+xhcdn.com/*track
+xhcdn.com/*track.min.js
+xhcdn.com/*widget.js
+xtube.com/*placeholder.jpg
+xtube.com/*xtube.min.js
+xtube.com/*xtube.pre.min.js
+xvideos.com/*default.header.static.js
+xvideos.com/*player.html5.static.js
+ynet.co.il/*/networks.js
+ynet.co.il/*YnetShops
+ynet.co.il/*paywall.js
+ynet.co.il/*popup_msg_block.jpg
+ynet.co.il/*static.js
+ynet.co.il/*static.min.js
+ynet.co.il?notifyMistake
+youporn.com/*ht.js
+youtube.com$beacon
+youtube.com*adunit
+youtube.com/*log_interaction
+youtube.com/*pagead-id.js
+youtube.com/annotations_invideo*instream_ad
+youtube.com/api/stats
+youtube.com/api/stats/ads
+youtube.com/csi_204
+youtube.com/embed$domain=xda-developers.com
+youtube.com/error_204
+youtube.com/feed_change
+youtube.com/feed_change_ajax
+youtube.com/get_endscreen
+youtube.com/get_midroll_info
+youtube.com/pagead
+youtube.com/player_204*adunit
+youtube.com/player_204*pagead
+youtube.com/ptracking
+youtube.com/set_awesome
+youtube.com/share_ajax
+youtube.com/youtubei/v1/log_event
+youtube.com/youtubei/v1/log_interaction
+youtube.com/youtubei/v1/upload/feedback
+yts.ag/images/vpn
+zoneid=*&var=*
+|blob:$script
+*##^script:has-text(ADNL)
+*##^script:has-text(AdBlock)
+*##^script:has-text(AdBlockUtil)
+*##^script:has-text(AdFragment)
+*##^script:has-text(AdRotate)
+*##^script:has-text(AdUnit)
+*##^script:has-text(AdUnit_properties)
+*##^script:has-text(Adblocker detected)
+*##^script:has-text(CoinHive)
+*##^script:has-text(DOMAttrModified)
+*##^script:has-text(DOMAttributeNameChanged)
+*##^script:has-text(DOMCharacterDataModified)
+*##^script:has-text(DOMElementNameChanged)
+*##^script:has-text(DOMNodeInserted)
+*##^script:has-text(DOMNodeInsertedIntoDocument)
+*##^script:has-text(DOMNodeRemoved)
+*##^script:has-text(DOMNodeRemovedFromDocument)
+*##^script:has-text(DOMSubtreeModified)
+*##^script:has-text(DY.API)
+*##^script:has-text(ExoLoader)
+*##^script:has-text(GoogleAnalyticsObject)
+*##^script:has-text(LoadAds)
+*##^script:has-text(NETSEER)
+*##^script:has-text(OBAttributionTracking)
+*##^script:has-text(OINK)
+*##^script:has-text(Pattaya)
+*##^script:has-text(SphereUp)
+*##^script:has-text(WebAssembly)
+*##^script:has-text(WebSocket)
+*##^script:has-text(Ya.Metrika)
+*##^script:has-text(_gaq.push)
+*##^script:has-text(_trackEvent)
+*##^script:has-text(_trackPageview)
+*##^script:has-text(_wpemojiSettings)
+*##^script:has-text(aboola)
+*##^script:has-text(adBlockDetected)
+*##^script:has-text(adNetwork)
+*##^script:has-text(adType)
+*##^script:has-text(adTypeChild)
+*##^script:has-text(ad_handler)
+*##^script:has-text(adblock)
+*##^script:has-text(adnl:passback)
+*##^script:has-text(adprefs)
+*##^script:has-text(adrotate)
+*##^script:has-text(adsbygoogle)
+*##^script:has-text(adsystem)
+*##^script:has-text(adxprts)
+*##^script:has-text(amzn_ads)
+*##^script:has-text(amznads)
+*##^script:has-text(analytics.js)
+*##^script:has-text(asjdebsbnhjx)
+*##^script:has-text(clickTrackerInit)
+*##^script:has-text(clicktale)
+*##^script:has-text(clicktracker)
+*##^script:has-text(cookieconsent)
+*##^script:has-text(crazyegg)
+*##^script:has-text(cxApi)
+*##^script:has-text(directrev)
+*##^script:has-text(document.write)
+*##^script:has-text(eaCtrl)
+*##^script:has-text(eval)
+*##^script:has-text(exposuresCollector)
+*##^script:has-text(fakepath)
+*##^script:has-text(freegeoip)
+*##^script:has-text(fuckAdBlock)
+*##^script:has-text(ga.js)
+*##^script:has-text(gaName)
+*##^script:has-text(getTracker)
+*##^script:has-text(google-analytics)
+*##^script:has-text(google.ads)
+*##^script:has-text(google_ad_client)
+*##^script:has-text(google_ad_height)
+*##^script:has-text(google_ad_slot)
+*##^script:has-text(google_ad_width)
+*##^script:has-text(google_ads)
+*##^script:has-text(google_conversion_id)
+*##^script:has-text(google_remarketing_only)
+*##^script:has-text(google_tag_params)
+*##^script:has-text(googletag)
+*##^script:has-text(googletagmanager)
+*##^script:has-text(informereng)
+*##^script:has-text(initAd)
+*##^script:has-text(isAdBlocked)
+*##^script:has-text(isOnBlockedPage)
+*##^script:has-text(liveperson.net)
+*##^script:has-text(navbarAdSlots)
+*##^script:has-text(onAdCall)
+*##^script:has-text(onAdSchedulingComplete)
+*##^script:has-text(onClickTrackingEvent)
+*##^script:has-text(onCustomClickTrackingEvent)
+*##^script:has-text(onImpressionEvent)
+*##^script:has-text(onTrackingEvent)
+*##^script:has-text(ova.ads.schedule)
+*##^script:has-text(popunder)
+*##^script:has-text(proMenuTeaser)
+*##^script:has-text(pubads)
+*##^script:has-text(saka)
+*##^script:has-text(sekindo)
+*##^script:has-text(sentry_dsn)
+*##^script:has-text(trackEvent)
+*##^script:has-text(trafficjunky)
+*##^script:has-text(utbrain)
+*##^script:has-text(utbrainSetting)
+*##^script:has-text(wabtn4fg)
+*##^script:has-text(window.ADBLOCKED)
+*##^script:has-text(window.Krux)
+*##^script:has-text(window.NREUM)
+*##^script:has-text(window.disqus_config)
+*##^script:has-text(window.fbAsyncInit)
+*##^script:has-text(window.loadAd)
+apkmirror.com##^script:has-text(Ad blocker)
+apkmirror.com##^script:has-text(canRunAds)
+apkmirror.com##^script:has-text(visibleAds)
+ebay.com##^script:has-text(beforeunload)
+ebay.com##^script:has-text(lazyLoad)
+ebay.com##^script:has-text(pagespeed)
+hwzone.co.il##^script:has-text(idle)
+israelpost.co.il##^script:has-text(AdvBottom)
+israelpost.co.il##^script:has-text(AdvLeft)
+israelpost.co.il##^script:has-text(AdvMenu)
+israelpost.co.il##^script:has-text(AdvPopUnder)
+israelpost.co.il##^script:has-text(AdvRight)
+israelpost.co.il##^script:has-text(AdvTop)
+israelpost.co.il##^script:has-text(BannerArray)
+israelpost.co.il##^script:has-text(checkAdv)
+onhax.me##^script:has-text(TID)
+onhax.me##^script:has-text(console)
+onlife.co.il##^script:has-text("gpt-ad")
+onlife.co.il##^script:has-text("location.reload")
+onlife.co.il##^script:has-text(gpt-ad)
+onlife.co.il##^script:has-text(location.reload)
+pandora.com##^script:has-text(adroll)
+pandora.com##^script:has-text(ideoAds)
+pandora.com##^script:has-text(udioAds)
+pornfun.com##^script:has-text(.adblock)
+torec.net##^script:has-text(monthly)
+upload.ac##^script:has-text(Clipboard)
+upload.ac##^script:has-text(adblockinfo)
+upload.ac##^script:has-text(bannerad)
+upload.ac##^script:has-text(gtag)
+upload.so##^script:has-text(TID)
+upload.so##^script:has-text(checked)
+upload.so##^script:has-text(popads)
+upload.so##^script:has-text(tracker)
+upload.so##^script:has-text(trident)
+uploadshub.com##^script:has-text(TID)
+uploadshub.com##^script:has-text(checked)
+uploadshub.com##^script:has-text(popads)
+uploadshub.com##^script:has-text(tracker)
+uploadshub.com##^script:has-text(trident)
+walla.co.il##^script:has-text(ad-box)
+walla.co.il##^script:has-text(ads)
+walla.co.il##^script:has-text(adsParams)
+walla.co.il##^script:has-text(adt)
+xda-developers.com##^script:has-text(ad-tag)
+xda-developers.com##^script:has-text(adBlockDetect)
+xda-developers.com##^script:has-text(adTag)
+xda-developers.com##^script:has-text(ad_navbar)
+xda-developers.com##^script:has-text(adblocking)
+xda-developers.com##^script:has-text(criteo)
+xda-developers.com##^script:has-text(deployads)
+xda-developers.com##^script:has-text(firebug)
+xda-developers.com##^script:has-text(nofacssserved)
+xda-developers.com##^script:has-text(purchad)
+xda-developers.com##^script:has-text(servebom.com)
+xda-developers.com##^script:has-text(xda_ad_choice)
+xda-developers.com##^script:has-text(xda_adtest)
+xhamster.com##^script:has-text(displayPlayerAdv)
+xhamster.com##^script:has-text(statsLog)
+yad2.co.il##^script:has-text(Fusion)
+yad2.co.il##^script:has-text(sekindoSizes)
+ynet.co.il##^script:has-text(cookie)
+ynet.co.il##^script:has-text(facebook)
+ynet.co.il##^script:has-text(iframe)
+ynet.co.il##^script:has-text(location.reload)
+yts.am##^script:has-text(function)
+! Title: I Don't Care About Emojis
+! Expires: 7 days (update frequency)
+! Homepage: https://github.com/lassekongo83/Frellwit-s-filter-lists
+! Description: This filter aims to remove emoji realted scripts, stylesheets, fonts, and images.
+! License: GPLv3
+
+||twemoji.maxcdn.com^
+||emoji.redditmedia.com^
+||discordemoji.com^
+/wp-emoji$script,stylesheet
+/emoji.$script,stylesheet,image
+/emojiarea.$script
+/emojify.$script
+/emojione.$script,stylesheet
+/emojiFace.$script
+/lsxemojipicker.$script
+/images/*emoji/*
+[Adblock Plus 2.0]
+! Checksum: AIKRXQqGzMFTvR6E7AWl8Q
+! Version: 201901190412
+! Title: Message "seen" Remover for Facebook
+! Last modified: 19 Jan 2019 04:12 UTC
+! Expires: 4 days (update frequency)
+!
+||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+! YouTube -------------------------------------------------------------------------------------------------------------------------------
+youtube.com###masthead-ad
+youtube.com##.ytp-ce-covering-overlay
+youtube.com##.ytp-ce-element-shadow
+youtube.com##.ytp-ce-covering-image
+youtube.com##.ytp-ce-expanding-image
+youtube.com##.ytp-ce-element.ytp-ce-video.ytp-ce-element-show
+youtube.com##.ytp-ce-element.ytp-ce-channel.ytp-ce-channel-this
+youtube.com##.ytp-cards-teaser
+youtube.com##.ytp-ce-element
+youtube.com##.ytp-cards-button
+youtube.com##.iv-click-target
+youtube.com###vat-notice
+youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
+youtube.com###inproduct-guide-modal
+youtube.com###yt-lang-aler-tp
+youtube.com###yt-dialog-bg
+youtube.com##.yt-dialog-base
+youtube.com##.iv-promo
+youtube.com##.ytd-background-promo-renderer.style-scope.promo-message
+youtube.com###merch-shelf
+youtube.com###list-container
+youtube.com###ticket-shelf
+! Baidu ---------------------------------------------------------------------------------------------------------------------------------
+pan.baidu.com###activateGuidePopupOuter
+tieba.baidu.com##.tbui_aside_float_bar
+
+! Discord -------------------------------------------------------------------------------------------------------------------------------
+discordapp.com##.height36-36OHCc.weightMedium-2iZe9B.size14-3iUx6q.notice-2FJMB4.noticeDefault-362Ko2
+discordapp.com##.invite-OjTXrW.channelNotice-1-XFjC
+discordapp.com##.btn-download-apps
+discordapp.com##.channelNotices-41mJbj
+discordapp.com##.base-3dtUhz.noWrap-3jynv6.alignStretch-DpGPf3.justifyStart-2NDFzi.directionColumn-35P_nr.vertical-V37hAW.flex-1O1GKY.flex-1xMQg5 > .flexChild-faoVW3
+
+! Google --------------------------------------------------------------------------------------------------------------------------------
+google.*##div[jsl][data-ved]:if(h4:has-text(People also search for))
+google.*##.exp-outline
+google.*##[id^="ed_"]
+google.com##.hww53CMqxtL__visible.itbXqfXFa__o-q-uKXqAwNiM.hww53CMqxtL__mobile-promo
+
+! Google Drive --------------------------------------------------------------------------------------------------------------------------
+drive.google.com##.a-nf-Rc-Gd
+
+! Google Product Forums -----------------------------------------------------------------------------------------------------------------
+productforums.google.com##.BOXPGHD-g-b.BOXPGHD-g-w > .BOXPGHD-g-s.BOXPGHD-g-r
+productforums.google.com##.BOXPGHD-g-b.BOXPGHD-g-w
+productforums.google.com##div.BOXPGHD-g-w:nth-of-type(5)
+productforums.google.com##.BOXPGHD-g-h
+productforums.google.com##div.BOXPGHD-g-w:nth-of-type(6)
+! Yahoo Mail ----------------------------------------------------------------------------------------------------------------------------
+mail.yahoo.com###mail-app-component > div:nth-of-type(2)
+mail.yahoo.com##div[aria-label="Messages"]:style(margin-top: -0px !important;)
+mail.yahoo.com##.W_6D6F.k_w.p_R.folder-list > div:nth-of-type(1)
+mail.yahoo.com##.I_T.p_R.o_v.D_F
+mail.yahoo.com##.W_3vHgs.j_ZqTdtW.q_52qC.o_h.e_dRA.U_eo6.Q_6EGz.B_fq7.Z_rJ.p_f.D_F.H_3niBz
+mail.yahoo.com##.rightRailAdContainer
+mail.yahoo.com###norrin-upsell
+mail.yahoo.com###emptyFolderVideo
+
+! Removes the "Recommended channels" section when you're logged on
+twitch.tv##.recommended-channels
+
+! Removes the "Recommended channels" section when you're not logged on
+twitch.tv##.tw-full-width > .tw-mg-b-2
+
+! Removes suggestions from the "Following" page
+twitch.tv##.tw-pd-3 > div:nth-of-type(5)
+
+! Removes the blue bar on the front page, that I presume is only used to advertise for Twitch Prime
+twitch.tv##.blue-bar
+
+! Attempts to remove the "Based on your watch log" carousel
+twitch.tv##.tw-pd-y-2 > div:nth-of-type(1)
+
+[Adblock Plus 2.0]
+! Title: 🕊 Twitter De-Politificator
+! Version: 13January2019v2-Alpha
+! Expires: 3 days
+! Description: Are you just trying to casually browse through some comedy and art accounts on Twitter, and have grown really, really tired and worn out by seeing trashy posts and accounts made by tweeters who physically can't stop babbling about politics, especially American politics? Then this list will probably save your life.
+! Motivation: I joined Twitter in 2014, and it was a pretty cosy little coffee club for about a year and a half after that. Then the 2016 American election happened, and the entirety of Twitter turned into one giant political bitchslap contest that was completely devoid of common sense. By 2017 it had got nasty enough that I deleted my Twitter account, and I didn't begin to lurk there again for another year. This list has made me able to remove large portions of the crappy drama stuff, and now I can browse Twitter while seeing far less seething, mind-melting idiocy fill the comment sections.
+! IMPORTANT NOTE 1: This list does not imply that I or the users of the list hold any particular political stance. The only thing that it claims, is that its users are tired of all the political stuff that is on Twitter.
+! IMPORTANT NOTE 2: Generally, a word is added to the list if more than ~80% of the tweets that uses it are either depressing to get to know about, or is politically bitchslapping. There will be false positives, and there's very little I can do about that unless it's a matter of life and death. My apologies in advance, New England Patriots fans.
+! IMPORTANT NOTE 3: It's not easy to figure out which keywords I should block and which ones I shouldn't. I usually can't block overly generic terms like "Christian", "Muslim", "guns", or avatar names with eagle emotes. And I'm on the fence about whether e.g. "Democrats", and "Nazi" (among other words) should be blocked, depending on how annoying and up-yours their users are.
+! For more information, details, helpful tools, and other lists that I've made, visit https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
+
+! 📛 = This category requires using either Nano Adblocker or uBlock Origin.
+
+! General entries
+twitter.com#?#.tweet:-abp-contains(Libcuck)
+twitter.com#?#.tweet:-abp-contains(Libtard)
+twitter.com#?#.tweet:-abp-contains(libtard)
+twitter.com#?#.tweet:-abp-contains(Trump)
+twitter.com#?#.tweet:-abp-contains( racism )
+twitter.com#?#.tweet:-abp-contains( conservative )
+twitter.com#?#.tweet:-abp-contains(conservatism)
+twitter.com#?#.tweet:-abp-contains(conservatives)
+twitter.com#?#.tweet:-abp-contains( liberals )
+twitter.com#?#.tweet:-abp-contains(Sean Hannity)
+twitter.com#?#.tweet:-abp-contains(Republican)
+twitter.com#?#.tweet:-abp-contains(Socialis)
+twitter.com#?#.tweet:-abp-contains(Sharia)
+twitter.com#?#.tweet:-abp-contains(Islamic)
+twitter.com#?#.tweet:-abp-contains(progressive)
+twitter.com#?#.tweet:-abp-contains(migration)
+twitter.com#?#.tweet:-abp-contains(migrants)
+twitter.com#?#.tweet:-abp-contains(feminist)
+twitter.com#?#.tweet:-abp-contains(left-wing)
+twitter.com#?#.tweet:-abp-contains(right-wing)
+twitter.com#?#.tweet:-abp-contains(卍)
+twitter.com#?#.tweet:-abp-contains(Patriot)
+twitter.com#?#.tweet:-abp-contains(Nationalis)
+twitter.com#?#.tweet:-abp-contains(multiculturalis)
+twitter.com#?#.tweet:-abp-contains(#Free)
+twitter.com#?#.tweet:-abp-contains(imperialist)
+twitter.com#?#.tweet:-abp-contains(MAGA)
+twitter.com#?#.tweet:-abp-contains(Cuck )
+twitter.com#?#.tweet:-abp-contains(anti-Semitism)
+twitter.com#?#.tweet:-abp-contains(anti-semitism)
+twitter.com#?#.tweet:-abp-contains(Soros )
+twitter.com#?#.tweet:-abp-contains(Israeli occupation)
+twitter.com#?#.tweet:-abp-contains(Moslem)
+twitter.com#?#.tweet:-abp-contains(2nd Amendment)
+twitter.com#?#.tweet:-abp-contains(2nd amendment)
+twitter.com#?#.tweet:-abp-contains(Pro-Life)
+twitter.com#?#.tweet:-abp-contains(Pro-life)
+twitter.com#?#.tweet:-abp-contains( dems )
+twitter.com#?#.tweet:-abp-contains(☭)
+
+! If an account's name uses the American flag, it's usually for weird patriotic purposes
+twitter.com#?#.tweet:-abp-has(.FullNameGroup:-abp-contains(🇺🇸))
+twitter.com#?#.tweet:-abp-has(.FullNameGroup:-abp-contains(🇺🇲))
+
+! Added because it's the worst and least constructive meme ever created in human history
+twitter.com#?#.tweet:-abp-contains(tfw no gf)
+
+! Added after I found a bizarre thread that thought that "European prohibitions on ritual slaughter = Hatred against religions"
+twitter.com#?#.tweet:-abp-contains( kosher)
+
+! We need to stop treating his incoherent and insulting tweets as being newsworthy material 📛
+com,xyz,net,org,biz,tv,co,no,dk,se,nu,fi,is,de,uk,aus,ca,nz,ie##.tweet:has-text(realDonaldTrump)
+com,xyz,net,org,biz,tv,co,no,dk,se,nu,fi,is,de,uk,aus,ca,nz,ie##iframe[srcdoc*="twitter-tweet"][srcdoc*="realDonaldTrump"]
+
+! Entries that are currently deactivated, due to them causing severe issues with threads about coding libraries. A better solution may or may not be found in the future.
+!!! twitter.com#?#.tweet:-abp-contains( libs )
+!!! twitter.com#?#.tweet:-abp-contains( Libs )
+[Adblock Plus 2.0]
+twitter.com##div.module.Footer
+twitter.com##div.module.enhanced-media-thumbnails
+twitter.com##div.trends
+twitter.com##div.wrapper-discover
+twitter.com##div.wrapper-home
+twitter.com##div.wtf-module
+twitter.com##li#global-nav-home
+twitter.com##li.topics
+[Adblock Plus 2.0]
+! Version: 201812140827
+! Title: X Files: NoFacebookAds
+! NFA: rimuovi la spazzatura da Facebook!
+! Last modified: 14-12-2018
+! Expires: 30 days
+! Homepage: https://xfiles.noads.it
+! Home: https://xfiles.noads.it
+! Blog: https://gioxx.org/tag/abpxfiles/
+! Hosting lista: GitHub.com
+! 
+@@||www.facebook.com/ads/$elemhide
+@@||www.facebook.com/ajax/ads/$xmlhttprequest,domain=www.facebook.com
+###pagelet_side_ads
+##.adsCategoryIcon
+##.adsCategoryTitleLink
+/hads-
+apps.facebook.com##div[style="margin: 0px; width: 760px; height: 90px; text-align: center; vertical-align: middle;"]
+facebook.com###MessagingNetegoWrapper
+facebook.com###headerArea
+facebook.com###home_sponsor_nile
+facebook.com###home_stream > .uiUnifiedStory[data-ft*="\"ei\":\""]
+facebook.com###leaderboard
+facebook.com###pagelet_ads_when_no_friend_list_suggestion
+facebook.com###pagelet_games_rhc
+facebook.com###pagelet_growth_expanding_cta
+facebook.com##.-cx-PRIVATE-fbAdUnit__root
+facebook.com##.-cx-PRIVATE-fbEmu__root
+facebook.com##.-cx-PRIVATE-fbFacebarTypeaheadToken__sponsored
+facebook.com##.-cx-PRIVATE-snowliftAds__root
+facebook.com##.-cx-PRIVATE-spyml__story
+facebook.com##.-cx-PUBLIC-fbAdUnit__root
+facebook.com##._24n
+facebook.com##._24o
+facebook.com##._3qj-
+facebook.com##._4u8
+facebook.com##.adv
+facebook.com##.egoOrganicColumn
+facebook.com##.ego_spo
+facebook.com##.fbAdUnit
+facebook.com##.fbEmu
+facebook.com##.fbEmuBlock
+facebook.com##.fbEmuComboList
+facebook.com##.fbEmuEgo
+facebook.com##.fbEmuEgoUnit
+facebook.com##.fbEmuLink
+facebook.com##.fbPhotoAdsCol
+facebook.com##.fbTimelineSideAds
+facebook.com##.fixedAux .pbm
+facebook.com##.generic_dialog.pop_dialog.generic_dialog_modal
+facebook.com##.muffin.group
+facebook.com##.ownsection[role="option"]
+facebook.com##[data-referrer="pagelet_side_ads"]
+facebook.com##[href^="/ads/adboard/"]
+facebook.com##a[ajaxify^="/ajax/emu/end.php?"]
+facebook.com##a[href^="/ajax/emu/end.php?"]
+facebook.com##div[class="ego_column _5qrt"]
+facebook.com##div[class="ego_column _8_9"]
+facebook.com##div[class="ego_column pagelet _5qrt"]
+facebook.com##div[class="ego_column pagelet"]
+facebook.com##div[class="ego_column"]
+facebook.com##div[id^="sponsoredTickerStory_"]
+facebook.com##div[id^="substream_"] ._5jmm[data-dedupekey][data-cursor][data-ftr="1"][data-fte="1"]:not([data-timestamp])
+facebook.com##div[id^="substream_"] div[data-ft*="\"ei\":\""]
+facebook.com##div[id^="topnews_main_stream_"] div[data-ft*="\"ei\":\""]
+facebook.com##ul[id^="typeahead_list_"] > ._20e._6_k._55y_
+m.facebook.com,touch.facebook.com##.aymlCoverFlow
+m.facebook.com,touch.facebook.com##.aymlNewCoverFlow[data-ft*="\"is_sponsored\":\"1\""]
+m.facebook.com,touch.facebook.com##.pyml
+m.facebook.com,touch.facebook.com##.storyStream > ._6t2[data-sigil="marea"]
+m.facebook.com,touch.facebook.com##.storyStream > .fullwidth._539p
+m.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"]._676
+m.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"].storyAggregation
+||atdmt.com^$third-party
+||fbcdn.net^*/flyers/$domain=facebook.com
+[Adblock Plus 2.0]
+! Title: Youtubeの広告をとにかくブロックするフィルタ
+! Last modified: 03 Apr 2018 00:00 JST
+! Expires: 6 hours (update frequency)
+! Homepage: https://pokapoka.shoooter.net/
+! 
+! 
+
+||www.youtube.com/ads/$image
+youtube.com##.ad-container
+youtube.com##.video-ads
+youtube.com##.ytp-ad-progress-list
+youtube.com##.ytd-search-pyv-renderer
+youtube.com##.iv-promo
+youtube.com###player-ads
+youtube.com###masthead-ad
+youtube.com###video-masthead 
+=adunit&$domain=youtube.com
+||www.youtube.com/yts/jsbin/www-pagead-id-
+||youtube.com/get_midroll_
+||pagead2.googlesyndication.com^
+||www.google.co.jp/pagead/lvz?
+||youtube.com/pagead/
+||doubleclick.net^
+||2mdn.net^$domain=youtube.com
+!#include YouTubeEvenMorePureVideoExperience.txt
+!#include StopAutoplayOnYouTube.txt
+!#include Anti-Elsagate%20List.txt
+widget.intercom.io$script
+||liveperson.net/api*$script
+! ||livechatinc.com
+||snapengage.com/chatjs/*$script
+chatnoxapp.appspot.com/site/chat.js
+||kayako*.com/messenger^$script
+v*.zopim.com$script
+*/phplive
+||chatwee-api.com$script
+embed.tawk.to$script
+^code-1-1.js
+*/chat.js
+*/facebookchat.js
+*/chatwing.js
+*api.purechat.com
+^App/widget/chatWidget*.js
+widgets.getsitecontrol.com*script.js
+*website_chat_widget.asp
+||zendesk.com*host.js
+*GetOnlineChatUrl*
+js.driftt.com/dist/assets/widget*prod.js
+call.chatra.io/chatra.js
+||mylivechat.com/chatinline.aspx
+
+! Title: CHEF-KOCH's Facebook Filter List
+! Description: A filter list to defuck Facebook.
+! License: https://github.com/CHEF-KOCH/CKs-FilterList/blob/master/LICENSE
+! By downloading or viewing, or using this list, you are accepting these terms and the license.
+! Homepage: https://github.com/CHEF-KOCH/CKs-FilterList
+! Expires: 14 days
+! Version: 0.0.0.03
+! Last updated: 2018-12-31
+! Please report any unblocked content or problems by email or via GitHub issue ticket.
+! Email: CHEF-KOCH@protonmail.com
+! Copyright (C) 2018 by CHEF-KOCH
+
+/facebookaff/*
+/facebookaff2/*
+/facebooksex.
+@@||facebook.com/ads/ajax/ads_stats_dialog/$~third-party,xmlhttprequest
+@@||www.facebook.com/ad.*^ajaxpipe^$subdocument,~third-party
+facebook.com###browse_lhc_container:style(position: relative !important; top: 0 !important;)
+facebook.com###content > div > ._lwx:style(position: absolute !important; padding-bottom: 10px !important;)
+facebook.com###contentArea div:if-not(.clearfix):has(a[href*="/login/?"])
+facebook.com###entity_sidebar:style(position: relative !important; top: 0 !important;)
+facebook.com###headerArea > div > div:nth-of-type(3)
+facebook.com###js_10:style(position: relative !important;)
+facebook.com###leftCol > div > div:style(position: relative !important; top: 0 !important;)
+facebook.com###mobile_mirror_banner
+facebook.com###pagelet_growth_expanding_cta
+facebook.com###stream_pagelet div[id^="feed_stream_"] div[id^="substream_"] div[id^="hyperfeed_story_id_"]:has(a.uiStreamSponsoredLink)
+facebook.com###u_0_11._k:style(position: relative !important; top: 0 !important; left: 0 !important;)
+facebook.com###u_0_11:style(position: relative !important; top: 0 !important;)
+facebook.com###u_0_12:style(position: relative !important; top: 0 !important;)
+facebook.com###u_0_13:style(position: relative !important; top: 0 !important;)
+facebook.com###u_0_14:style(position: relative !important; top: 0 !important; left: 0 !important;)
+facebook.com###u_0_1a:style(position: relative !important; top: 0 !important;)
+facebook.com###u_0_1b:style(position: relative !important; top: 0 !important;)
+facebook.com###u_0_1d:style(position: relative !important; top: 0 !important;)
+facebook.com###u_0_1h:style(position: relative !important;)
+facebook.com###u_0_1l:style(position: relative !important;)
+facebook.com###u_0_1u:style(position: relative !important;)
+facebook.com###u_0_29:style(position: relative !important;)
+facebook.com###u_0_g:style(position: relative !important;)
+facebook.com###u_0_m
+facebook.com###u_0_u:style(position: relative !important; top: 0 !important;)
+facebook.com###u_0_v:style(position: relative !important; top: 0 !important;)
+facebook.com###u_0_w:style(position: relative !important; top: 0 !important;)
+facebook.com###u_0_z:style(position: relative !important; top: 0 !important;)
+facebook.com###u_fetchstream_1_3:style(position: relative !important; top: 0 !important;)
+facebook.com###u_fetchstream_1_b:style(position: relative !important;)
+facebook.com###u_fetchstream_2_0:style(position: relative !important;)
+facebook.com###u_jsonp_2_0:style(top: 0 !important;)
+facebook.com###u_jsonp_2_3:style(position: relative !important; top: 0 !important;)
+facebook.com###u_jsonp_3_3:style(position: relative !important; top: 0 !important;)
+facebook.com###u_jsonp_3_h:style(position: relative !important; top: 0 !important;)
+facebook.com###u_jsonp_4_9:style(position: relative !important; top: 0 !important;)
+facebook.com##._11gk
+facebook.com##._1n-x._8k-._3m9:style(position: absolute !important;)
+facebook.com##._27i-:style(position: relative !important;)
+facebook.com##._2avl
+facebook.com##._2yq ._4-u2:before:style(border: none !important;)
+facebook.com##._2yq ._5sqx._5sqx:style(position: absolute !important; top: 0 !important;)
+facebook.com##._3d9q.fixed_elem:style(top: 0 !important;)
+facebook.com##._4-u8._3u8y._4rka._4-u2:style(position: relative !important;)
+facebook.com##._4-u8._4-u2._4k-l._4k-k:style(position: relative !important; top: 0 !important;)
+facebook.com##._4k-p:style(margin-top: 0 !important;)
+facebook.com##._4oes:style(position: relative !important; border-bottom: 1px solid #ccc !important;)
+facebook.com##._4rtl
+facebook.com##._50ti:style(position: relative !important;)
+facebook.com##._50tj._2t-a:style(position: relative !important;)
+facebook.com##._5c_8:style(position: relative !important; top: 0 !important;)
+facebook.com##._5hn6:has(div a[role="button"][href^="/login/?"])
+facebook.com##._5hn6:has(div a[role="button"][href^="/r.php?"])
+facebook.com##._5ss8:style(left: auto !important; top: 0 !important;)
+facebook.com##._5vx2:style(border: none !important; box-shadow: none !important;)
+facebook.com##._5zrt._2x4w:style(position: relative !important; top: 0 !important;)
+facebook.com##._673w:style(position: relative !important;)
+facebook.com##._k._1a1e:style(position: relative !important; top: 0 !important; left: 0 !important;)
+facebook.com##._ky-:style(margin: 0 !important;)
+facebook.com##._kyy:style(position: relative !important; top: 0 !important;)
+facebook.com##._kyz > div:nth-of-type(2)
+facebook.com##._uex
+facebook.com##._uey._3azy._638s:style(position: relative !important; top: 0 !important;)
+facebook.com##.canvas_rating_popout
+facebook.com##.ego_section
+facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="%26adgroup_id%"]
+facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="utm_medium"]
+facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="utm_source"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"] + div
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26adgroup_id%"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%3Fcampaign%3D"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*=".intelliad.de"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="adfarm.mediaplex.com"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"] + div
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="https%3A%2F%2Fgoo.gl%2F"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="utm_medium"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="utm_source"]
+facebook.com##.fbChatSidebar:style(position: absolute !important; height: 100% !important; border-bottom: 1px solid #ccc !important;)
+facebook.com##.fbTimelineStickyHeader
+facebook.com##.fixed_always:style(position: absolute !important;)
+facebook.com##.fixed_elem:style(position: absolute !important;)
+facebook.com##.pam._3-95.uiBoxRed
+facebook.com##.pbm.clearfix:style(padding-top: 53px !important;)
+facebook.com##.photoContainer:style(position: absolute !important; top: -143px !important;)
+facebook.com##:xpath(.//*[@data-games-xout-query-type="gyml-recommended"])
+facebook.com##:xpath(//*/a[@class='uiStreamSponsoredLink']/ancestor::div[contains(concat(' ',normalize-space(@id),' '),'hyperfeed_story_id_')])
+facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@id,"hyperfeed_story_id_")][.//h6//span/text()="Sponsored"])
+facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@id,"hyperfeed_story_id_")][.//text()="Suggested Post"])
+facebook.com##[id^="hyperfeed_story_"]:if(.userContentWrapper div[id^="feed_subtitle_"] a:if(span:has-text(Sp):has-text(S):has-text(on):has-text(S):has-text(so):has-text(S):has-text(red):has-text(S)):matches-css(display: inline))
+facebook.com##[id^="hyperfeed_story_"]:if(.userContentWrapper div[id^="feed_subtitle_"] a:if(span:has-text(Sp):has-text(S):has-text(on):has-text(S):has-text(so):has-text(S):has-text(red):has-text(S)):matches-css(display: inline))
+facebook.com##[id^="hyperfeed_story_"]:if(.userContentWrapper div[id^="feed_subtitle_"] a:if(span:has-text(Sp):has-text(S):has-text(on):has-text(S):has-text(so):has-text(S):has-text(red):has-text(S)):matches-css(display: inline-block)
+facebook.com##[id^="hyperfeed_story_"]:if(.userContentWrapper div[id^="feed_subtitle_"] a:if(span:has-text(Sp):has-text(S):has-text(on):has-text(S):has-text(so):has-text(S):has-text(red):has-text(S)):matches-css(display: inline-block)
+facebook.com##[id^="hyperfeed_story_"]:if(.userContentWrapper div[id^="feed_subtitle_"] a:if(span:has-text(Sp):has-text(on):has-text(so):has-text(red)):matches-css(display: inline))
+facebook.com##[id^="hyperfeed_story_"]:if(.userContentWrapper div[id^="feed_subtitle_"] a:if(span:has-text(Sp):has-text(on):has-text(so):has-text(red)):matches-css(display: inline))
+facebook.com##[id^="hyperfeed_story_"]:if(.userContentWrapper div[id^="feed_subtitle_"] a:if(span:has-text(Sp):has-text(on):has-text(so):has-text(red)):matches-css(display: inline-block))
+facebook.com##[id^="hyperfeed_story_"]:if(.userContentWrapper div[id^="feed_subtitle_"] a:if(span:has-text(Sp):has-text(on):has-text(so):has-text(red)):matches-css(display: inline-block))
+facebook.com##a[ajaxify*="&eid="]
+facebook.com##a[href^="/ajax/emu/end.php?"]
+facebook.com##a[href^="https://l.facebook.com/"][href*="%2526ad_id%"]
+facebook.com##div[data-xt]
+facebook.com##div[id^="hyperfeed_story_id_"]:has(a.uiStreamSponsoredLink)
+facebook.com##div[id^="hyperfeed_story_id_"]:if(div > span:matches-css(display:none):has(abbr .timestampContent))
+facebook.com#?#.ego_section:-abp-contains(People you)
+facebook.com#?#.fbUserStory:-abp-contains(People you)
+facebook.com#?#.mtm:-abp-contains(Products shown)
+facebook.com#?#.pagelet:-abp-has(a[href^="/ad_campaign"])
+facebook.com#?#.userContentWrapper:-abp-contains(People you)
+facebook.com#?#div[data-testid="fbfeed_story"]:-abp-has(a[href*="[is_sponsored]"])
+facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(a[href*="is_sponsored"])
+facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(a[href^="/business/help/788160621327601/?"])
+facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(input[data-next-question-id])
+facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(span:-abp-contains(/Suggested Post|Vorgeschlagener Beitrag/))
+facebook.com#@#.Ad
+facebook.com#@#div[id^="hyperfeed_story_id_"]:has(a[href*="utm_campaign"])
+facebook.com,facebookcorewwwi.onion###stream_pagelet [id^="hyperfeed_story_id_"]:has(span._4dcu)
+facebook.com,facebookcorewwwi.onion###stream_pagelet [id^="hyperfeed_story_id_"]:has(span._4dcu)
+facebook.com,facebookcorewwwi.onion###stream_pagelet div[id^="hyperfeed_story_id_"]:has(a.uiStreamSponsoredLink)
+facebook.com,facebookcorewwwi.onion###stream_pagelet div[id^="hyperfeed_story_id_"]:if(h6:has-text(People You May Know))
+facebook.com,facebookcorewwwi.onion##.ego_column:if(a[href^="/campaign/landing"])
+facebook.com,facebookcorewwwi.onion##.ego_section:has(a.adsCategoryTitleLink)
+facebook.com,facebookcorewwwi.onion##.ego_section:if(a[href^="/ad_campaign"])
+facebook.com,facebookcorewwwi.onion##.fbUserStory:has-text(Popular Across Facebook)
+facebook.com,facebookcorewwwi.onion##.userContentWrapper:has(a[href*="/ads/"])
+facebook.com,facebookcorewwwi.onion##.userContentWrapper:has-text(Popular Across Facebook)
+facebook.com,facebookcorewwwi.onion##.userContentWrapper>div div>span>span:has-text(^Suggested Post$)
+facebook.com,facebookcorewwwi.onion##[id^="hyperfeed_story_id_"]:has(a[href*="client_token"])
+facebook.com,facebookcorewwwi.onion##[id^="hyperfeed_story_id_"]:if([id^="feed_subtitle_"] a[href]:matches-css-after(content:/Gesponsert|Sponsored|Sponsrad/))
+facebook.com,facebookcorewwwi.onion##div[data-testid="fbfeed_story"]:if(a[href*="[is_sponsored]"])
+facebook.com,facebookcorewwwi.onion##div[id^="hyperfeed_story_id_"]:if(div > span:matches-css(display:none):has(abbr .timestampContent))
+facebook.com,facebookcorewwwi.onion##div[id^="hyperfeed_story_id_"]:if(div[id*="subtitle"] > span:matches-css(display:none):has(abbr .timestampContent)) 
+facebookcorewwwi.onion###mobile_login_bar
+facebookcorewwwi.onion###u_0_12
+facebookcorewwwi.onion###u_0_6c
+facebookcorewwwi.onion###u_0_6d
+facebookcorewwwi.onion###u_0_6e
+m.facebook.com###header-notices
+m.facebook.com###mobile_login_bar
+m.facebook.com###u_0_12
+m.facebook.com##._5tel
+m.facebook.com##article:has(footer > div > div > a[href^="/friends/center/?fb_ref="])
+!||badges.instagram.com^
+||api.instagram.com^
+||cdninstagram.com^
+||instagram.com^
+||www.instagram.com^
+
+[uBlock Origin 1.16.20]
+! Title: Anti APKMirror Ads and Countdown
+! Version: 201901151318
+! Author: kowith337
+! Homepage: https://github.com/kowith337/PersonalFilterListCollection
+! Expires: 2 days
+! Mirror: https://github.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/specific/AntiAPKMirrorCountdown.txt
+
+! Stop making some tears!
+||apkmirror.com/wp-content/themes/APKMirror/images/sadkitten.png$important
+
+! DOM
+apkmirror.com##.OUTBRAIN
+apkmirror.com##.appRow:if(.gooWidget)
+apkmirror.com##.advertisement-text
+apkmirror.com##.amazon-ad
+apkmirror.com##.downloadCountdown
+apkmirror.com##.gooWidget
+apkmirror.com##.google-ad-leaderboard
+apkmirror.com##.google-ad-square-sidebar
+apkmirror.com###sidebar .listWidget:has-text(/Follow APK Mirror/)
+
+! 3P domains block
+||amazon-adsystem.com$domain=apkmirror.com,important
+||crsspxl.com$domain=apkmirror.com,important
+||google-analytics.com$domain=apkmirror.com,important
+||googlesyndication.com$domain=apkmirror.com,important
+||outbrain.com$domain=apkmirror.com,important
+||pagefair.com$domain=apkmirror.com,important
+||pagefair.net$domain=apkmirror.com,important
+||pro-market.net$domain=apkmirror.com,important
+||quantserve.com$domain=apkmirror.com,important
+||referrer.disqus.com$domain=apkmirror.com,important
+||scorecardresearch.com$domain=apkmirror.com,important
+
+! Scriptlets
+apkmirror.com##script:inject(abort-on-property-read.js, visibleAds)
+apkmirror.com##script:inject(abort-on-property-write.js, #downloadCountdownBar)
+apkmirror.com##script:inject(abort-on-property-write.js, ranTwice)
+apkmirror.com##script:inject(abort-on-property-write.js, timerInterval)
+
+youtube.com##ytd-consent-bump-renderer
+||apkmirror.com/wp-content/themes/APKMirror/images/sadkitten.png$important
+||redditmedia.com/gtm^$subdocument,important,redirect=noopframe
+||redditstatic.com/gtm^$subdocument,important,redirect=noopframe
+
+! Also, PNG PIXEL TRACKING!?
+! Reddit Again, also PNG PIXEL TRACKING!?
+||reddit.com/static/pixel.png$image,important,redirect=1x1-transparent.png
+
+! [YouTube Polymer]
+youtube.com##ytd-consent-bump-renderer
+youtube.com###hats-container[data-survey-id]
+! [GitHub]
+github.com##.repository-content .protip
+github.com##div[class^="signup-prompt"]
+
+! [Minecraft] Forge Ads Pane
+@@ -23,10 +24,10 @@ twitter.com###signin-dropdown
+wallgif.com##content .big-modal
+wallgif.com##content .big_modal_bg
+[uBlock Origin 1.16.20]
+! Title: Personal Miscellaneous Annoyance
+! Version: 201812041738
+! Title: Miscellaneous Annoyance [Redirected]
+! Version: 201901151512
+! Author: kowith337
+! Homepage: https://github.com/kowith337/PersonalFilterListCollection
+! Expires: 2 days
+! Mirror: https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/other/MiscAnnoynace.txt
+! Redirect: https://github.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/other/MiscAnnoynace.txt
+
+! An uncategorized / out of scope of site or topic to create the stand alone filterlists
+! will be stay here until the specific site or category are have enough rules.
+
+! DOM Generic - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! [GitHub]
+github.com##div[class^="signup-prompt"]
+
+! [Minecraft] Forge Ads Pane
+files.minecraftforge.net##.ad-container
+files.minecraftforge.net##.ad-container-framed
+
+! [Twitter]
+twitter.com###signin-dropdown
+
+! [WallGif]
+wallgif.com##content .big-modal
+wallgif.com##content .big_modal_bg
+
+! [YouTube Old]
+youtube.com###hats-container[data-survey-id]
+
+! [YouTube New Polymer]
+youtube.com##ytd-consent-bump-renderer
+
+! DOM Chaining - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! [GitHub]
+github.com##.js-notice:has(.js-dismiss)
+
+! [Minecraft Forge]
+files.minecraftforge.net##.sidebar-right:has(.ad-container)
+files.minecraftforge.net##.sidebar-right:has(.ad-container-framed)
+
+! [Randomness Thing]
+randomnessthing.com##.textwidget:has(img[src*="no-adblock-wordpress-plugin"])
+
+! [Stack Network]
+stackoverflow.com##.hero-container:has(.s-signup)
+stackoverflow.com##.js-topbar-dialog-corral:has(.dialog-content:has(a[href^="/jobs/salary/?"]))
+stackexchange.com,superuser.com##.hero-container:has(#hero-content:has(div a[href^="/users/signup?"]))
+
+! [WallGif] Disable AdBlock...? HOW ABOUT NO!!
+wallgif.com###overlay:has(img[alt="Loader"])
+wallgif.com##content div[id^=block_modal]
+
+! [YouTube Old]
+youtube.com##.individual-feed li .branded-page-box:has(.feed-item-dismissable:has(span.shelf-subscription-button button[data-style-type="branded"]))
+
+! HTML Filtering - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! Note: This work only FF quantum + uB0 WebExt
+!#if cap_html_filtering
+greasyfork.org##^.post-install
+!#endif
+
+! CSS Modify - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! [Minecraft] to prevent clicking the paid links hyperlink, e.g. AdFly, AdFocus, NetBee (by accident or intent)
+! ChocolateMinecraft: http://chocolateminecraft.com (Use both AdFly and NetBee {Older version of mods})
+! - Only "Mirror" links can be clickable, the very old versions may unable to click because it have no mirror links.
+chocolateminecraft.com###content table[style*="width:100%"] td a[href*="adf.ly/"]:style(pointer-events: none !important; text-decoration: none !important)
+chocolateminecraft.com###content table[style*="width:100%"] td a[href*="netb.ee/"]:style(pointer-events: none !important; text-decoration: none !important)
+
+! Forge: http://files.minecraftforge.net
+! It use AdFocus for all installer links (except changelog),
+! - Prevent clicking on all big icon links that appear as latest and/or recommended (because it contains AdFocus hyperlink) and
+!   leave only changelog can be clickable.
+! - All download URLs will not have underline an also unable to click, the only way to download is just click the (i) icon beside
+!   "Download" text, that's only the way you can get the direct download for this.
+files.minecraftforge.net##.download-list-wrapper .download-files .download-links li a[href*="adfoc.us/"]:style(pointer-events: none !important; text-decoration: none !important)
+files.minecraftforge.net##.downloads .download .links .link-left:has(a[href*="adfoc.us/"]):style(pointer-events: none !important)
+files.minecraftforge.net##.downloads .download .links .links-right .link:has(a[href*="adfoc.us/"]):style(pointer-events: none !important)
+
+! Optifine: http://optifine.net/downloads (Use AdFly)
+! - Only "Mirror" links can be clickable.
+optifine.net##table.downloadTable tr[class^="downloadLine"] td[class^="downloadLine"] a[href*="adf.ly/"]:style(pointer-events: none !important; text-decoration: none !important)
+
+! GreasyFork: in case if they rewrite CSS style, this will minimize the element at first place.
+greasyfork.org###install-area .post-install:style(width: 0px !important; height: 0px !important; pointer-events: none !important; display: none !important)
+
+! Network Requests - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! [WallGif]
+||bnserving.com$domain=wallgif.com,important
+||cpm10.com$domain=wallgif.com,important
+||newrelic.com$domain=wallgif.com,important
+
+! [Reddit]
+||redditmedia.com/gtm^$important,~document
+||redditstatic.com/gtm^$important,~document
+
+! [SpeedTest]
+||cloudfront.net/x.js$domain=speedtest.net,important
+||speedtest.net/choices/$important
+||speedtest.net/javascript/jquery-analytics$important
+
+! Redirect - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! GreasyFork added ping request while installing script (inside the "Install Script" green button) via [data-ping-url] that cause
+! promoted script to be shown and also the site also get user data about it, eliminate this requests and fake sent data with
+! `nooptext` can solve this thing also.
+||greasyfork.org/scripts/*/install-ping?$xmlhttprequest,important,redirect=nooptext
+
+! Reddit + GoogleTag Frame
+||redditmedia.com/gtm^$subdocument,important,redirect=noopframe
+||redditstatic.com/gtm^$subdocument,important,redirect=noopframe
+
+! Also, PNG PIXEL TRACKING!?
+||reddit.com/static/pixel.png$image,important,redirect=1x1-transparent.png
+
+! Block Page(s) / Redirect annoyance - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! Some extensions that hosted with add0n are show the popup
+||add0n.com$document
+||add0n.com$popunder
+||add0n.com$popup
+
+! Some extensions at Mozilla (mostly if it have suggest to contribute via donation)
+! is redirect to developer profile page after installed.
+||addons.mozilla.org/*/addon/*/developers$document
+
+! Scriplets - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+randomnessthing.com##script:contains(Criteo)
+randomnessthing.com##script:inject(abort-on-property-read.js, Criteo)
+randomnessthing.com##script:inject(abort-on-property-write.js, DisplayAcceptableAdIfAdblocked)
+
+! Backup from ThaiParanoidBlock - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! These rules aren't met the original requirement, but still need them (e.g. non-Thai sites)
+linkis.com##.deeper-overlay
+linkis.com##.js-forceAuth-popup-light
+linkis.com##.other-pages-holder .left-column
+linkis.com##.other-pages-holder .right-column
+linkis.com##.popup_force-auth
+linkis.com##.theme15-authorize
+
+! Stop making some tears!
+||apkmirror.com/wp-content/themes/APKMirror/images/sadkitten.png$important
+
+! DOM
+apkmirror.com##.OUTBRAIN
+apkmirror.com##.appRow:if(.gooWidget)
+apkmirror.com##.advertisement-text
+apkmirror.com##.amazon-ad
+apkmirror.com##.downloadCountdown
+apkmirror.com##.gooWidget
+apkmirror.com##.google-ad-leaderboard
+apkmirror.com##.google-ad-square-sidebar
+apkmirror.com###sidebar .listWidget:has-text(/Follow APK Mirror/)
+
+! 3P domains block
+||amazon-adsystem.com$domain=apkmirror.com,important
+||crsspxl.com$domain=apkmirror.com,important
+||google-analytics.com$domain=apkmirror.com,important
+||googlesyndication.com$domain=apkmirror.com,important
+||outbrain.com$domain=apkmirror.com,important
+||pagefair.com$domain=apkmirror.com,important
+||pagefair.net$domain=apkmirror.com,important
+||pro-market.net$domain=apkmirror.com,important
+||quantserve.com$domain=apkmirror.com,important
+||referrer.disqus.com$domain=apkmirror.com,important
+||scorecardresearch.com$domain=apkmirror.com,important
+
+! Scriptlets
+apkmirror.com##script:inject(abort-on-property-read.js, visibleAds)
+apkmirror.com##script:inject(abort-on-property-write.js, #downloadCountdownBar)
+apkmirror.com##script:inject(abort-on-property-write.js, ranTwice)
+apkmirror.com##script:inject(abort-on-property-write.js, timerInterval)
