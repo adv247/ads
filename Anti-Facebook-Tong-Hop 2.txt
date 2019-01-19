@@ -45,14 +45,6 @@
 ||certifications.apple.com^
 ||certifications2.apple.com^
 
-||support.apple.com^
-||support01.apple.com^
-||support02.apple.com^
-||support03.apple.com^
-||support04.apple.com^
-||support05.apple.com^
-||supportprofile.apple.com^
-||supporttest.apple.com^
 
 ||tips.apple.com^
 ||trailers.apple.com^
