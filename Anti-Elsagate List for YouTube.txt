@@ -1310,3 +1310,18 @@ youtube.com##ytd-rich-metadata-renderer.ytd-rich-metadata-row-renderer
 ! Attempts to remove YouTube frontpage recommended videos and channels when using "Disable polymer" (and using YouTube in a Germanic language)
 youtube.com#?#.feed-item-container.browse-list-item-container:-abp-has(.shelf-title-annotation:-abp-contains( for ))
 
+##.ad-container
+##.video-ads
+##.ytp-ad-progress-list
+=adunit&
+||doubleclick.net^
+||flashtalking.com$domain=youtube.com
+||googleadservices.com
+||googlesyndication.com^
+||s0.2mdn.net/ads
+||www.google.*/pagead$domain=youtube.com
+||www.youtube.com/[[computeEmptyGif_()]]$image
+||www.youtube.com/[[computeThumbnailUrl_(data.thumbnail)]]
+||www.youtube.com/api/stats
+||www.youtube.com/pagead
+||www.youtube.com/ptracking
