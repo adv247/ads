@@ -39,7 +39,7 @@
 ||movietrailers.apple.com^
 ||advertising.apple.com^
 
-||benefits.apple.com^
+
 ||beta.apple.com^
 ||certifications-test.apple.com^
 ||certifications.apple.com^
@@ -53,8 +53,6 @@
 ||support05.apple.com^
 ||supportprofile.apple.com^
 ||supporttest.apple.com^
-||survey.apple.com^
-||survey2.apple.com^
 
 ||tips.apple.com^
 ||trailers.apple.com^
@@ -64,11 +62,8 @@
 ||volume.apple.com^
 ||PublishingResearch.com^
 ||PublishingSurvey.com^
-||Quicktime.com^
 
-||Applemusic.com^
-||Buy-Different.com^
-||BuyAAPL.com^
+
 
 
 
