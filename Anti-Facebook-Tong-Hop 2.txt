@@ -25,6 +25,26 @@
 ::1             localhost 
 127.0.0.1	appldnld.apple.com
 
+||uptodate.apple.com^
+||volume.apple.com^
+
+||remoteadvisor.apple.com^
+||remoteadvisor1.apple.com^
+||remoteadvisor2.apple.com^
+||reportaproblem.apple.com^
+||mfi.apple.com^
+||mobile.apple.com^
+||mobileaccess.apple.com^
+||movies.apple.com^
+||movietrailers.apple.com^
+||advertising.apple.com^
+
+||benefits.apple.com^
+||beta.apple.com^
+||certifications-test.apple.com^
+||certifications.apple.com^
+||certifications2.apple.com^
+
 
 ||api-read.facebook.com/restserver.php?api_key=$third-party
 ||api.facebook.com^$third-party
