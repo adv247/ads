@@ -2519,3 +2519,111 @@ mbasic.facebook.com,touch.facebook.com##.storyStream > ._6t2[data-sigil="marea"]
 mbasic.facebook.com,touch.facebook.com##.storyStream > .fullwidth._539p
 mbasic.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"]._676
 mbasic.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"].storyAggregation
+
+[uBlock Origin 1.17.5.3]
+! Title: kowith337's Test List
+! Version: 201901172151
+! Author: kowith337
+! Homepage: https://github.com/kowith337/PersonalFilterListCollection
+! Expires: 2 days
+! Note: This list is for experimental and testing only, all rules in here will be change and/or remove at anytime.
+
+! [Facebook Desktop] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+! DOM Only: Remove "Top Picks" product from marketplace lists, only work for english UI users only (UK, US, Pirate)
+facebook.com##div[data-testid="marketplace_home_feed"] div[class] > div[class]:has(span[itemcomponent]:has-text(/^Top picks/))
+
+! DOM Only: Top videos for you...? No! Not Me and You! but for someone else!!
+! Test case to hide every zuckestions of videos and leave only channel list from pages you're following... (pages tiles)
+! See example at https://imgur.com/a/PAORHlg
+facebook.com##.fb_content div[class] > div[class] > #watch_feed
+facebook.com##.fb_content div[class] > div[class] > #watch_feed div[class] div[class][data-ft]:has(div span > div span a[href*="?referrer=video_home"])
+facebook.com##.fb_content div[class] > div[class] > #watch_feed
+facebook.com##.fb_content div[class] > div[class] > #watch_feed div[class] div[class][data-ft]:has(div span > div span a[href*="?referrer=video_home"])
+! No idea what it does? probably logging frequency of people or page that you're chatting?
+||facebook.com/*?modules=ChatImpressionLogger$important
+
+! Possibly tracking the "Typing" state of MESSenger delta (Where you can use chat at Facebook itself, not on MESSenger.com)
+||facebook.com/*?modules=MessengerWebDeltasTypedLogger$important
+||m.facebook.com/*?modules=MessengerWebDeltasTypedLogger$important
+||mbasic.facebook.com/*?modules=MessengerWebDeltasTypedLogger$important
+
+
+
+! Prevent ping active status, this probably prevent your friends noticeable that you're online becaue allowing 'active_ping' and
+! 'reconnect.php' XHR will be expose online status, regardless of your active status settings that you've turned off already.
+||edge-chat.facebook.com/active_ping?$important
+||*-edge-chat.facebook.com/active_ping?$important
+||facebook.com/ajax/presence/reconnect.php?$important
+||m.facebook.com/ajax/presence/reconnect.php?$important
+||mbasic.facebook.com/ajax/presence/reconnect.php?$important
+
+! Prevent modules connections that autoplay GIF comments (May doesn't work at all!)
+! Noticed that Facebook start to autoplay GIF images in comments when you scroll to it, same behaviour of autoplay videos, maybe.
+||facebook.com/*?modules=FeedAnimatedImageShare$important
+||facebook.com/*?modules=UFI2CommentAnimatedImageAttachmentPlayer$important
+
+! Prevent connections to retrieve lists of zuckested pages to like or follow. (Desktop site only)
+! Probably not recommended because you will not allow to remove or delete those pages zuckestions!
+! I recommended to remove it out by copy bookmarklet scripts below before blocking this connections.
+! Note: Bookmarklet script is only work for english UI users only (UK, US, Pirate)
+! javascript:(function()%7Bvar%20divs%20%3D%20document.querySelectorAll('a%5Brole%3Dbutton%5D%5Bdata-tooltip-content%3D%22Remove%20Suggestion%22%5D')%3B%20for%20(i%20%3D%200%3B%20i%20%3C%20divs.length%3B%20%2B%2Bi)%20%7Bdivs%5Bi%5D.click()%3B%7D%7D)()
+||facebook.com/ajax/pagelet/generic.php/PagesBrowserTopSuggestionsPagelet$xmlhttprequest,important,redirect=nooptext
+
+! Probably bypassed connections that related to ads?
+||facebook.com/*/promotion_trigger_info/$important
+||facebook.com/goodwill/^$important,~document
+
+! Probably track the feed that posted by instant game via 'TimeSlice' module, if scrolled to game post.
+||facebook.com/*?modules=TimeSliceInteractionsLiteTypedLogger$important
+
+! /ajax/bz/ isn't enough?
+||facebook.com/ajax/ibl/$important
+
+! [Facebook Touch] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+! This possibly to tracking the news feed load time (In order to trigger the "Switch to Basic site" if news feed load too slow)
+||facebook.com/ajax/mtouch_perf_page_load_timings/$important
+
+! I want to remove "Open in app" pane when open Facebook Gaming Page from mobile browser, but currently I can only remove button.
+m.facebook.com,touch.facebook.com###root[role="main"] div[data-store-id] div[class] a[data-click*="open_in_app"]
+
+! Try to remove weird square box that divide almost every comments
+m.facebook.com,touch.facebook.com##div[data-sigil="comment"] section.touchable[data-ad-preview="carousel-card"]
+
+! Remove the "Add" ads interest after you've removed it
+! m.facebook.com,touch.facebook.com##.-hardstate-ads .accelerate div[class] > div[class][style] div[class] > a[data-sigil="add"]
+
+! Facebook Messaging Privacy Aware (is typing, seen message)
+||facebook.com/*/change_read_status.php$important
+||facebook.com/*/mark_seen.php$important
+||facebook.com/*/typ.php$important
+||messenger.com/*/change_read_status.php$important
+||messenger.com/*/mark_seen.php$important
+||messenger.com/*/typ.php$important
+! Facebook Messaging Privacy Aware (is typing, seen message)
+||m.facebook.com/*/change_read_status.php$important
+||m.facebook.com/*/mark_seen.php$important
+||m.facebook.com/*/typ.php$important
+||m.facebook.com/*/change_read_status.php$important
+||m.facebook.com/*/mark_seen.php$important
+||m.facebook.com/*/typ.php$important
+! Facebook Messaging Privacy Aware (is typing, seen message)
+||h.facebook.com/*/change_read_status.php$important
+||h.facebook.com/*/mark_seen.php$important
+||h.facebook.com/*/typ.php$important
+||h.messenger.com/*/change_read_status.php$important
+||h.messenger.com/*/mark_seen.php$important
+||h.messenger.com/*/typ.php$important
+! Facebook Messaging Privacy Aware (is typing, seen message)
+||mobile.facebook.com/*/change_read_status.php$important
+||mobile.facebook.com/*/mark_seen.php$important
+||mobile.facebook.com/*/typ.php$important
+||mobile.messenger.com/*/change_read_status.php$important
+||mobile.messenger.com/*/mark_seen.php$important
+||mobile.messenger.com/*/typ.php$important
+! Facebook Messaging Privacy Aware (is typing, seen message)
+||touch.facebook.com/*/change_read_status.php$important
+||touch.facebook.com/*/mark_seen.php$important
+||touch.facebook.com/*/typ.php$important
+||touch.messenger.com/*/change_read_status.php$important
+||touch.messenger.com/*/mark_seen.php$important
+||touch.messenger.com/*/typ.php$important
