@@ -1,5 +1,13 @@
 # Title: Social media hosts
 # Updated January 12, 2019
+# Apple
+0.0.0.0 0 mesu.apple.com
+0.0.0.0 0 ocsp.apple.com
+0.0.0.0 0 appldnld.apple.com
+127.0.0.1 mesu.apple.com
+127.0.0.1 ocsp.apple.com
+127.0.0.1 appldnld.apple.com
+127.0.0.1 mesu.apple.com
 
 # Facebook
 0.0.0.0 0-act.channel.facebook.com
