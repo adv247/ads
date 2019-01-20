@@ -19,15 +19,13 @@
 127.0.0.1 mesu.apple.com
 127.0.0.1 ocsp.apple.com
 127.0.0.1 appldnld.apple.com
-127.0.0.1	localhost
-0.0.0.0 0	localhost
-255.255.255.255	broadcasthost
+127.0.0.1       localhost
+0.0.0.0 0       localhost
+255.255.255.255 broadcasthost
 ::1             localhost 
-127.0.0.1	appldnld.apple.com
-
+127.0.0.1       appldnld.apple.com
 ||uptodate.apple.com^
 ||volume.apple.com^
-
 ||remoteadvisor.apple.com^
 ||remoteadvisor1.apple.com^
 ||remoteadvisor2.apple.com^
@@ -38,23 +36,11 @@
 ||movies.apple.com^
 ||movietrailers.apple.com^
 ||advertising.apple.com^
-
-
 ||beta.apple.com^
 ||certifications-test.apple.com^
 ||certifications.apple.com^
 ||certifications2.apple.com^
-
-
 ||trailers.apple.com^
-||uptodate.apple.com^
-||volume.apple.com^
-
-
-
-
-
-
 ||api-read.facebook.com/restserver.php?api_key=$third-party
 ||api.facebook.com^$third-party
 ||badge.facebook.com^$third-party
@@ -951,7 +937,6 @@ spotify.com/ads/*
 ||audio-akp-spotify-com.akamaized.net/audio/*$media,domain=open.spotify.com
 ||audio-fa.scdn.co/audio/$media,domain=open.spotify.com|play.spotify.com
 ||audio-fa.scdn.co/audio/*$media,redirect=noopmp3-0.1s,domain=open.spotify.com 
-
 [uBlock Origin 1.16.7.2]
 ! Title: Facebook Modules Commands List
 ! Version: 201901151318
@@ -2472,75 +2457,9 @@ linkis.com##.other-pages-holder .left-column
 linkis.com##.other-pages-holder .right-column
 linkis.com##.popup_force-auth
 linkis.com##.theme15-authorize
-
 ||facebook.com$domain=~www.facebook.com
 ||facebook.net$domain=~www.facebook.com
 ||fbcdn.net$domain=~www.facebook.com
-
-@@||www.facebook.com/ads/$elemhide
-@@||www.facebook.com/ajax/ads/$xmlhttprequest,domain=www.facebook.com
-###pagelet_side_ads
-##.adsCategoryIcon
-##.adsCategoryTitleLink
-/hads-
-apps.facebook.com##div[style="margin: 0px; width: 760px; height: 90px; text-align: center; vertical-align: middle;"]
-facebook.com###MessagingNetegoWrapper
-facebook.com###headerArea
-facebook.com###home_sponsor_nile
-facebook.com###home_stream > .uiUnifiedStory[data-ft*="\"ei\":\""]
-facebook.com###leaderboard
-facebook.com###pagelet_ads_when_no_friend_list_suggestion
-facebook.com###pagelet_games_rhc
-facebook.com###pagelet_growth_expanding_cta
-facebook.com##.-cx-PRIVATE-fbAdUnit__root
-facebook.com##.-cx-PRIVATE-fbEmu__root
-facebook.com##.-cx-PRIVATE-fbFacebarTypeaheadToken__sponsored
-facebook.com##.-cx-PRIVATE-snowliftAds__root
-facebook.com##.-cx-PRIVATE-spyml__story
-facebook.com##.-cx-PUBLIC-fbAdUnit__root
-facebook.com##._24n
-facebook.com##._24o
-facebook.com##._3qj-
-facebook.com##._4u8
-facebook.com##.adv
-facebook.com##.egoOrganicColumn
-facebook.com##.ego_spo
-facebook.com##.fbAdUnit
-facebook.com##.fbEmu
-facebook.com##.fbEmuBlock
-facebook.com##.fbEmuComboList
-facebook.com##.fbEmuEgo
-facebook.com##.fbEmuEgoUnit
-facebook.com##.fbEmuLink
-facebook.com##.fbPhotoAdsCol
-facebook.com##.fbTimelineSideAds
-facebook.com##.fixedAux .pbm
-facebook.com##.generic_dialog.pop_dialog.generic_dialog_modal
-facebook.com##.muffin.group
-facebook.com##.ownsection[role="option"]
-facebook.com##[data-referrer="pagelet_side_ads"]
-facebook.com##[href^="/ads/adboard/"]
-facebook.com##a[ajaxify^="/ajax/emu/end.php?"]
-facebook.com##a[href^="/ajax/emu/end.php?"]
-facebook.com##div[class="ego_column _5qrt"]
-facebook.com##div[class="ego_column _8_9"]
-facebook.com##div[class="ego_column pagelet _5qrt"]
-facebook.com##div[class="ego_column pagelet"]
-facebook.com##div[class="ego_column"]
-facebook.com##div[id^="sponsoredTickerStory_"]
-facebook.com##div[id^="substream_"] ._5jmm[data-dedupekey][data-cursor][data-ftr="1"][data-fte="1"]:not([data-timestamp])
-facebook.com##div[id^="substream_"] div[data-ft*="\"ei\":\""]
-facebook.com##div[id^="topnews_main_stream_"] div[data-ft*="\"ei\":\""]
-facebook.com##ul[id^="typeahead_list_"] > ._20e._6_k._55y_
-m.facebook.com,touch.facebook.com##.aymlCoverFlow
-m.facebook.com,touch.facebook.com##.aymlNewCoverFlow[data-ft*="\"is_sponsored\":\"1\""]
-m.facebook.com,touch.facebook.com##.pyml
-m.facebook.com,touch.facebook.com##.storyStream > ._6t2[data-sigil="marea"]
-m.facebook.com,touch.facebook.com##.storyStream > .fullwidth._539p
-m.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"]._676
-m.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"].storyAggregation
-||atdmt.com^$third-party
-||fbcdn.net^*/flyers/$domain=facebook.com
 mbasic.facebook.com,touch.facebook.com##.aymlCoverFlow
 mbasic.facebook.com,touch.facebook.com##.aymlNewCoverFlow[data-ft*="\"is_sponsored\":\"1\""]
 mbasic.facebook.com,touch.facebook.com##.pyml
@@ -2548,36 +2467,22 @@ mbasic.facebook.com,touch.facebook.com##.storyStream > ._6t2[data-sigil="marea"]
 mbasic.facebook.com,touch.facebook.com##.storyStream > .fullwidth._539p
 mbasic.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"]._676
 mbasic.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"].storyAggregation
-
 [uBlock Origin 1.17.5.3]
 ! Title: kowith337's Test List
 ! Version: 201901172151
-! Author: kowith337
-! Homepage: https://github.com/kowith337/PersonalFilterListCollection
-! Expires: 2 days
 ! Note: This list is for experimental and testing only, all rules in here will be change and/or remove at anytime.
-
 ! [Facebook Desktop] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ! DOM Only: Remove "Top Picks" product from marketplace lists, only work for english UI users only (UK, US, Pirate)
 facebook.com##div[data-testid="marketplace_home_feed"] div[class] > div[class]:has(span[itemcomponent]:has-text(/^Top picks/))
-
 ! DOM Only: Top videos for you...? No! Not Me and You! but for someone else!!
 ! Test case to hide every zuckestions of videos and leave only channel list from pages you're following... (pages tiles)
 ! See example at https://imgur.com/a/PAORHlg
 facebook.com##.fb_content div[class] > div[class] > #watch_feed
 facebook.com##.fb_content div[class] > div[class] > #watch_feed div[class] div[class][data-ft]:has(div span > div span a[href*="?referrer=video_home"])
-facebook.com##.fb_content div[class] > div[class] > #watch_feed
-facebook.com##.fb_content div[class] > div[class] > #watch_feed div[class] div[class][data-ft]:has(div span > div span a[href*="?referrer=video_home"])
 ! No idea what it does? probably logging frequency of people or page that you're chatting?
-||facebook.com/*?modules=ChatImpressionLogger$important
-
 ! Possibly tracking the "Typing" state of MESSenger delta (Where you can use chat at Facebook itself, not on MESSenger.com)
-||facebook.com/*?modules=MessengerWebDeltasTypedLogger$important
 ||m.facebook.com/*?modules=MessengerWebDeltasTypedLogger$important
 ||mbasic.facebook.com/*?modules=MessengerWebDeltasTypedLogger$important
-
-
-
 ! Prevent ping active status, this probably prevent your friends noticeable that you're online becaue allowing 'active_ping' and
 ! 'reconnect.php' XHR will be expose online status, regardless of your active status settings that you've turned off already.
 ||edge-chat.facebook.com/active_ping?$important
@@ -2585,41 +2490,75 @@ facebook.com##.fb_content div[class] > div[class] > #watch_feed div[class] div[c
 ||facebook.com/ajax/presence/reconnect.php?$important
 ||m.facebook.com/ajax/presence/reconnect.php?$important
 ||mbasic.facebook.com/ajax/presence/reconnect.php?$important
-
 ! Prevent modules connections that autoplay GIF comments (May doesn't work at all!)
 ! Noticed that Facebook start to autoplay GIF images in comments when you scroll to it, same behaviour of autoplay videos, maybe.
 ||facebook.com/*?modules=FeedAnimatedImageShare$important
 ||facebook.com/*?modules=UFI2CommentAnimatedImageAttachmentPlayer$important
-
 ! Prevent connections to retrieve lists of zuckested pages to like or follow. (Desktop site only)
 ! Probably not recommended because you will not allow to remove or delete those pages zuckestions!
 ! I recommended to remove it out by copy bookmarklet scripts below before blocking this connections.
 ! Note: Bookmarklet script is only work for english UI users only (UK, US, Pirate)
 ! javascript:(function()%7Bvar%20divs%20%3D%20document.querySelectorAll('a%5Brole%3Dbutton%5D%5Bdata-tooltip-content%3D%22Remove%20Suggestion%22%5D')%3B%20for%20(i%20%3D%200%3B%20i%20%3C%20divs.length%3B%20%2B%2Bi)%20%7Bdivs%5Bi%5D.click()%3B%7D%7D)()
 ||facebook.com/ajax/pagelet/generic.php/PagesBrowserTopSuggestionsPagelet$xmlhttprequest,important,redirect=nooptext
-
 ! Probably bypassed connections that related to ads?
 ||facebook.com/*/promotion_trigger_info/$important
 ||facebook.com/goodwill/^$important,~document
-
 ! Probably track the feed that posted by instant game via 'TimeSlice' module, if scrolled to game post.
 ||facebook.com/*?modules=TimeSliceInteractionsLiteTypedLogger$important
-
 ! /ajax/bz/ isn't enough?
 ||facebook.com/ajax/ibl/$important
-
 ! [Facebook Touch] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ! This possibly to tracking the news feed load time (In order to trigger the "Switch to Basic site" if news feed load too slow)
 ||facebook.com/ajax/mtouch_perf_page_load_timings/$important
-
 ! I want to remove "Open in app" pane when open Facebook Gaming Page from mobile browser, but currently I can only remove button.
 m.facebook.com,touch.facebook.com###root[role="main"] div[data-store-id] div[class] a[data-click*="open_in_app"]
-
 ! Try to remove weird square box that divide almost every comments
 m.facebook.com,touch.facebook.com##div[data-sigil="comment"] section.touchable[data-ad-preview="carousel-card"]
-
 ! Remove the "Add" ads interest after you've removed it
 ! m.facebook.com,touch.facebook.com##.-hardstate-ads .accelerate div[class] > div[class][style] div[class] > a[data-sigil="add"]
+! Facebook Messaging Privacy Aware (is typing, seen message)
+||facebook.com/*/change_read_status.php$important
+||facebook.com/*/mark_seen.php$important
+||facebook.com/*/typ.php$important
+||messenger.com/*/change_read_status.php$important
+||messenger.com/*/mark_seen.php$important
+||messenger.com/*/typ.php$important
+||m.facebook.com/*/change_read_status.php$important
+||m.facebook.com/*/mark_seen.php$important
+||m.facebook.com/*/typ.php$important
+||h.facebook.com/*/change_read_status.php$important
+||h.facebook.com/*/mark_seen.php$important
+||h.facebook.com/*/typ.php$important
+||h.messenger.com/*/change_read_status.php$important
+||h.messenger.com/*/mark_seen.php$important
+||h.messenger.com/*/typ.php$important
+||mobile.facebook.com/*/change_read_status.php$important
+||mobile.facebook.com/*/mark_seen.php$important
+||mobile.facebook.com/*/typ.php$important
+||mobile.messenger.com/*/change_read_status.php$important
+||mobile.messenger.com/*/mark_seen.php$important
+||mobile.messenger.com/*/typ.php$important
+||touch.facebook.com/*/change_read_status.php$important
+||touch.facebook.com/*/mark_seen.php$important
+||touch.facebook.com/*/typ.php$important
+||touch.messenger.com/*/change_read_status.php$important
+||touch.messenger.com/*/mark_seen.php$important
+||touch.messenger.com/*/typ.php$important
+||adf.ly^$important
+||bit.do/*^$important
+||bit.ly/*^$important
+||biturl.io^$important
+||cur.lv^$important
+||dr.tl/*^$important
+||go.budurl.co^$important
+||hackforu.ms^$important
+||shorte.st^$important
+||slsh.us^$important
+||taveo.net/*^$important
+||tldr.ly^$important
+||weblb-wg.dual-gslb.spotify.com^
+||weblb-wg.gslb.spotify.com^
+||spclient.wg.spotify.com^
 
 ! Facebook Messaging Privacy Aware (is typing, seen message)
 ||facebook.com/*/change_read_status.php$important
@@ -2656,27 +2595,3 @@ m.facebook.com,touch.facebook.com##div[data-sigil="comment"] section.touchable[d
 ||touch.messenger.com/*/change_read_status.php$important
 ||touch.messenger.com/*/mark_seen.php$important
 ||touch.messenger.com/*/typ.php$important
-
-!||badges.instagram.com^
-||api.instagram.com^
-||cdninstagram.com^
-||instagram.com^
-||www.instagram.com^
-
-||adf.ly^$important
-||bit.do/*^$important
-||bit.ly/*^$important
-||biturl.io^$important
-||cur.lv^$important
-||dr.tl/*^$important
-||go.budurl.co^$important
-||hackforu.ms^$important
-||shorte.st^$important
-||slsh.us^$important
-||taveo.net/*^$important
-||tldr.ly^$important
-
-||weblb-wg.dual-gslb.spotify.com^
-||weblb-wg.gslb.spotify.com^
-||adeventtracker.spotify.com^
-||spclient.wg.spotify.com^
