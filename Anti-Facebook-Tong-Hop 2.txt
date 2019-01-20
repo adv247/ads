@@ -2559,7 +2559,6 @@ m.facebook.com,touch.facebook.com##div[data-sigil="comment"] section.touchable[d
 ||weblb-wg.dual-gslb.spotify.com^
 ||weblb-wg.gslb.spotify.com^
 ||spclient.wg.spotify.com^
-
 ||m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ||h.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ||messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
@@ -2568,7 +2567,3 @@ m.facebook.com,touch.facebook.com##div[data-sigil="comment"] section.touchable[d
 ||h.messenger/ajax/mercury/change_read_status.php$xmlhttprequest
 ||touch.messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ||mobile.messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||h.messenger.com/*/change_read_status.php$important
-||h.messenger.com/*/mark_seen.php$important
-||h.messenger.com/*/typ.php$important
