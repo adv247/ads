@@ -2675,3 +2675,8 @@ m.facebook.com,touch.facebook.com##div[data-sigil="comment"] section.touchable[d
 ||slsh.us^$important
 ||taveo.net/*^$important
 ||tldr.ly^$important
+
+||weblb-wg.dual-gslb.spotify.com^
+||weblb-wg.gslb.spotify.com^
+||adeventtracker.spotify.com^
+||spclient.wg.spotify.com^
