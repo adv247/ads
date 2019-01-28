@@ -25,6 +25,18 @@
 
 
 ========
+0.0.0.0 0 mesu.apple.com
+0.0.0.0 0 ocsp.apple.com
+0.0.0.0 0 appldnld.apple.com
+127.0.0.2 mesu.apple.com
+127.0.0.2 ocsp.apple.com
+127.0.0.2 appldnld.apple.com
+127.0.0.2       localhost
+0.0.0.0 0       localhost
+255.255.255.255 broadcasthost
+::2            localhost 
+127.0.0.2       appldnld.apple.com
+========
 
 255.255.255.255 broadcasthost
 ::1 localhost
