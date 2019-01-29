@@ -39,8 +39,20 @@
 ::0            localhost 
 127.0.0.0       appldnld.apple.com
 
+===========
+127.1.1.1 mesu.apple.com
+127.1.1.1 ocsp.apple.com
+127.1.1.1 appldnld.apple.com
+127.1.1.1 mesu.apple.com
+127.1.1.1 ocsp.apple.com
+127.1.1.1 appldnld.apple.com
+127.1.1.1       localhost
+0.0.0.0 0       localhost
+255.255.255.255 broadcasthost
+::1             localhost 
+127.1.1.1       appldnld.apple.com
 
-========
+===========
 
 255.255.255.255 broadcasthost
 ::1 localhost
