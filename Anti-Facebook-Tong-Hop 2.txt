@@ -91,6 +91,34 @@ ff02::3 ip6-allhosts
 0.0.0.0 0.0.0.0
 
 ============
+||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+basic.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+o.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+beta.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+h.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+web.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+zero.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+mobile.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||basic.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||o.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||beta.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||h.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||web.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||zero.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||mobile.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+
+
+
+
 =====
 ||uptodate.apple.com^
 ||volume.apple.com^
