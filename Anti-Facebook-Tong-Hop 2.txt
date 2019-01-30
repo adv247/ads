@@ -2663,3 +2663,77 @@ m.facebook.com,touch.facebook.com##div[data-sigil="comment"] section.touchable[d
 ||h.messenger/ajax/mercury/change_read_status.php$xmlhttprequest
 ||touch.messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ||mobile.messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
+basic.facebook.com,touch.facebook.com##.aymlCoverFlow
+basic.facebook.com,touch.facebook.com##.aymlNewCoverFlow[data-ft*="\"is_sponsored\":\"1\""]
+basic.facebook.com,touch.facebook.com##.pyml
+basic.facebook.com,touch.facebook.com##.storyStream > ._6t2[data-sigil="marea"]
+basic.facebook.com,touch.facebook.com##.storyStream > .fullwidth._539p
+basic.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"]._676
+basic.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"].storyAggregation
+
+mobile.facebook.com,touch.facebook.com##.aymlCoverFlow
+mobile.facebook.com,touch.facebook.com##.aymlNewCoverFlow[data-ft*="\"is_sponsored\":\"1\""]
+mobile.facebook.com,touch.facebook.com##.pyml
+mobile.facebook.com,touch.facebook.com##.storyStream > ._6t2[data-sigil="marea"]
+mobile.facebook.com,touch.facebook.com##.storyStream > .fullwidth._539p
+mobile.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"]._676
+mobile.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"].storyAggregation
+
+mbasic.facebook.com,touch.facebook.com##.aymlCoverFlow
+mbasic.facebook.com,touch.facebook.com##.aymlNewCoverFlow[data-ft*="\"is_sponsored\":\"1\""]
+mbasic.facebook.com,touch.facebook.com##.pyml
+mbasic.facebook.com,touch.facebook.com##.storyStream > ._6t2[data-sigil="marea"]
+mbasic.facebook.com,touch.facebook.com##.storyStream > .fullwidth._539p
+mbasic.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"]._676
+mbasic.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"].storyAggregation
+
+facebook.com/*/change_read_status.php$important
+facebook.com/*/mark_seen.php$important
+facebook.com/*/typ.php$important
+messenger.com/*/change_read_status.php$important
+messenger.com/*/mark_seen.php$important
+messenger.com/*/typ.php$important
+m.facebook.com/*/change_read_status.php$important
+m.facebook.com/*/mark_seen.php$important
+m.facebook.com/*/typ.php$important
+h.facebook.com/*/change_read_status.php$important
+h.facebook.com/*/mark_seen.php$important
+h.facebook.com/*/typ.php$important
+h.messenger.com/*/change_read_status.php$important
+h.messenger.com/*/mark_seen.php$important
+h.messenger.com/*/typ.php$important
+mobile.facebook.com/*/change_read_status.php$important
+mobile.facebook.com/*/mark_seen.php$important
+mobile.facebook.com/*/typ.php$important
+mobile.messenger.com/*/change_read_status.php$important
+mobile.messenger.com/*/mark_seen.php$important
+mobile.messenger.com/*/typ.php$important
+touch.facebook.com/*/change_read_status.php$important
+touch.facebook.com/*/mark_seen.php$important
+touch.facebook.com/*/typ.php$important
+touch.messenger.com/*/change_read_status.php$important
+touch.messenger.com/*/mark_seen.php$important
+touch.messenger.com/*/typ.php$important
+adf.ly^$important
+bit.do/*^$important
+bit.ly/*^$important
+biturl.io^$important
+cur.lv^$important
+dr.tl/*^$important
+go.budurl.co^$important
+hackforu.ms^$important
+shorte.st^$important
+slsh.us^$important
+taveo.net/*^$important
+tldr.ly^$important
+weblb-wg.dual-gslb.spotify.com^
+weblb-wg.gslb.spotify.com^
+spclient.wg.spotify.com^
+m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+h.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
+mobile.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+touch.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+h.messenger/ajax/mercury/change_read_status.php$xmlhttprequest
+touch.messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
+mobile.messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
