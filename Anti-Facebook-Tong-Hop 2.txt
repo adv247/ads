@@ -2701,7 +2701,6 @@ zero.facebook.com/*/typ.php$important
 ||zero.facebook.com/*/change_read_status.php$important
 ||zero.facebook.com/*/mark_seen.php$important
 ||zero.facebook.com/*/typ.php$important
-
 ! Facebook
 facebook.com,facebookcorewwwi.onion###u_0_6c
 facebook.com,facebookcorewwwi.onion###u_0_6d
@@ -2711,13 +2710,10 @@ m.facebook.com,m.facebookcorewwwi.onion###u_0_12
 facebook.com,facebookcorewwwi.onion###u_0_25
 facebook.com,facebookcorewwwi.onion###u_0_24
 facebook.com,facebookcorewwwi.onion###pagelet_loggedout_sign_up
-
 mbasic.facebook.com,mbasic.facebookcorewwwi.onion###mobile_login_bar
 mbasic.facebook.com,mbasic.facebookcorewwwi.onion###u_0_12
 mobile.facebook.com,mobile.facebookcorewwwi.onion###mobile_login_bar
 mobile.facebook.com,mobile.facebookcorewwwi.onion###u_0_12
-
-! Facebook
 ||facebook.com,facebookcorewwwi.onion###u_0_6c
 ||facebook.com,facebookcorewwwi.onion###u_0_6d
 ||facebook.com,facebookcorewwwi.onion###u_0_6e
@@ -2726,30 +2722,23 @@ mobile.facebook.com,mobile.facebookcorewwwi.onion###u_0_12
 ||facebook.com,facebookcorewwwi.onion###u_0_25
 ||facebook.com,facebookcorewwwi.onion###u_0_24
 ||facebook.com,facebookcorewwwi.onion###pagelet_loggedout_sign_up
-
 ||mbasic.facebook.com,mbasic.facebookcorewwwi.onion###mobile_login_bar
 ||mbasic.facebook.com,mbasic.facebookcorewwwi.onion###u_0_12
 ||mobile.facebook.com,mobile.facebookcorewwwi.onion###mobile_login_bar
 ||mobile.facebook.com,mobile.facebookcorewwwi.onion###u_0_12
-
-
 ==================
-
 ! Multi-domain
 ##.onp-sl-inner-wrap
 ##.onp-sl-outer-wrap
 ##.onp-sl-social-buttons
 ##.onp-sl-overlap-background
 ##.onp-sl-overlap-box
-
-
 ! Twitter
 twitter.com##.js-signup-call-out
 mobile.twitter.com##.rn-bnwqim.rn-gy4na3.rn-1mdbw0j.rn-9aemit.rn-wk8lta.rn-bcqeeo.rn-ifefl9.rn-11wrixw.rn-p1pxzi.rn-61z16t.rn-1mnahxq.rn-eqz5dr.rn-7vfszb.rn-1pxmb3b.rn-6koalj.rn-deolkf.rn-gxnn5r.rn-ndvcnb.rn-fnigne.rn-13yce4e.rn-mm0ijv.rn-rull8r.rn-14skgim.rn-1efd50x.rn-1oszu61.LqlkGmch > .rn-bnwqim.rn-gy4na3.rn-1mdbw0j.rn-9aemit.rn-wk8lta.rn-bcqeeo.rn-ifefl9.rn-11wrixw.rn-p1pxzi.rn-61z16t.rn-1mnahxq.rn-eqz5dr.rn-7vfszb.rn-1pxmb3b.rn-6koalj.rn-deolkf.rn-gxnn5r.rn-ndvcnb.rn-fnigne.rn-13yce4e.rn-mm0ijv.rn-rull8r.rn-14skgim.rn-1efd50x.rn-1oszu61._3wLZCidQ > .rn-bnwqim.rn-gy4na3.rn-1mdbw0j.rn-9aemit.rn-wk8lta.rn-bcqeeo.rn-ifefl9.rn-11wrixw.rn-p1pxzi.rn-61z16t.rn-1mnahxq.rn-eqz5dr.rn-7vfszb.rn-1pxmb3b.rn-6koalj.rn-deolkf.rn-gxnn5r.rn-ndvcnb.rn-fnigne.rn-13yce4e.rn-mm0ijv.rn-rull8r.rn-14skgim.rn-1efd50x.rn-1oszu61:nth-of-type(2)
 mobile.twitter.com##.toast
 twitter.com##.rn-1lgpqti.rn-13qz1uu.rn-bnwqim.rn-1gmp1p.rn-1tkzxud
 twitter.com##.rn-1lgpqti.rn-ipm5af.rn-zchlnj.rn-1xcajam
-
 ! Pinterest ↪️📛
 ! For very important notes about Pinterest, see https://github.com/DandelionSprout/adfilt/issues/26.
 pinterest.*##.FullPageModal__scroller
@@ -2761,55 +2750,253 @@ pinterest.*##footer > div[data-test-id="giftWrap"]
 pinterest.*##.Unauth__GiftWrapper
 pinterest.*##div[class="GrowthUnauthPinImage__imageDim"]
 pinterest.*##div[class^="_4j _4l _4m "]
-
 ! Pixiv ↪️📛
 pixiv.net###register-introduction-modal
 pixiv.net##.introduction-modal
 pixiv.net##.r18-image.front-centered
-
 ! Sysla (A Norwegian business-tailored newssite)
 sysla.no###agreement-popup
 sysla.no##.in.fade.modal-backdrop
 sysla.no##div.in.modal-backdrop
-
 ! GitHub
 github.com##.signup-prompt
-
 ! Opera Addons
 addons.opera.com###overlay
-
 ! Deezer
 deezer.com##.modal-wrapper
 deezer.com##.modal-backdrop
 deezer.com##.opened.modal
-
 ! Instagram
 instagram.com##.Fzijm.bR_3v
 instagram.com#?#.ZUqME:-abp-has(a[href^="/accounts/emailsignup/"])
 ! (Note to self: If these entries cease to work, replace them with "instagram.com#?#div[class*=" "]:-abp-has(> div > div > div > a[class][href^="/accounts/emailsignup/"])", as per https://github.com/DandelionSprout/adfilt/issues/25#issuecomment-458347604.)
-
 ! Ooopic
 ooopic.com###public-mask-login
-
 ! Reddit
 reddit.com##.listingsignupbar.infobar
-
 ! Stack Exchange and related sites
 stackexchange.com,askubuntu.com,serverfault.com,superuser.com,mathoverflow.net,stackapps.com#?#.js-dismissable-hero:-abp-contains(Sign up)
-
 ! Mr. Food
 mrfood.com###newsletterSignUpDivAnime
 mrfood.com###viewportGreyout
 mrfood.com##.in-content-container-coverage
-
 ! The Clever
 theclever.com###overlay_search
-
 ! Nijie ↪️📛
 nijie.info##.nijie_regist
 nijie.info##.warning_illust
 nijie.info##.twit-button
-
 ! thredUP
 thredup.com##.modal-underlay
 thredup.com##.redux-modal
+! Chrome
+!!! google.*##.gb_g (Deactivated because it broke the avatar button menu.)
+chrome.google.com##.Yb
+! Edge
+##.epb-default-color.epb-container.f-information.c-uhfh-alert
+! Opera
+! Firefox
+addons.mozilla.org##.DownloadFirefoxButton
+! Generic
+##.ViewInAppLink
+##a[href*=".app.link/"]
+reddit.com##a[href*=".app.link/"]:not(.PostHeader__post-link)
+reddit.com##a[class="TopButton"][href*=".app.link/"]
+reddit.com##.DualPartInterstitial
+reddit.com##.XPromoAdFeed
+reddit.com##.SnackBar
+reddit.com##.XPromoPill
+reddit.com##.XPromoPopup
+reddit.com##.xpromoMinimal
+! Imgur
+imgur.com##.getTheApp
+imgur.com##.get-the-app
+imgur.com##.FloatingOIA-container
+imgur.com##.AppBanner-text
+imgur.com##.PopOverBannerSmall
+imgur.com##.PopOverBannerFull
+! Misc
+/smart-app-banner.$script,stylesheet
+aftonbladet.se##._3aP1_
+soundcloud.com##.footer__appButtonContainer
+soundcloud.com##.upsellBanner__app
+accuweather.com###app-store-links
+.SmartMessage.$script,domain=weather.com
+!mobile.twitter.com##body > div > div[class]:not(#react-root) > div:not([aria-hidden]):has([role="button"])
+!mobile.twitter.com##body:style(overscroll-behavior-y: auto !important; overflow-y: scroll !important;)
+mobile.twitter.com##+js(addEventListener-defuser.js, scroll, (e))
+quora.com##html,body:style(overflow: auto !important; user-select: text !important;)
+quora.com##.PageWrapper:style(filter: none !important;)
+quora.com##.modal_bg
+yelp.*##.menu-bar-pitch_open-in-app
+/logos/$domain=google.co.jp|google.com
+google.co.jp###hplogo
+!##^にいぜんバグあり
+!suspendTabsUntilReady=trueでホームがgoogleの時に、##^でテキストがとりこぼしになる。そして##^があると###hplogoが無視されるので、テキストが表示されたままになってしまう
+!google.co.jp##^#hplogo
+google.co.jp###prm
+||www.google.co.jp/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png
+||www.google.co.jp/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png
+! 1001Tracklists ------------------------------------------------------------------------------------------------------------------------
+1001tracklists.com#@#[id][width]
+1001tracklists.com##.center.img15ad
+1001tracklists.com###artworkLeft
+1001tracklists.com###adLown
+1001tracklists.com###rightDiv
+1001tracklists.com##div:nth-of-type(1) > .noUser
+1001tracklists.com###wavoWrapperCenter
+1001tracklists.com###playerWidget
+1001tracklists.com##.socialShare
+! 9Clacks -------------------------------------------------------------------------------------------------------------------------------
+9clacks.org##.post-navigation
+9clacks.org###related_posts
+9clacks.org###respond
+9clacks.org##.single-post-thumb
+! DBR.EE --------------------------------------------------------------------------------------------------------------------------------
+dbr.ee##.alert-container
+dbr.ee##div.col-xs-12:nth-of-type(1) > .ad-container
+dbr.ee##.col-md-offset-0.col-md-4.col-sm-offset-2.col-sm-8.col-xs-12 > .ad-container
+dbr.ee##.footer-spacer
+! DownloadToxix -------------------------------------------------------------------------------------------------------------------------
+downloadtoxix.com###respond
+downloadtoxix.com###jp-relatedposts
+downloadtoxix.com##.related-posts.section
+downloadtoxix.com##.sd-sharing-enabled.sharedaddy
+downloadtoxix.com###custom_html-12
+downloadtoxix.com###colophon
+downloadtoxix.com##.header-image
+downloadtoxix.com###recent-posts-widget-with-thumbnails-3
+downloadtoxix.com###text-3
+downloadtoxix.com###glt-translate-trigger
+downloadtoxix.com##.site-description
+downloadtoxix.com##.post-navigation.navigation
+! EDMFull -------------------------------------------------------------------------------------------------------------------------------
+edmfull.com##.post-thumbnail
+edmfull.com###featured-content
+edmfull.com###site-header
+edmfull.com###top-posts-2
+edmfull.com###text-5
+edmfull.com###comments
+edmfull.com##.post-navigation.navigation
+edmfull.com###jp-relatedposts
+! iTD Music -----------------------------------------------------------------------------------------------------------------------------
+itdmusic.*###respond
+itdmusic.*###menu-item-57993
+itdmusic.*###menu-item-122862
+itdmusic.*###menu-item-47141
+itdmusic.*##.top-nav
+itdmusic.*###categort-posts-widget-3
+itdmusic.*###text-3
+itdmusic.*###meta-2
+itdmusic.*##.itdmu-widget.widget
+itdmusic.*###theme-footer
+itdmusic.*##.footer-bottom
+itdmusic.*###text-html-widget-2
+itdmusic.*###facebook-widget-3
+itdmusic.*##.share-post
+itdmusic.*##span:nth-of-type(4)
+itdmusic.*###M317017ScriptRootC211616
+itdmusic.*##.breaking-news
+! iTOPMUSIC -----------------------------------------------------------------------------------------------------------------------------
+itopmusic.com###comments-section
+itopmusic.com###secondary
+itopmusic.com##.g1-footer.g1-row-layout-page.g1-row
+! iTunes --------------------------------------------------------------------------------------------------------------------------------
+itunes.apple.com##.we-subscribe
+itunes.apple.com##.sosumi--subscribe.sosumi
+! LOVERSDANCE ---------------------------------------------------------------------------------------------------------------------------
+loversdance.club###wpp-2
+loversdance.club##.related-posts
+loversdance.club###disqus_thread
+loversdance.club###jp-relatedposts
+loversdance.club##.postauthor
+loversdance.club##.clearfix.primary-slider-container
+! Lovers of Dance -----------------------------------------------------------------------------------------------------------------------
+loversofdance.net###respond
+loversofdance.net##.post-navigation.navigation
+loversofdance.net###donation_buttons
+loversofdance.net###colophon
+loversofdance.net##.site-description
+loversofdance.net###top-posts-9
+loversofdance.net###recent-posts-widget-with-thumbnails-8
+loversofdance.net###jp-relatedposts
+loversofdance.net##.entry-footer > .comments-link
+loversofdance.net###menu-item-43327
+loversofdance.net###glt-translate-trigger
+loversofdance.net###recent-posts-widget-with-thumbnails-3
+loversofdance.net##.header-image
+! OnlyiPlus (MSB) -----------------------------------------------------------------------------------------------------------------------
+onlyiplus.net##.widget_list_mag_wp_300px.widget
+onlyiplus.net##div.widget_text.widget:nth-of-type(5)
+onlyiplus.net##footer
+onlyiplus.net##div.widget_text.widget:nth-of-type(9)
+onlyiplus.net##.homeadv
+onlyiplus.net###respond
+onlyiplus.net##.prev-articles
+onlyiplus.net###related-wrap
+onlyiplus.net##div.widget_text.widget:nth-of-type(7)
+onlyiplus.net#@#.top-social
+onlyiplus.net##.fa-facebook.fa
+onlyiplus.net##.fa-twitter.fa
+onlyiplus.net##.fa-instagram.fa
+onlyiplus.net##.fa-youtube.fa
+! Plus Premieres ------------------------------------------------------------------------------------------------------------------------
+@@||ads.themoneytizer.com$script,domain=pluspremieres.nz
+@@||hb.vntsm.com^$xmlhttprequest,domain=pluspremieres.nz
+@@||hb.vntsm.com/v3/live/ad-manager.min.js$script,domain=pluspremieres.nz
+cbox.ws###frmMain
+pluspremieres.*##+js(addEventListener-defuser.js, /^(?:contextmenu|copy|keydown)$/)
+pluspremieres.*###carousel
+pluspremieres.*###headline
+pluspremieres.*###post-bottom-wrap
+pluspremieres.*###\31 9905-1
+pluspremieres.*###\31 9905-28
+pluspremieres.*###\32 2232-1
+pluspremieres.*###\32 2232-28
+pluspremieres.*###\32 2232-3
+pluspremieres.*###\37 28x90bottom
+pluspremieres.*###\37 28x90top
+pluspremieres.*###\33 00x600
+! SoundCloud ----------------------------------------------------------------------------------------------------------------------------
+soundcloud.com##.visible.sc-border-light-bottom.featureHeader
+soundcloud.com##.g-flex-row-centered-spread.stream__header
+soundcloud.com##.signinInitialStep__socialSignin
+soundcloud.com##.signinInitialStep__divider
+soundcloud.com##p.sc-text-light.signin__text:nth-of-type(2)
+soundcloud.com##p.sc-text-light.signin__text:nth-of-type(3)
+! Spotify -------------------------------------------------------------------------------------------------------------------------------
+accounts.spotify.com##.content > div.row:nth-of-type(1)
+accounts.spotify.com##.content > div.row:nth-of-type(2)
+accounts.spotify.com##.content > .col-xs-12
+open.spotify.com##.navBar > ul
+open.spotify.com##.navBar > div:nth-of-type(2)
+||youtube.com/annotations_invideo?$object-subrequest
+! HTML5 version
+youtube.com##.video-annotations
+! Removes sharing tab below videos
+||youtube.com/share_ajax?action_get_share_box=1&video_id=$xmlhttprequest
+youtube.com##.action-panel-trigger[role="button"][data-trigger-for="action-panel-share"]
+youtube.com##.yt-uix-button[data-trigger-for="action-panel-share"]
+||youtube.com/live_chat_fragments_ajax?$xmlhttprequest
+||youtube.com/comment_service_ajax?$domain=youtube.com
+youtube.com###comments
+! Removes all annotations in videos
+! Removes video suggestions on video pages
+youtube.com##.watch-sidebar-body > #watch-related > .related-list-item > .related-video
+youtube.com##.watch-sidebar-body > #watch-related > .related-list-item
+! Removes recommended channels on home page, susbcriptions page and feed
+youtube.com##.home .branded-page-v2-secondary-col
+youtube.com##.feed .branded-page-v2-secondary-col
+youtube.com##.guide-builder-v2 .branded-page-v2-secondary-col
+! Removes recommended and featured videos in the endscreen
+||ytimg.com/yts/swfbin/player-*/endscreen.swf$object-subrequest,domain=youtube.com
+youtube.com##.html5-endscreen-content
+youtube.com##.html5-endscreen
+! Removes related/featured/popular channels on channel pages
+youtube.com##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip
+youtube.com##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip + .branded-page-related-channels-list
+! "Subscribe to see more videos from this channel" on home page after watching some video of a channel
+youtube.com###channel-subscription-promo-in-feed
+youtube.com##.branded-page-v2-col-container > .branded-page-v2-col-container-inner > .branded-page-v2-secondary-col:last-child > .branded-page-box:first-child:last-child
+youtube.com##.branded-page-v2-col-container > .branded-page-v2-col-container-inner > .branded-page-v2-secondary-col:last-child > .branded-page-related-channels:first-child + .branded-page-box:last-child
+
