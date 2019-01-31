@@ -24,37 +24,19 @@
 255.255.255.255 broadcasthost
 ::1             localhost 
 127.0.0.1       appldnld.apple.com
-
-
 =====
-0.0.0.0 0 mesu.apple.com
-0.0.0.0 0 ocsp.apple.com
-0.0.0.0 0 appldnld.apple.com
 127.0.0.0 mesu.apple.com
 127.0.0.0 ocsp.apple.com
 127.0.0.0 appldnld.apple.com
 127.0.0.0       localhost
-0.0.0.0 0       localhost
-255.255.255.255 broadcasthost
 ::0            localhost 
 127.0.0.0       appldnld.apple.com
-
 ===========
-127.1.1.1 mesu.apple.com
-127.1.1.1 ocsp.apple.com
-127.1.1.1 appldnld.apple.com
 127.1.1.1 mesu.apple.com
 127.1.1.1 ocsp.apple.com
 127.1.1.1 appldnld.apple.com
 127.1.1.1       localhost
-0.0.0.0 0       localhost
-255.255.255.255 broadcasthost
-::1             localhost 
 127.1.1.1       appldnld.apple.com
-
-===========
-
-255.255.255.255 broadcasthost
 ::1 localhost
 ::1 ip6-localhost
 ::1 ip6-loopback
@@ -65,31 +47,12 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 ff02::3 ip6-allhosts
 0.0.0.0 0.0.0.0
-
-255.255.255.255 broadcasthost
 ::0 localhost
 ::0 ip6-localhost
 ::0 ip6-loopback
-fe80::1%lo0 localhost
-ff00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
 ff02::0 ip6-allnodes
 ff02::0 ip6-allrouters
 ff02::0 ip6-allhosts
-0.0.0.0 0.0.0.0
-
-255.255.255.255 broadcasthost
-::1 localhost
-::1 ip6-localhost
-::1 ip6-loopback
-fe80::1%lo0 localhost
-ff00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-ff02::3 ip6-allhosts
-0.0.0.0 0.0.0.0
-
 ============
 ||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
@@ -99,9 +62,7 @@ beta.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 h.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 web.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 zero.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 mobile.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ||basic.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ||o.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ||beta.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
@@ -110,16 +71,6 @@ mobile.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ||zero.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ||m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ||mobile.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-
-
-
-
-=====
 ||uptodate.apple.com^
 ||volume.apple.com^
 ||remoteadvisor.apple.com^
@@ -2011,7 +1962,6 @@ yts.am##^script:has-text(function)
 ! Title: Message "seen" Remover for Facebook
 ! Last modified: 19 Jan 2019 04:12 UTC
 ! Expires: 4 days (update frequency)
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ! YouTube -------------------------------------------------------------------------------------------------------------------------------
 youtube.com###masthead-ad
 youtube.com##.ytp-ce-covering-overlay
@@ -2655,10 +2605,7 @@ m.facebook.com,touch.facebook.com##div[data-sigil="comment"] section.touchable[d
 ||weblb-wg.dual-gslb.spotify.com^
 ||weblb-wg.gslb.spotify.com^
 ||spclient.wg.spotify.com^
-||m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||h.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ||messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||mobile.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ||touch.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ||h.messenger/ajax/mercury/change_read_status.php$xmlhttprequest
 ||touch.messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
@@ -2670,7 +2617,6 @@ basic.facebook.com,touch.facebook.com##.storyStream > ._6t2[data-sigil="marea"]
 basic.facebook.com,touch.facebook.com##.storyStream > .fullwidth._539p
 basic.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"]._676
 basic.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"].storyAggregation
-
 mobile.facebook.com,touch.facebook.com##.aymlCoverFlow
 mobile.facebook.com,touch.facebook.com##.aymlNewCoverFlow[data-ft*="\"is_sponsored\":\"1\""]
 mobile.facebook.com,touch.facebook.com##.pyml
@@ -2678,15 +2624,6 @@ mobile.facebook.com,touch.facebook.com##.storyStream > ._6t2[data-sigil="marea"]
 mobile.facebook.com,touch.facebook.com##.storyStream > .fullwidth._539p
 mobile.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"]._676
 mobile.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"].storyAggregation
-
-mbasic.facebook.com,touch.facebook.com##.aymlCoverFlow
-mbasic.facebook.com,touch.facebook.com##.aymlNewCoverFlow[data-ft*="\"is_sponsored\":\"1\""]
-mbasic.facebook.com,touch.facebook.com##.pyml
-mbasic.facebook.com,touch.facebook.com##.storyStream > ._6t2[data-sigil="marea"]
-mbasic.facebook.com,touch.facebook.com##.storyStream > .fullwidth._539p
-mbasic.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"]._676
-mbasic.facebook.com,touch.facebook.com##.storyStream > article[id^="u_"].storyAggregation
-
 facebook.com/*/change_read_status.php$important
 facebook.com/*/mark_seen.php$important
 facebook.com/*/typ.php$important
@@ -2729,238 +2666,42 @@ tldr.ly^$important
 weblb-wg.dual-gslb.spotify.com^
 weblb-wg.gslb.spotify.com^
 spclient.wg.spotify.com^
-m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-h.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
-mobile.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 touch.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 h.messenger/ajax/mercury/change_read_status.php$xmlhttprequest
 touch.messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
 mobile.messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
-mbasic.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-
-
 =========
-
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-mbasic.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-o.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-beta.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-h.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-web.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-zero.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-mobile.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
-facebook.com/*/change_read_status.php$important
-facebook.com/*/mark_seen.php$important
-facebook.com/*/typ.php$important
-messenger.com/*/change_read_status.php$important
-messenger.com/*/mark_seen.php$important
-messenger.com/*/typ.php$important
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||basic.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||o.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||beta.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||h.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||web.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||zero.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||mobile.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
-
-
-
-||facebook.com/*/change_read_status.php$important
-||facebook.com/*/mark_seen.php$important
-||facebook.com/*/typ.php$important
-||messenger.com/*/change_read_status.php$important
-||messenger.com/*/mark_seen.php$important
-||messenger.com/*/typ.php$important
-
-============
-facebook.com/*/change_read_status.php$important
-facebook.com/*/mark_seen.php$important
-facebook.com/*/typ.php$important
-messenger.com/*/change_read_status.php$important
-messenger.com/*/mark_seen.php$important
-messenger.com/*/typ.php$important
-
 ==
-
-m.facebook.com/*/change_read_status.php$important
-m.facebook.com/*/mark_seen.php$important
-m.facebook.com/*/typ.php$important
-m.facebook.com/*/change_read_status.php$important
-m.facebook.com/*/mark_seen.php$important
-m.facebook.com/*/typ.php$important
-
-==
-
 mbasic.facebook.com/*/change_read_status.php$important
 mbasic.facebook.com/*/mark_seen.php$important
 mbasic.facebook.com/*/typ.php$important
-mbasic.facebook.com/*/change_read_status.php$important
-mbasic.facebook.com/*/mark_seen.php$important
-mbasic.facebook.com/*/typ.php$important
-
-==
 beta.facebook.com/*/change_read_status.php$important
 beta.facebook.com/*/mark_seen.php$important
 beta.facebook.com/*/typ.php$important
-beta.facebook.com/*/change_read_status.php$important
-beta.facebook.com/*/mark_seen.php$important
-beta.facebook.com/*/typ.php$important
-
-==
-h.facebook.com/*/change_read_status.php$important
-h.facebook.com/*/mark_seen.php$important
-h.facebook.com/*/typ.php$important
-h.facebook.com/*/change_read_status.php$important
-h.facebook.com/*/mark_seen.php$important
-h.facebook.com/*/typ.php$important
-
 ========
-
 web.facebook.com/*/change_read_status.php$important
 web.facebook.com/*/mark_seen.php$important
 web.facebook.com/*/typ.php$important
-web.facebook.com/*/change_read_status.php$important
-web.facebook.com/*/mark_seen.php$important
-web.facebook.com/*/typ.php$important
-
 =======
-
 zero.facebook.com/*/change_read_status.php$important
 zero.facebook.com/*/mark_seen.php$important
 zero.facebook.com/*/typ.php$important
-zero.facebook.com/*/change_read_status.php$important
-zero.facebook.com/*/mark_seen.php$important
-zero.facebook.com/*/typ.php$important
-
-
-=====
-
-m.facebook.com/*/change_read_status.php$important
-m.facebook.com/*/mark_seen.php$important
-m.facebook.com/*/typ.php$important
-m.facebook.com/*/change_read_status.php$important
-m.facebook.com/*/mark_seen.php$important
-m.facebook.com/*/typ.php$important
-
 ======
-
-mobile.facebook.com/*/change_read_status.php$important
-mobile.facebook.com/*/mark_seen.php$important
-mobile.facebook.com/*/typ.php$important
-mobile.facebook.com/*/change_read_status.php$important
-mobile.facebook.com/*/mark_seen.php$important
-mobile.facebook.com/*/typ.php$important
-
 ===
-
-messenger.com/*/change_read_status.php$important
-messenger.com/*/mark_seen.php$important
-messenger.com/*/typ.php$important
-messenger.com/*/change_read_status.php$important
-messenger.com/*/mark_seen.php$important
-messenger.com/*/typ.php$important
-
-==
-
-||facebook.com/*/change_read_status.php$important
-||facebook.com/*/mark_seen.php$important
-||facebook.com/*/typ.php$important
-||messenger.com/*/change_read_status.php$important
-||messenger.com/*/mark_seen.php$important
-||messenger.com/*/typ.php$important
-
-==
-
-||m.facebook.com/*/change_read_status.php$important
-||m.facebook.com/*/mark_seen.php$important
-||m.facebook.com/*/typ.php$important
-||m.facebook.com/*/change_read_status.php$important
-||m.facebook.com/*/mark_seen.php$important
-||m.facebook.com/*/typ.php$important
-
-==
-
 ||mbasic.facebook.com/*/change_read_status.php$important
 ||mbasic.facebook.com/*/mark_seen.php$important
 ||mbasic.facebook.com/*/typ.php$important
-||mbasic.facebook.com/*/change_read_status.php$important
-||mbasic.facebook.com/*/mark_seen.php$important
-||mbasic.facebook.com/*/typ.php$important
-
-==
 ||beta.facebook.com/*/change_read_status.php$important
 ||beta.facebook.com/*/mark_seen.php$important
 ||beta.facebook.com/*/typ.php$important
-||beta.facebook.com/*/change_read_status.php$important
-||beta.facebook.com/*/mark_seen.php$important
-||beta.facebook.com/*/typ.php$important
-
-==
-||h.facebook.com/*/change_read_status.php$important
-||h.facebook.com/*/mark_seen.php$important
-||h.facebook.com/*/typ.php$important
-||h.facebook.com/*/change_read_status.php$important
-||h.facebook.com/*/mark_seen.php$important
-||h.facebook.com/*/typ.php$important
-
-========
-
 ||web.facebook.com/*/change_read_status.php$important
 ||web.facebook.com/*/mark_seen.php$important
 ||web.facebook.com/*/typ.php$important
-||web.facebook.com/*/change_read_status.php$important
-||web.facebook.com/*/mark_seen.php$important
-||web.facebook.com/*/typ.php$important
-
-=======
-
-||zero.facebook.com/*/change_read_status.php$important
-||zero.facebook.com/*/mark_seen.php$important
-||zero.facebook.com/*/typ.php$important
 ||zero.facebook.com/*/change_read_status.php$important
 ||zero.facebook.com/*/mark_seen.php$important
 ||zero.facebook.com/*/typ.php$important
 
-
-=====
-
-||m.facebook.com/*/change_read_status.php$important
-||m.facebook.com/*/mark_seen.php$important
-||m.facebook.com/*/typ.php$important
-||m.facebook.com/*/change_read_status.php$important
-||m.facebook.com/*/mark_seen.php$important
-||m.facebook.com/*/typ.php$important
-
-======
-
-||mobile.facebook.com/*/change_read_status.php$important
-||mobile.facebook.com/*/mark_seen.php$important
-||mobile.facebook.com/*/typ.php$important
-||mobile.facebook.com/*/change_read_status.php$important
-||mobile.facebook.com/*/mark_seen.php$important
-||mobile.facebook.com/*/typ.php$important
-
-===
-
-||messenger.com/*/change_read_status.php$important
-||messenger.com/*/mark_seen.php$important
-||messenger.com/*/typ.php$important
-||messenger.com/*/change_read_status.php$important
-||messenger.com/*/mark_seen.php$important
-||messenger.com/*/typ.php$important
-
-==
 
 
 
