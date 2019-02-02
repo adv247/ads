@@ -11,6 +11,31 @@
 ::1             localhost 
 127.0.0.1	appldnld.apple.com
 
+=========================
+mesu.apple.com
+ocsp.apple.com
+appldnld.apple.com
+app-mesaurement.com
+ppq.apple.com
+
+
+0.0.0.0 0 mesu.apple.com
+0.0.0.0 0 ocsp.apple.com
+0.0.0.0 0 appldnld.apple.com
+0.0.0.0 0 app-mesaurement.com
+0.0.0.0 0 ppq.apple.com
+
+127.0.0.1 mesu.apple.com
+127.0.0.1 ocsp.apple.com
+127.0.0.1 appldnld.apple.com
+127.0.0.1 app-mesaurement.com
+127.0.0.1 ppq.apple.com
+
+127.1.1.1 mesu.apple.com
+127.1.1.1 ocsp.apple.com
+127.1.1.1 appldnld.apple.com
+127.1.1.1 app-mesaurement.com
+127.1.1.1 ppq.apple.com
 
 =========================
 127.1.1.1 mesu.apple.com
