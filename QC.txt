@@ -5,6 +5,9 @@ https://www.eff.org/files/cookieblocklist.txt
 https://filters.adtidy.org/extension/chromium/filters/11.txt
 https://filters.adtidy.org/extension/chromium/filters/12.txt
 https://filters.adtidy.org/windows/filters/15.txt
+https://filters.adtidy.org/windows/filters/14.txt
+https://adguard.com/en/filter-rules.html?id=14
+
 https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_facebook0.txt
 https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/test/hosts_facebook0.txt
 https://filters.adtidy.org/extension/chromium/filters/4.txt
