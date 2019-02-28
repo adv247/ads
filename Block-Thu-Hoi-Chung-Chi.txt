@@ -2,12 +2,9 @@
 127.0.0.1 appldnld.apple.com
 127.0.0.1 mesu.apple.com
 
-mesu.apple.com
-ocsp.apple.com
-appldnld.apple.com
-5.2.76.189
-2a04:52c0:101:1cd::d3c8
-world-gen.g.aaplimg.com
-ppg.apple.com
-gdmf.apple.com
-intowow.applefeed.com.tw
+127.0.0.1 5.2.76.189
+127.0.0.1 2a04:52c0:101:1cd::d3c8
+127.0.0.1 world-gen.g.aaplimg.com
+127.0.0.1 ppg.apple.com
+127.0.0.1 gdmf.apple.com
+127.0.0.1 intowow.applefeed.com.tw
