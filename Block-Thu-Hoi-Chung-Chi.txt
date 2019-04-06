@@ -8,3 +8,14 @@
 127.0.0.1 ppg.apple.com
 127.0.0.1 gdmf.apple.com
 127.0.0.1 intowow.applefeed.com.tw
+
+0.0.0.0 oscp.apple.com
+0.0.0.0 appldnld.apple.com
+0.0.0.0 mesu.apple.com
+
+0.0.0.0 5.2.76.189
+0.0.0.0 2a04:52c0:101:1cd::d3c8
+0.0.0.0 world-gen.g.aaplimg.com
+0.0.0.0 ppg.apple.com
+0.0.0.0 gdmf.apple.com
+0.0.0.0 intowow.applefeed.com.tw
