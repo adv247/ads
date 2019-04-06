@@ -16,43 +16,6 @@
 0.0.0.0 0 mesu.apple.com
 0.0.0.0 0 ocsp.apple.com
 0.0.0.0 0 appldnld.apple.com
-127.0.0.1 mesu.apple.com
-127.0.0.1 ocsp.apple.com
-127.0.0.1 appldnld.apple.com
-127.0.0.1       localhost
-0.0.0.0 0       localhost
-255.255.255.255 broadcasthost
-::1             localhost 
-127.0.0.1       appldnld.apple.com
-=====
-127.0.0.0 mesu.apple.com
-127.0.0.0 ocsp.apple.com
-127.0.0.0 appldnld.apple.com
-127.0.0.0       localhost
-::0            localhost 
-127.0.0.0       appldnld.apple.com
-===========
-127.1.1.1 mesu.apple.com
-127.1.1.1 ocsp.apple.com
-127.1.1.1 appldnld.apple.com
-127.1.1.1       localhost
-127.1.1.1       appldnld.apple.com
-::1 localhost
-::1 ip6-localhost
-::1 ip6-loopback
-fe80::1%lo0 localhost
-ff00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-ff02::3 ip6-allhosts
-0.0.0.0 0.0.0.0
-::0 localhost
-::0 ip6-localhost
-::0 ip6-loopback
-ff02::0 ip6-allnodes
-ff02::0 ip6-allrouters
-ff02::0 ip6-allhosts
 ============
 ||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
 m.facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
