@@ -26,7 +26,7 @@
 0.0.0.0 www.gdmf.apple.com
 0.0.0.0 iadsdk.apple.com
 0.0.0.0 a.applvn.com
-
+0.0.0.0 xp.apple.com
 ||oscp.apple.com
 ||appldnld.apple.com
 ||mesu.apple.com
@@ -53,7 +53,7 @@
 ||ppq.apple.com^
 ||iadsdk.apple.com^
 ||a.applvn.com^
-
+||xp.apple.com
 ||oscp.apple.com^
 ||mesu.apple.com^
 ||5.2.76.189^
@@ -69,4 +69,4 @@
 ||www.gdmf.apple.com^
 ||iadsdk.apple.com^
 ||a.applvn.com^
-
+||xp.apple.com^
