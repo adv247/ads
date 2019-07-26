@@ -19,3 +19,54 @@
 0.0.0.0 ppg.apple.com
 0.0.0.0 gdmf.apple.com
 0.0.0.0 intowow.applefeed.com.tw
+
+0.0.0.0 ocsp.int-x3.letsencrypt.org
+0.0.0.0 world-gen.g.aaplimg.com
+0.0.0.0 gdmf.apple.com
+0.0.0.0 www.gdmf.apple.com
+0.0.0.0 iadsdk.apple.com
+0.0.0.0 a.applvn.com
+
+||oscp.apple.com
+||appldnld.apple.com
+||mesu.apple.com
+
+||5.2.76.189
+||2a04:52c0:101:1cd::d3c8
+||world-gen.g.aaplimg.com
+||ppg.apple.com
+||gdmf.apple.com
+||intowow.applefeed.com.tw
+
+||ocsp.int-x3.letsencrypt.org
+||world-gen.g.aaplimg.com
+||gdmf.apple.com
+||www.gdmf.apple.com
+||iadsdk.apple.com
+||a.applvn.com
+||ocsp.int-x3.letsencrypt.org^
+
+||world-gen.g.aaplimg.com^
+||mesu.apple.com^
+||gdmf.apple.com^
+||www.gdmf.apple.com^
+||ppq.apple.com^
+||iadsdk.apple.com^
+||a.applvn.com^
+
+||oscp.apple.com^
+||mesu.apple.com^
+||5.2.76.189^
+||2a04:52c0:101:1cd::d3c8^
+||world-gen.g.aaplimg.com^
+||ppg.apple.com^
+||gdmf.apple.com^
+||intowow.applefeed.com.tw^
+
+||ocsp.int-x3.letsencrypt.org^
+||world-gen.g.aaplimg.com^
+||gdmf.apple.com^
+||www.gdmf.apple.com^
+||iadsdk.apple.com^
+||a.applvn.com^
+
