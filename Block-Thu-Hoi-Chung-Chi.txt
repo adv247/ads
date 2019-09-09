@@ -1,4 +1,3 @@
-
 127.0.0.1 oscp.apple.com
 127.0.0.1 appldnld.apple.com
 127.0.0.1 mesu.apple.com
@@ -71,4 +70,10 @@ a.applvn.com
 127.0.0.1 ppq.apple.com
 127.0.0.1 iadsdk.apple.com
 127.0.0.1 a.applvn.com
-
+oscp.apple.com
+appldnld.apple.com
+5.2.76.189
+2a04:52c0:101:1cd::d3c8
+ppg.apple.com
+intowow.applefeed.com.tw
+xp.apple.com
