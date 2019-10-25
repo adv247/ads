@@ -233,13 +233,6 @@ hostsVN-quantumult, blacklist, https://raw.githubusercontent.com/bigdargon/hosts
 ^https?://messenger.com/ajax/mercury/change_read_status.php$xmlhttprequest
 ^https?://mobile.facebook.com,mobile.facebookcorewwwi.onion###mobile_login_bar
 ^https?://mobile.facebook.com,mobile.facebookcorewwwi.onion###u_0_12
-^https?://mobile.facebook.com,touch.facebook.com##.aymlCoverFlow
-^https?://mobile.facebook.com,touch.facebook.com##.aymlNewCoverFlow[data-ft*="\"is_sponsored\":\"1\""]
-^https?://mobile.facebook.com,touch.facebook.com##.pyml
-^https?://mobile.facebook.com,touch.facebook.com##.storyStream > ._6t2[data-sigil="marea"]
-^https?://mobile.facebook.com,touch.facebook.com##.storyStream > .fullwidth._539p
-^https?://mobile.facebook.com,touch.facebook.com##.storyStream > article[id="u_"]._676
-^https?://mobile.facebook.com,touch.facebook.com##.storyStream > article[id="u_"].storyAggregation
 ^https?://mobile.facebook.com/*/change_read_status.php$important
 ^https?://mobile.facebook.com/*/mark_seen.php$important
 ^https?://mobile.facebook.com/*/typ.php$important
@@ -323,88 +316,7 @@ hostsVN-quantumult, blacklist, https://raw.githubusercontent.com/bigdargon/hosts
 ^https?://zero.facebook.com/ajax/messaging/type.php
 ^https?://zero.facebook.com/ajax/messaging/type.php$xmlhttprequest
 ^https?://f.nanafiles.co.il/Common/Images/pixel.gif
-^https?://facebook.com$important,third-party
-^https?://facebook.com$third-party,domain=ynet.co.il
-^https?://facebook.com/*like.php$third-party
-^https?://facebook.com/*plugins/page.php
-^https?://facebook.com/*sdk.js
-^https?://facebook.com/RDXSports
-^https?://facebook.com/babylonsoftwareltd
-^https?://facebook.com/connect/ping
-^https?://facebook.com/fql
-^https?://facebook.com/offsite_event.php
-^https?://facebook.com/outbrain
-^https?://facebook.com/plugins/
-^https?://facebook.com/plugins/likebox.php
-^https?://facebook.com/sharer.php
-^https?://facebook.com/taboola
-^https?://facebook.com/tr
-^https?://facebook.com/tr*PageView
-^https?://facebook.net/*fbevents.js
-^https?://facebook.net/*like.php$third-party
-^https?://facebook.net/*sdk.js
-^https?://facebook.com##div#stream_pagelet
-^https?://facebook.com##div#pagelet_trending_tags_and_topics
-^https?://facebook.com##span.uiSideNavCount
-^https?://facebook.com##div.home_right_column
-^https?://facebook.com##div#pagelet_sidebar
-^https?://facebook.com###pagelet_trending_tags_and_topics
-^https?://facebook.com###pagelet_games_rhc
-^https?://facebook.com##.megaphone_location_pages_feed
-^https?://apps.facebook.com###rightCol
-^https?://facebook.com###pagelet_pymk_timeline
-^https?://f.nanafiles.co.il/Common/Images/pixel.gif
-^https?://facebook.com$important,third-party
-^https?://facebook.com$third-party,domain=ynet.co.il
-^https?://facebook.com/*like.php$third-party
-^https?://facebook.com/*plugins/page.php
-^https?://facebook.com/*sdk.js
-^https?://facebook.com/RDXSports
-^https?://facebook.com/babylonsoftwareltd
-^https?://facebook.com/connect/ping
-^https?://facebook.com/fql
-^https?://facebook.com/offsite_event.php
-^https?://facebook.com/outbrain
-^https?://facebook.com/plugins/
-^https?://facebook.com/plugins/likebox.php
-^https?://facebook.com/sharer.php
-^https?://facebook.com/taboola
-^https?://facebook.com/tr
-^https?://facebook.com/tr*PageView
-^https?://facebook.net/*fbevents.js
-^https?://facebook.net/*like.php$third-party
-^https?://facebook.net/*sdk.js
-^https?://facebook.com##div#stream_pagelet/*
-^https?://facebook.com##div#pagelet_trending_tags_and_topics/*
-^https?://facebook.com##span.uiSideNavCount/*
-^https?://facebook.com##div.home_right_column/*
-^https?://facebook.com##div#pagelet_sidebar/*
-^https?://facebook.com###pagelet_trending_tags_and_topics/*
-^https?://facebook.com###pagelet_games_rhc/*
-^https?://facebook.com##.megaphone_location_pages_feed/*
-^https?://apps.facebook.com###rightCol/*
-^https?://facebook.com###pagelet_pymk_timeline/*
-^https?://f.nanafiles.co.il/Common/Images/pixel.gif/*
-^https?://facebook.com$important,third-party/*
-^https?://facebook.com$third-party,domain=ynet.co.il/*
-^https?://facebook.com/*like.php$third-party/*
-^https?://facebook.com/*plugins/page.php/*
-^https?://facebook.com/*sdk.js/*
-^https?://facebook.com/RDXSports/*
-^https?://facebook.com/babylonsoftwareltd/*
-^https?://facebook.com/connect/ping/*
-^https?://facebook.com/fql/*
-^https?://facebook.com/offsite_event.php/*
-^https?://facebook.com/outbrain/*
-^https?://facebook.com/plugins//*
-^https?://facebook.com/plugins/likebox.php/*
-^https?://facebook.com/sharer.php/*
-^https?://facebook.com/taboola/*
-^https?://facebook.com/tr/*
-^https?://facebook.com/tr*PageView/*
-^https?://facebook.net/*fbevents.js/*
-^https?://facebook.net/*like.php$third-party/*
-^https?://facebook.net/*sdk.js/*
+
 
 
 
@@ -417,6 +329,7 @@ hostsVN-quantumult, blacklist, https://raw.githubusercontent.com/bigdargon/hosts
 ^https?://avatar-nct.nixcdn.com/.+popup
 
 //spotify
+
 ^https?://spclient.wg.spotify.com/ad-logic/*
 ^https?://spclient.wg.spotify.com/ads/*
 ^https?://spclient.wg.spotify.com/.+ad_slot
